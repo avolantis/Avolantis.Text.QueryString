@@ -1,0 +1,26 @@
+name: stale
+
+on:
+  schedule:
+    - cron: "00 6 * * *" # Run every day at 6:00 AM
+  workflow_dispatch: # Enable manual triggering of this workflow
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/stale@v3
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          days-before-stale: 15
+          days-before-close: -1 # Never close automatically
+          stale-issue-label: "stale"
+          stale-issue-message: "This issue has not seen activity for 15 days therefore it is now marked stale."
+          exempt-issue-labels: "kind/bug,blocked,on-hold"
+          stale-pr-label: "stale"
+          stale-pr-message: "This pull request has not seen activity for 15 days therefore it is now marked stale."
+          exempt-pr-labels: "blocked,on-hold" # Bug PR-s are still marked stale if abandoned

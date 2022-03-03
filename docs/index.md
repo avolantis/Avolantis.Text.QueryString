@@ -1,0 +1,1 @@
+C:/Users/langb/source/repos/Avolantis.Text.QueryString/README.md

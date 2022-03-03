@@ -1,0 +1,12 @@
+<Project>
+    <PropertyGroup>
+        <!-- Basic -->
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>Avolantis.Text.QueryString</RootNamespace>
+
+        <!-- Language features -->
+        <Nullable>enable</Nullable>
+        <LangVersion>default</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+</Project>

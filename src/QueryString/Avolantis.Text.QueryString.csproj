@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <NeutralLanguage>en</NeutralLanguage>
+        <RootNamespace>Avolantis.Text.QueryString</RootNamespace>
+        <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Avolantis.Text.QueryString.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <Company>Avolantis</Company>
+        <Product>Avolantis.Text.QueryString</Product>
+        <ProductName>Avolantis.Text.QueryString</ProductName>
+        <ProductVersion>0.1.0</ProductVersion>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <Title>Avolantis.Text.QueryString</Title>
+        <PackageTags>query query-string serialization filter http rest</PackageTags>
+        <Description>QueryString handling and serialization for .NET 6</Description>
+        <Authors>Bence Láng</Authors>
+        <Copyright>Copyright © 2022 Avolantis</Copyright>
+        <PackageVersion>$(ProductVersion)</PackageVersion>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/avolantis/Avolantis.Text.QueryString</RepositoryUrl>
+    </PropertyGroup>
+
+</Project>

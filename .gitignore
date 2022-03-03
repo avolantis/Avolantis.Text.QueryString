@@ -1,0 +1,9 @@
+.idea/
+
+/**/bin/
+/**/obj/
+/**/dist/
+/**/coverage/
+
+# Prettier is only used locally to format md, json and yml files
+.prettierrc

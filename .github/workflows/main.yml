@@ -1,0 +1,172 @@
+name: main
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - "fix/*"
+      - "release/*"
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+*"
+  pull_request:
+    branches:
+      - main
+      - develop
+      - "fix/*"
+      - "release/*"
+  schedule:
+    - cron: "00 6 * * 1" # Run every monday at 6:00 AM
+  workflow_dispatch:
+
+env:
+  DOTNET_NOLOGO: true
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 6.0.102
+      - uses: actions/cache@v1
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
+          restore-keys: ${{ runner.os }}-nuget
+      - name: build
+        run: |
+          dotnet restore --locked-mode
+          dotnet build --no-restore --configuration Release
+      - uses: actions/cache@v2
+        id: restore-build
+        with:
+          path: ./*
+          key: ${{ github.sha }}
+
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/cache@v2
+        id: restore-build
+        with:
+          path: ./*
+          key: ${{ github.sha }}
+      - name: test
+        run: |
+          dotnet test --configuration Release --collect:"XPlat Code Coverage" --settings ./test/test.runsettings
+          cp ./test/coverage/*/coverage.info ./test/coverage/coverage.lcov
+      - name: coverage
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: ./test/coverage/coverage.lcov
+
+  scan:
+    runs-on: ubuntu-latest
+    if: github.event_name != 'push' || startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    permissions:
+      security-events: write
+    steps:
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 6.0.102
+      - uses: github/codeql-action/init@v1
+        with:
+          languages: csharp
+      - uses: actions/cache@v2
+        id: restore-build
+        with:
+          path: ./*
+          key: ${{ github.sha }}
+      - name: codeql
+        run: github/codeql-action/analyze@v1
+
+  package:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+    needs:
+      - build
+      - test
+    steps:
+      - uses: actions/cache@v2
+        id: restore-build
+        with:
+          path: ./*
+          key: ${{ github.sha }}
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 6.0.102
+      - name: package
+        run: |
+          dotnet publish --no-build --configuration Release
+          dotnet pack --no-build --configuration Release
+      - uses: actions/upload-artifact@v2
+        with:
+          name: assemblies
+          path: ./src/QueryString/bin/Release/net6.0/publish
+      - uses: actions/upload-artifact@v2
+        with:
+          name: nupkg
+          path: ./src/QueryString/bin/Release/net6.0/*.nupkg
+
+  publish:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+    needs:
+      - scan
+      - package
+    permissions:
+      packages: write
+    steps:
+      - uses: actions/cache@v2
+        id: restore-build
+        with:
+          path: ./*
+          key: ${{ github.sha }}
+      - name: verify
+        run: |
+          echo "Verifying release commit is the main branch"
+          git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
+          git branch --remote --contains | grep origin/main
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 6.0.102
+      - name: nuget
+        if: contains(github.ref_name, '-') != 1
+        run: dotnet nuget push ${FILE} --api-key ${NUGET_TOKEN}
+        env:
+          NUGET_TOKEN: ${{ secrets.NUGET_TOKEN }}
+          FILE: ./src/QueryString/bin/Release/net6.0/Avolantis.Text.QueryString.*.nupkg
+      - name: github
+        run: dotnet nuget push ${FILE} --api-key ${GITHUB_TOKEN} --source ${GITHUB_SOURCE}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_SOURCE: https://nuget.pkg.github.com/avolantis/index.json
+          FILE: ./src/QueryString/bin/Release/net6.0/Avolantis.Text.QueryString.*.nupkg
+
+  docs:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v') && !contains(github.ref_name, '-')
+    needs: publish
+    concurrency: ci-${{ github.ref_name }}
+    steps:
+      - uses: actions/cache@v2
+        id: restore-build
+        with:
+          path: ./*
+          key: ${{ github.sha }}
+      - name: build
+        uses: nikeee/docfx-action@v1.0.0
+        with:
+          args: ./docs/docfx.json
+      - name: deploy
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          branch: gh-pages
+          folder: ./docs/dist

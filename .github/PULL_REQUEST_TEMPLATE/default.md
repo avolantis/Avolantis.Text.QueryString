@@ -1,0 +1,5 @@
+- [ ] I've read and accepted the contribution guidelines
+- [ ] I've read and accepted the code of conduct
+- [ ] I've checked my commit message and code for conventions
+- [ ] I've added and/or updated test cases for the changes
+- [ ] I've updated the documentation, where necessary
