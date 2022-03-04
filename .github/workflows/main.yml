@@ -129,7 +129,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: nupkg
-          path: ./src/QueryString/bin/Release/net6.0/*.nupkg
+          path: ./src/QueryString/bin/Release/Avolantis.Text.QueryString.*.nupkg
 
   publish:
     runs-on: ubuntu-latest
@@ -158,13 +158,13 @@ jobs:
         run: dotnet nuget push ${FILE} --api-key ${NUGET_TOKEN}
         env:
           NUGET_TOKEN: ${{ secrets.NUGET_TOKEN }}
-          FILE: ./src/QueryString/bin/Release/net6.0/Avolantis.Text.QueryString.*.nupkg
+          FILE: ./src/QueryString/bin/Release/Avolantis.Text.QueryString.*.nupkg
       - name: github
         run: dotnet nuget push ${FILE} --api-key ${GITHUB_TOKEN} --source ${GITHUB_SOURCE}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_SOURCE: https://nuget.pkg.github.com/avolantis/index.json
-          FILE: ./src/QueryString/bin/Release/net6.0/Avolantis.Text.QueryString.*.nupkg
+          FILE: ./src/QueryString/bin/Release/Avolantis.Text.QueryString.*.nupkg
 
   docs:
     runs-on: ubuntu-latest
