@@ -11,7 +11,7 @@ updates:
       interval: "weekly"
     labels:
       - "area/deps"
-    target-branch: "develop"
+    target-branch: "main"
     commit-message:
       prefix: "build"
     open-pull-requests-limit: 5
