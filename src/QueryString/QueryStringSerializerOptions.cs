@@ -82,5 +82,10 @@ public class QueryStringSerializerOptions
     ///     Gets or sets the available <see cref="QueryParameterConverter" />s used to convert
     ///     CLR objects to their corresponding <see cref="QueryStringParameter" />s
     /// </summary>
-    public ICollection<QueryParameterConverter> Converters { get; set; } = new List<QueryParameterConverter>();
+    public ICollection<QueryParameterConverter> Converters { get; set; } = new List<QueryParameterConverter>
+    {
+        DateTimeQueryParameterConverter.Instance,
+        DateOnlyQueryParameterConverter.Instance,
+        TimeOnlyQueryParameterConverter.Instance
+    };
 }
