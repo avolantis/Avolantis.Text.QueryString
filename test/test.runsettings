@@ -7,10 +7,16 @@
         <DataCollectors>
             <DataCollector friendlyName="XPlat code coverage">
                 <Configuration>
-                    <Format>lcov</Format>
+                    <Format>cobertura,lcov</Format>
                     <UseSourceLink>true</UseSourceLink>
                 </Configuration>
             </DataCollector>
         </DataCollectors>
     </DataCollectionRunSettings>
+    <LoggerRunSettings>
+        <Loggers>
+            <Logger friendlyName="trx" enabled="True" />
+            <Logger friendlyName="html" enabled="True" />
+        </Loggers>
+    </LoggerRunSettings>
 </RunSettings>
