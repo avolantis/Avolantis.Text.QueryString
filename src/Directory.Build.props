@@ -1,13 +1,21 @@
 <Project>
     <PropertyGroup>
         <!-- Basic -->
+        <Company>Avolantis</Company>
+        <NeutralLanguage>en</NeutralLanguage>
         <TargetFramework>net6.0</TargetFramework>
         <RootNamespace>Avolantis.Text.QueryString</RootNamespace>
+        <Copyright>Copyright © 2022 Avolantis</Copyright>
 
         <!-- Language features -->
         <Nullable>enable</Nullable>
         <LangVersion>default</LangVersion>
         <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <!-- Documentation -->
+    <PropertyGroup Condition="!$(MSBuildProjectName.EndsWith('Tests'))">
+        <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(MSBuildProjectName).xml</DocumentationFile>
     </PropertyGroup>
 
     <!-- Testability -->

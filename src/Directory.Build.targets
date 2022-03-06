@@ -1,0 +1,20 @@
+﻿<Project>
+    <!-- Versioning -->
+    <PropertyGroup>
+        <SemVerMajor>$([System.Text.RegularExpressions.Regex]::Match($(Version), '^\d+'))</SemVerMajor>
+        <SemVerPatch>$(Version.Split('-')[0])</SemVerPatch>
+
+        <FileVersion>$(SemVerPatch).0</FileVersion>
+        <AssemblyVersion>$(SemVerMajor).0.0</AssemblyVersion>
+        <InformationalVersion>$(Version)</InformationalVersion>
+    </PropertyGroup>
+
+    <!-- Package -->
+    <PropertyGroup Condition="$(IsPackable) != false">
+        <Authors>Bence Láng</Authors>
+        <PackageVersion>$(Version)</PackageVersion>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/avolantis/Avolantis.Text.QueryString</RepositoryUrl>
+    </PropertyGroup>
+</Project>
