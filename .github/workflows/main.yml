@@ -30,7 +30,7 @@ jobs:
       pr: ${{ github.event.number || 0 }}
 
   scan:
-    if: github.event_name != 'push' && github.event_name != 'workflow_dispatch' || github.event.inputs.scan
+    if: (github.event_name != 'push' || startsWith(github.ref, 'refs/tags/v')) && (github.event_name != 'workflow_dispatch' || github.event.inputs.scan)
     needs: build
     uses: ./.github/workflows/scan.yml
     permissions: 
