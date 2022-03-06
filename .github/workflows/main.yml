@@ -1,5 +1,4 @@
 name: main
-
 on:
   push:
     branches:
@@ -10,227 +9,45 @@ on:
     tags:
       - "v[0-9]+.[0-9]+.[0-9]+*"
   pull_request:
-    branches:
-      - main
-      - develop
-      - "fix/*"
-      - "release/*"
   schedule:
     - cron: "00 6 * * 1" # Run every monday at 6:00 AM
   workflow_dispatch:
-
-env:
-  DOTNET_NOLOGO: true
-  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
-  DOTNET_CLI_TELEMETRY_OPTOUT: true
+    inputs:
+      scan:
+        type: boolean
+        description: Run CodeQL
+        required: false
+        default: false
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: 6.0.102
-      - uses: actions/cache@v1
-        with:
-          path: ~/.nuget/packages
-          key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
-          restore-keys: ${{ runner.os }}-nuget
-      - name: build
-        run: |
-          dotnet restore --locked-mode
-          dotnet build --no-restore --configuration Release
-      - uses: actions/cache@v2
-        id: restore-build
-        with:
-          path: ./*
-          key: ${{ github.sha }}
+    uses: ./.github/workflows/build.yml
 
   test:
-    runs-on: ubuntu-latest
     needs: build
-    steps:
-      - uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: 6.0.102
-      - uses: actions/cache@v1
-        with:
-          path: ~/.nuget/packages
-          key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
-          restore-keys: ${{ runner.os }}-nuget
-      - uses: actions/cache@v2
-        id: restore-build
-        with:
-          path: ./*
-          key: ${{ github.sha }}
-      - name: test
-        run: dotnet test --no-build --configuration Release --collect:"XPlat Code Coverage" --settings ./test/test.runsettings
-      - name: prepare
-        if: always()
-        working-directory: ./test/coverage
-        run: |
-          echo "Preparing test results report..."
-          rm -rf $(basename -s .trx *.trx)
-          mv *.trx results.trx || echo "TRX result report not found, ignoring..."
-          mv *.html results.html || echo "HTML result report not found, ignoring..."
-          echo "Preparing coverage data..."
-          mv */coverage.info coverage.lcov || echo "LCOV report not found, ignoring..."
-          mv */coverage.cobertura.xml coverage.xml || echo "Cobertura report not found, ignoring..."
-          find . -maxdepth 1 -type d -delete
-      - name: summary
-        if: always()
-        uses: irongut/CodeCoverageSummary@v1.2.0
-        with:
-          filename: ./test/coverage/coverage.xml
-          badge: true
-          format: 'md'
-          output: 'both'
-      - name: prepare
-        if: always()
-        run: |
-          echo "Preparing coverage reports..."
-          mv code-coverage-results.md ./test/coverage/report.md || echo "Markdown report not found, ignoring..."
-          mv code-coverage-results.txt ./test/coverage/report.txt || echo "Text report not found, ignoring..."
-      - name: report
-        uses: dorny/test-reporter@v1
-        if: always()
-        with:
-          name: results
-          path: ./test/coverage/results.trx
-          reporter: dotnet-trx
-      - name: coverage
-        if: always()
-        uses: coverallsapp/github-action@master
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          path-to-lcov: ./test/coverage/coverage.lcov
-      - name: artifacts
-        uses: actions/upload-artifact@v2
-        if: always()
-        with:
-          name: reports
-          path: ./test/coverage
-      - name: comment
-        if: always() && github.event_name == 'pull_request'
-        uses: marocchino/sticky-pull-request-comment@v2
-        with:
-          hide_and_recreate: true
-          hide_classify: "OUTDATED"
-          path: ./test/coverage/report.md         
+    uses: ./.github/workflows/test.yml
+    with:
+      pr: ${{ github.event.number || 0 }}
 
   scan:
-    runs-on: ubuntu-latest
-    if: github.event_name != 'push' || startsWith(github.ref, 'refs/tags/v')
+    if: github.event_name != 'push' && github.event_name != 'workflow_dispatch' || github.event.inputs.scan
     needs: build
-    permissions:
+    uses: ./.github/workflows/scan.yml
+    permissions: 
       security-events: write
-    steps:
-      - uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: 6.0.102
-      - uses: github/codeql-action/init@v1
-        with:
-          languages: csharp
-      - uses: actions/cache@v1
-        with:
-          path: ~/.nuget/packages
-          key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
-          restore-keys: ${{ runner.os }}-nuget
-      - uses: actions/cache@v2
-        id: restore-build
-        with:
-          path: ./*
-          key: ${{ github.sha }}
-      - name: codeql
-        run: github/codeql-action/analyze@v1
 
   package:
-    runs-on: ubuntu-latest
-    if: github.event_name == 'push'
     needs: test
-    steps:
-      - uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: 6.0.102
-      - uses: actions/cache@v1
-        with:
-          path: ~/.nuget/packages
-          key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
-          restore-keys: ${{ runner.os }}-nuget
-      - uses: actions/cache@v2
-        id: restore-build
-        with:
-          path: ./*
-          key: ${{ github.sha }}
-      - name: package
-        run: |
-          dotnet publish --no-build --configuration Release
-          dotnet pack --no-build --configuration Release
-      - uses: actions/upload-artifact@v2
-        with:
-          name: assemblies
-          path: ./src/QueryString/bin/Release/net6.0/publish
-      - uses: actions/upload-artifact@v2
-        with:
-          name: nupkg
-          path: ./src/QueryString/bin/Release/Avolantis.Text.QueryString.*.nupkg
+    uses: ./.github/workflows/package.yml
 
-  publish:
-    runs-on: ubuntu-latest
+  release:
     if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
-    needs:
-      - scan
+    needs: 
       - package
+      - scan
+    uses: ./.github/workflows/release.yml
     permissions:
+      contents: write
       packages: write
-    steps:
-      - uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: 6.0.102
-      - uses: actions/cache@v2
-        id: restore-build
-        with:
-          path: ./*
-          key: ${{ github.sha }}
-      - name: verify
-        run: |
-          echo "Verifying release commit is the main branch"
-          git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
-          git branch --remote --contains | grep origin/main
-      - name: nuget
-        if: contains(github.ref_name, '-') != 1
-        run: dotnet nuget push ${FILE} --api-key ${NUGET_TOKEN}
-        env:
-          NUGET_TOKEN: ${{ secrets.NUGET_TOKEN }}
-          FILE: ./src/QueryString/bin/Release/Avolantis.Text.QueryString.*.nupkg
-      - name: github
-        run: dotnet nuget push ${FILE} --api-key ${GITHUB_TOKEN} --source ${GITHUB_SOURCE}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_SOURCE: https://nuget.pkg.github.com/avolantis/index.json
-          FILE: ./src/QueryString/bin/Release/Avolantis.Text.QueryString.*.nupkg
-
-  docs:
-    runs-on: ubuntu-latest
-    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v') && !contains(github.ref_name, '-')
-    needs: publish
-    concurrency: ci-${{ github.ref_name }}
-    steps:
-      - uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: 6.0.102
-      - uses: actions/cache@v2
-        id: restore-build
-        with:
-          path: ./*
-          key: ${{ github.sha }}
-      - name: build
-        uses: nikeee/docfx-action@v1.0.0
-        with:
-          args: ./docs/docfx.json
-      - name: deploy
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
-        with:
-          branch: gh-pages
-          folder: ./docs/dist
+    secrets:
+      NUGET_TOKEN: ${{ secrets.NUGET_TOKEN }}

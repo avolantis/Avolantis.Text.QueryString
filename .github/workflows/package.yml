@@ -1,0 +1,41 @@
+﻿name: package
+on:
+  workflow_call:
+
+env:
+  DOTNET_NOLOGO: true
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 6.0.102
+      - uses: actions/cache@v1
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
+          restore-keys: ${{ runner.os }}-nuget
+      - uses: actions/cache@v2
+        id: restore-build
+        with:
+          path: |
+            ./src
+            ./test
+          key: ${{ github.sha }}
+      - name: package
+        run: |
+          dotnet publish --no-build --configuration Release
+          dotnet pack --no-build --configuration Release
+      - uses: actions/upload-artifact@v2
+        with:
+          name: assemblies-${{ github.sha }}
+          path: ./src/QueryString/bin/Release/net6.0/publish
+      - uses: actions/upload-artifact@v2
+        with:
+          name: nupkg-${{ github.sha }}
+          path: ./src/QueryString/bin/Release/Avolantis.Text.QueryString.*.nupkg

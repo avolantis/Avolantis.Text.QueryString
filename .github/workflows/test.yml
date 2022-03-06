@@ -1,0 +1,89 @@
+﻿name: test
+on:
+  workflow_call:
+    inputs:
+      pr:
+        type: number
+        required: false
+        default: 0
+
+env:
+  DOTNET_NOLOGO: true
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 6.0.102
+      - uses: actions/cache@v1
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
+          restore-keys: ${{ runner.os }}-nuget
+      - uses: actions/cache@v2
+        id: restore-build
+        with:
+          path: |
+            ./src
+            ./test
+          key: ${{ github.sha }}
+      - name: test
+        run: dotnet test --no-build --configuration Release --collect:"XPlat Code Coverage" --settings ./test/test.runsettings
+      - name: prepare
+        if: always()
+        working-directory: ./test/coverage
+        run: |
+          echo "Preparing test results report..."
+          rm -rf $(basename -s .trx *.trx)
+          mv *.trx results.trx || echo "TRX result report not found, ignoring..."
+          mv *.html results.html || echo "HTML result report not found, ignoring..."
+          echo "Preparing coverage data..."
+          mv */coverage.info coverage.lcov || echo "LCOV report not found, ignoring..."
+          mv */coverage.cobertura.xml coverage.xml || echo "Cobertura report not found, ignoring..."
+          find . -maxdepth 1 -type d -delete
+      - name: summary
+        if: always()
+        uses: irongut/CodeCoverageSummary@v1.2.0
+        with:
+          filename: ./test/coverage/coverage.xml
+          badge: true
+          format: "md"
+          output: "both"
+      - name: prepare
+        if: always()
+        run: |
+          echo "Preparing coverage reports..."
+          mv code-coverage-results.md ./test/coverage/report.md || echo "Markdown report not found, ignoring..."
+          mv code-coverage-results.txt ./test/coverage/report.txt || echo "Text report not found, ignoring..."
+      - name: report
+        uses: dorny/test-reporter@v1
+        if: always()
+        with:
+          name: results
+          path: ./test/coverage/results.trx
+          reporter: dotnet-trx
+      - name: coverage
+        if: always()
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: ./test/coverage/coverage.lcov
+      - name: artifacts
+        uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: reports-${{ github.sha }}
+          path: ./test/coverage
+      - name: comment
+        if: always() && github.event.inputs.pr > 0
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          number: ${{ github.event.inputs.pr }}
+          hide_and_recreate: true
+          hide_classify: "OUTDATED"
+          path: ./test/coverage/report.md
