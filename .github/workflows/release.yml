@@ -44,6 +44,16 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           GITHUB_SOURCE: https://nuget.pkg.github.com/avolantis/index.json
           FILE: ./dist/Avolantis.Text.QueryString.*.nupkg
+      - name: prepare
+        working-directory: dist
+        run: |
+          tar -czf $(basename -s .nupkg *.nupkg).tar.gz --exclude "$(basename *.nupkg)" .
+          zip -r $(basename -s .nupkg *.nupkg).zip . -x "$(basename *.nupkg)" -x "$(basename *.tar.gz)"
+      - name: reports
+        uses: actions/download-artifact@v2
+        with:
+          name: reports-${{ github.sha }}
+          path: ./test/coverage
       - name: release
         uses: softprops/action-gh-release@v1
         with:
@@ -52,3 +62,4 @@ jobs:
             ./LICENSE.md
             ./README.md
             ./dist/*
+            ./test/coverage/*
