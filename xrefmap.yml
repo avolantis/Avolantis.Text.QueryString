@@ -1,0 +1,806 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Avolantis.Text.QueryString
+  name: Avolantis.Text.QueryString
+  href: api/Avolantis.Text.QueryString.html
+  commentId: N:Avolantis.Text.QueryString
+  fullName: Avolantis.Text.QueryString
+  nameWithType: Avolantis.Text.QueryString
+- uid: Avolantis.Text.QueryString.
+  name: ''
+  href: api/Avolantis.Text.QueryString..html
+  commentId: T:Avolantis.Text.QueryString.
+  fullName: Avolantis.Text.QueryString.
+- uid: Avolantis.Text.QueryString.QueryParameterCollection
+  name: QueryParameterCollection
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html
+  commentId: T:Avolantis.Text.QueryString.QueryParameterCollection
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection
+  nameWithType: QueryParameterCollection
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.#ctor
+  name: QueryParameterCollection()
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection__ctor
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.#ctor
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.QueryParameterCollection()
+  nameWithType: QueryParameterCollection.QueryParameterCollection()
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.#ctor(IEnumerable{Avolantis.Text.QueryString.QueryStringParameter})
+  name: QueryParameterCollection(IEnumerable<QueryStringParameter>)
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection__ctor_IEnumerable_Avolantis_Text_QueryString_QueryStringParameter__
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.#ctor(IEnumerable{Avolantis.Text.QueryString.QueryStringParameter})
+  name.vb: QueryParameterCollection(IEnumerable(Of QueryStringParameter))
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.QueryParameterCollection(IEnumerable<Avolantis.Text.QueryString.QueryStringParameter>)
+  fullName.vb: Avolantis.Text.QueryString.QueryParameterCollection.QueryParameterCollection(IEnumerable(Of Avolantis.Text.QueryString.QueryStringParameter))
+  nameWithType: QueryParameterCollection.QueryParameterCollection(IEnumerable<QueryStringParameter>)
+  nameWithType.vb: QueryParameterCollection.QueryParameterCollection(IEnumerable(Of QueryStringParameter))
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.#ctor*
+  name: QueryParameterCollection
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection__ctor_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterCollection.#ctor
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.QueryParameterCollection
+  nameWithType: QueryParameterCollection.QueryParameterCollection
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Add(Avolantis.Text.QueryString.QueryStringParameter)
+  name: Add(QueryStringParameter)
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Add_Avolantis_Text_QueryString_QueryStringParameter_
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.Add(Avolantis.Text.QueryString.QueryStringParameter)
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Add(Avolantis.Text.QueryString.QueryStringParameter)
+  nameWithType: QueryParameterCollection.Add(QueryStringParameter)
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Add(System.String,System.String)
+  name: Add(String, String)
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Add_System_String_System_String_
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.Add(System.String,System.String)
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Add(System.String, System.String)
+  nameWithType: QueryParameterCollection.Add(String, String)
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Add*
+  name: Add
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Add_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterCollection.Add
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Add
+  nameWithType: QueryParameterCollection.Add
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Clear
+  name: Clear()
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Clear
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.Clear
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Clear()
+  nameWithType: QueryParameterCollection.Clear()
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Clear*
+  name: Clear
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Clear_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterCollection.Clear
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Clear
+  nameWithType: QueryParameterCollection.Clear
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Clone
+  name: Clone()
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Clone
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.Clone
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Clone()
+  nameWithType: QueryParameterCollection.Clone()
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Clone*
+  name: Clone
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Clone_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterCollection.Clone
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Clone
+  nameWithType: QueryParameterCollection.Clone
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Contains(Avolantis.Text.QueryString.QueryStringParameter)
+  name: Contains(QueryStringParameter)
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Contains_Avolantis_Text_QueryString_QueryStringParameter_
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.Contains(Avolantis.Text.QueryString.QueryStringParameter)
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Contains(Avolantis.Text.QueryString.QueryStringParameter)
+  nameWithType: QueryParameterCollection.Contains(QueryStringParameter)
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Contains(System.String,System.String)
+  name: Contains(String, String)
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Contains_System_String_System_String_
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.Contains(System.String,System.String)
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Contains(System.String, System.String)
+  nameWithType: QueryParameterCollection.Contains(String, String)
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Contains*
+  name: Contains
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Contains_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterCollection.Contains
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Contains
+  nameWithType: QueryParameterCollection.Contains
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.ContainsKey(System.String)
+  name: ContainsKey(String)
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_ContainsKey_System_String_
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.ContainsKey(System.String)
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.ContainsKey(System.String)
+  nameWithType: QueryParameterCollection.ContainsKey(String)
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.ContainsKey*
+  name: ContainsKey
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_ContainsKey_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterCollection.ContainsKey
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.ContainsKey
+  nameWithType: QueryParameterCollection.ContainsKey
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Count
+  name: Count()
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Count
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.Count
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Count()
+  nameWithType: QueryParameterCollection.Count()
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Count*
+  name: Count
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Count_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterCollection.Count
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Count
+  nameWithType: QueryParameterCollection.Count
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Equals(Avolantis.Text.QueryString.QueryParameterCollection)
+  name: Equals(QueryParameterCollection)
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Equals_Avolantis_Text_QueryString_QueryParameterCollection_
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.Equals(Avolantis.Text.QueryString.QueryParameterCollection)
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Equals(Avolantis.Text.QueryString.QueryParameterCollection)
+  nameWithType: QueryParameterCollection.Equals(QueryParameterCollection)
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Equals_System_Object_
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.Equals(System.Object)
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Equals(System.Object)
+  nameWithType: QueryParameterCollection.Equals(Object)
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Equals*
+  name: Equals
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Equals_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterCollection.Equals
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Equals
+  nameWithType: QueryParameterCollection.Equals
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.GetEnumerator
+  name: GetEnumerator()
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_GetEnumerator
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.GetEnumerator
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.GetEnumerator()
+  nameWithType: QueryParameterCollection.GetEnumerator()
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.GetEnumerator*
+  name: GetEnumerator
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_GetEnumerator_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterCollection.GetEnumerator
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.GetEnumerator
+  nameWithType: QueryParameterCollection.GetEnumerator
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.GetHashCode
+  name: GetHashCode()
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_GetHashCode
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.GetHashCode
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.GetHashCode()
+  nameWithType: QueryParameterCollection.GetHashCode()
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.GetHashCode*
+  name: GetHashCode
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_GetHashCode_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterCollection.GetHashCode
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.GetHashCode
+  nameWithType: QueryParameterCollection.GetHashCode
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Item(System.String)
+  name: Item[String]
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Item_System_String_
+  commentId: P:Avolantis.Text.QueryString.QueryParameterCollection.Item(System.String)
+  name.vb: Item(String)
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Item[System.String]
+  fullName.vb: Avolantis.Text.QueryString.QueryParameterCollection.Item(System.String)
+  nameWithType: QueryParameterCollection.Item[String]
+  nameWithType.vb: QueryParameterCollection.Item(String)
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Item(System.String,System.Int32)
+  name: Item[String, Int32]
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Item_System_String_System_Int32_
+  commentId: P:Avolantis.Text.QueryString.QueryParameterCollection.Item(System.String,System.Int32)
+  name.vb: Item(String, Int32)
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Item[System.String, System.Int32]
+  fullName.vb: Avolantis.Text.QueryString.QueryParameterCollection.Item(System.String, System.Int32)
+  nameWithType: QueryParameterCollection.Item[String, Int32]
+  nameWithType.vb: QueryParameterCollection.Item(String, Int32)
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Item*
+  name: Item
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Item_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterCollection.Item
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Item
+  nameWithType: QueryParameterCollection.Item
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Keys
+  name: Keys
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Keys
+  commentId: P:Avolantis.Text.QueryString.QueryParameterCollection.Keys
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Keys
+  nameWithType: QueryParameterCollection.Keys
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Keys*
+  name: Keys
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Keys_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterCollection.Keys
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Keys
+  nameWithType: QueryParameterCollection.Keys
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.op_Equality(Avolantis.Text.QueryString.QueryParameterCollection,Avolantis.Text.QueryString.QueryParameterCollection)
+  name: Equality(QueryParameterCollection, QueryParameterCollection)
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_op_Equality_Avolantis_Text_QueryString_QueryParameterCollection_Avolantis_Text_QueryString_QueryParameterCollection_
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.op_Equality(Avolantis.Text.QueryString.QueryParameterCollection,Avolantis.Text.QueryString.QueryParameterCollection)
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Equality(Avolantis.Text.QueryString.QueryParameterCollection, Avolantis.Text.QueryString.QueryParameterCollection)
+  nameWithType: QueryParameterCollection.Equality(QueryParameterCollection, QueryParameterCollection)
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.op_Equality*
+  name: Equality
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_op_Equality_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterCollection.op_Equality
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Equality
+  nameWithType: QueryParameterCollection.Equality
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.op_Inequality(Avolantis.Text.QueryString.QueryParameterCollection,Avolantis.Text.QueryString.QueryParameterCollection)
+  name: Inequality(QueryParameterCollection, QueryParameterCollection)
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_op_Inequality_Avolantis_Text_QueryString_QueryParameterCollection_Avolantis_Text_QueryString_QueryParameterCollection_
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.op_Inequality(Avolantis.Text.QueryString.QueryParameterCollection,Avolantis.Text.QueryString.QueryParameterCollection)
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Inequality(Avolantis.Text.QueryString.QueryParameterCollection, Avolantis.Text.QueryString.QueryParameterCollection)
+  nameWithType: QueryParameterCollection.Inequality(QueryParameterCollection, QueryParameterCollection)
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.op_Inequality*
+  name: Inequality
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_op_Inequality_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterCollection.op_Inequality
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Inequality
+  nameWithType: QueryParameterCollection.Inequality
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Parse(System.String,System.String,System.String)
+  name: Parse(String, String, String)
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Parse_System_String_System_String_System_String_
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.Parse(System.String,System.String,System.String)
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Parse(System.String, System.String, System.String)
+  nameWithType: QueryParameterCollection.Parse(String, String, String)
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Parse*
+  name: Parse
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Parse_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterCollection.Parse
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Parse
+  nameWithType: QueryParameterCollection.Parse
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Remove(Avolantis.Text.QueryString.QueryStringParameter)
+  name: Remove(QueryStringParameter)
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Remove_Avolantis_Text_QueryString_QueryStringParameter_
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.Remove(Avolantis.Text.QueryString.QueryStringParameter)
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Remove(Avolantis.Text.QueryString.QueryStringParameter)
+  nameWithType: QueryParameterCollection.Remove(QueryStringParameter)
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Remove(System.String,System.Int32)
+  name: Remove(String, Int32)
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Remove_System_String_System_Int32_
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.Remove(System.String,System.Int32)
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Remove(System.String, System.Int32)
+  nameWithType: QueryParameterCollection.Remove(String, Int32)
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Remove(System.String,System.String)
+  name: Remove(String, String)
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Remove_System_String_System_String_
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.Remove(System.String,System.String)
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Remove(System.String, System.String)
+  nameWithType: QueryParameterCollection.Remove(String, String)
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Remove*
+  name: Remove
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Remove_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterCollection.Remove
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Remove
+  nameWithType: QueryParameterCollection.Remove
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.RemoveAll(System.String)
+  name: RemoveAll(String)
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_RemoveAll_System_String_
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.RemoveAll(System.String)
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.RemoveAll(System.String)
+  nameWithType: QueryParameterCollection.RemoveAll(String)
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.RemoveAll(System.String,System.String)
+  name: RemoveAll(String, String)
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_RemoveAll_System_String_System_String_
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.RemoveAll(System.String,System.String)
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.RemoveAll(System.String, System.String)
+  nameWithType: QueryParameterCollection.RemoveAll(String, String)
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.RemoveAll*
+  name: RemoveAll
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_RemoveAll_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterCollection.RemoveAll
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.RemoveAll
+  nameWithType: QueryParameterCollection.RemoveAll
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Set(System.String,System.String)
+  name: Set(String, String)
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Set_System_String_System_String_
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.Set(System.String,System.String)
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Set(System.String, System.String)
+  nameWithType: QueryParameterCollection.Set(String, String)
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.Set*
+  name: Set
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_Set_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterCollection.Set
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.Set
+  nameWithType: QueryParameterCollection.Set
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_System_Collections_IEnumerable_GetEnumerator
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.System#Collections#IEnumerable#GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: QueryParameterCollection.IEnumerable.GetEnumerator()
+  nameWithType.vb: QueryParameterCollection.System.Collections.IEnumerable.GetEnumerator()
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.System#Collections#IEnumerable#GetEnumerator*
+  name: IEnumerable.GetEnumerator
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_System_Collections_IEnumerable_GetEnumerator_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterCollection.System#Collections#IEnumerable#GetEnumerator
+  isSpec: "True"
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.System.Collections.IEnumerable.GetEnumerator
+  nameWithType: QueryParameterCollection.IEnumerable.GetEnumerator
+  nameWithType.vb: QueryParameterCollection.System.Collections.IEnumerable.GetEnumerator
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.ToString
+  name: ToString()
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_ToString
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.ToString
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.ToString()
+  nameWithType: QueryParameterCollection.ToString()
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.ToString(System.Boolean,System.String,System.String)
+  name: ToString(Boolean, String, String)
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_ToString_System_Boolean_System_String_System_String_
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.ToString(System.Boolean,System.String,System.String)
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.ToString(System.Boolean, System.String, System.String)
+  nameWithType: QueryParameterCollection.ToString(Boolean, String, String)
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.ToString*
+  name: ToString
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_ToString_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterCollection.ToString
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.ToString
+  nameWithType: QueryParameterCollection.ToString
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.TryGetValue(System.String,System.Int32,System.String@)
+  name: TryGetValue(String, Int32, out String)
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_TryGetValue_System_String_System_Int32_System_String__
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.TryGetValue(System.String,System.Int32,System.String@)
+  name.vb: TryGetValue(String, Int32, ByRef String)
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.TryGetValue(System.String, System.Int32, out System.String)
+  fullName.vb: Avolantis.Text.QueryString.QueryParameterCollection.TryGetValue(System.String, System.Int32, ByRef System.String)
+  nameWithType: QueryParameterCollection.TryGetValue(String, Int32, out String)
+  nameWithType.vb: QueryParameterCollection.TryGetValue(String, Int32, ByRef String)
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.TryGetValue*
+  name: TryGetValue
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_TryGetValue_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterCollection.TryGetValue
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.TryGetValue
+  nameWithType: QueryParameterCollection.TryGetValue
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.TryGetValues(System.String,System.Nullable{IReadOnlyList{System.String}}@)
+  name: TryGetValues(String, out Nullable<IReadOnlyList<String>>)
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_TryGetValues_System_String_System_Nullable_IReadOnlyList_System_String____
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.TryGetValues(System.String,System.Nullable{IReadOnlyList{System.String}}@)
+  name.vb: TryGetValues(String, ByRef Nullable(Of IReadOnlyList(Of String)))
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.TryGetValues(System.String, out System.Nullable<IReadOnlyList<System.String>>)
+  fullName.vb: Avolantis.Text.QueryString.QueryParameterCollection.TryGetValues(System.String, ByRef System.Nullable(Of IReadOnlyList(Of System.String)))
+  nameWithType: QueryParameterCollection.TryGetValues(String, out Nullable<IReadOnlyList<String>>)
+  nameWithType.vb: QueryParameterCollection.TryGetValues(String, ByRef Nullable(Of IReadOnlyList(Of String)))
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.TryGetValues*
+  name: TryGetValues
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_TryGetValues_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterCollection.TryGetValues
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.TryGetValues
+  nameWithType: QueryParameterCollection.TryGetValues
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.TryParse(System.String,Avolantis.Text.QueryString.QueryParameterCollection@,System.String,System.String)
+  name: TryParse(String, out QueryParameterCollection, String, String)
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_TryParse_System_String_Avolantis_Text_QueryString_QueryParameterCollection__System_String_System_String_
+  commentId: M:Avolantis.Text.QueryString.QueryParameterCollection.TryParse(System.String,Avolantis.Text.QueryString.QueryParameterCollection@,System.String,System.String)
+  name.vb: TryParse(String, ByRef QueryParameterCollection, String, String)
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.TryParse(System.String, out Avolantis.Text.QueryString.QueryParameterCollection, System.String, System.String)
+  fullName.vb: Avolantis.Text.QueryString.QueryParameterCollection.TryParse(System.String, ByRef Avolantis.Text.QueryString.QueryParameterCollection, System.String, System.String)
+  nameWithType: QueryParameterCollection.TryParse(String, out QueryParameterCollection, String, String)
+  nameWithType.vb: QueryParameterCollection.TryParse(String, ByRef QueryParameterCollection, String, String)
+- uid: Avolantis.Text.QueryString.QueryParameterCollection.TryParse*
+  name: TryParse
+  href: api/Avolantis.Text.QueryString.QueryParameterCollection.html#Avolantis_Text_QueryString_QueryParameterCollection_TryParse_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterCollection.TryParse
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterCollection.TryParse
+  nameWithType: QueryParameterCollection.TryParse
+- uid: Avolantis.Text.QueryString.QueryParameterConverter
+  name: QueryParameterConverter
+  href: api/Avolantis.Text.QueryString.QueryParameterConverter.html
+  commentId: T:Avolantis.Text.QueryString.QueryParameterConverter
+  fullName: Avolantis.Text.QueryString.QueryParameterConverter
+  nameWithType: QueryParameterConverter
+- uid: Avolantis.Text.QueryString.QueryParameterConverter.CanConvert(Type)
+  name: CanConvert(Type)
+  href: api/Avolantis.Text.QueryString.QueryParameterConverter.html#Avolantis_Text_QueryString_QueryParameterConverter_CanConvert_Type_
+  commentId: M:Avolantis.Text.QueryString.QueryParameterConverter.CanConvert(Type)
+  fullName: Avolantis.Text.QueryString.QueryParameterConverter.CanConvert(Type)
+  nameWithType: QueryParameterConverter.CanConvert(Type)
+- uid: Avolantis.Text.QueryString.QueryParameterConverter.CanConvert*
+  name: CanConvert
+  href: api/Avolantis.Text.QueryString.QueryParameterConverter.html#Avolantis_Text_QueryString_QueryParameterConverter_CanConvert_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterConverter.CanConvert
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterConverter.CanConvert
+  nameWithType: QueryParameterConverter.CanConvert
+- uid: Avolantis.Text.QueryString.QueryParameterConverter.Convert(System.String,System.Object,Type,Avolantis.Text.QueryString.QueryParameterCollection,Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  name: Convert(String, Object, Type, QueryParameterCollection, QueryStringSerializerOptions)
+  href: api/Avolantis.Text.QueryString.QueryParameterConverter.html#Avolantis_Text_QueryString_QueryParameterConverter_Convert_System_String_System_Object_Type_Avolantis_Text_QueryString_QueryParameterCollection_Avolantis_Text_QueryString_QueryStringSerializerOptions_
+  commentId: M:Avolantis.Text.QueryString.QueryParameterConverter.Convert(System.String,System.Object,Type,Avolantis.Text.QueryString.QueryParameterCollection,Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  fullName: Avolantis.Text.QueryString.QueryParameterConverter.Convert(System.String, System.Object, Type, Avolantis.Text.QueryString.QueryParameterCollection, Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  nameWithType: QueryParameterConverter.Convert(String, Object, Type, QueryParameterCollection, QueryStringSerializerOptions)
+- uid: Avolantis.Text.QueryString.QueryParameterConverter.Convert*
+  name: Convert
+  href: api/Avolantis.Text.QueryString.QueryParameterConverter.html#Avolantis_Text_QueryString_QueryParameterConverter_Convert_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterConverter.Convert
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterConverter.Convert
+  nameWithType: QueryParameterConverter.Convert
+- uid: Avolantis.Text.QueryString.QueryParameterConverter`1
+  name: QueryParameterConverter<T>
+  href: api/Avolantis.Text.QueryString.QueryParameterConverter-1.html
+  commentId: T:Avolantis.Text.QueryString.QueryParameterConverter`1
+  name.vb: QueryParameterConverter(Of T)
+  fullName: Avolantis.Text.QueryString.QueryParameterConverter<T>
+  fullName.vb: Avolantis.Text.QueryString.QueryParameterConverter(Of T)
+  nameWithType: QueryParameterConverter<T>
+  nameWithType.vb: QueryParameterConverter(Of T)
+- uid: Avolantis.Text.QueryString.QueryParameterConverter`1.CanConvert(Type)
+  name: CanConvert(Type)
+  href: api/Avolantis.Text.QueryString.QueryParameterConverter-1.html#Avolantis_Text_QueryString_QueryParameterConverter_1_CanConvert_Type_
+  commentId: M:Avolantis.Text.QueryString.QueryParameterConverter`1.CanConvert(Type)
+  fullName: Avolantis.Text.QueryString.QueryParameterConverter<T>.CanConvert(Type)
+  fullName.vb: Avolantis.Text.QueryString.QueryParameterConverter(Of T).CanConvert(Type)
+  nameWithType: QueryParameterConverter<T>.CanConvert(Type)
+  nameWithType.vb: QueryParameterConverter(Of T).CanConvert(Type)
+- uid: Avolantis.Text.QueryString.QueryParameterConverter`1.CanConvert*
+  name: CanConvert
+  href: api/Avolantis.Text.QueryString.QueryParameterConverter-1.html#Avolantis_Text_QueryString_QueryParameterConverter_1_CanConvert_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterConverter`1.CanConvert
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterConverter<T>.CanConvert
+  fullName.vb: Avolantis.Text.QueryString.QueryParameterConverter(Of T).CanConvert
+  nameWithType: QueryParameterConverter<T>.CanConvert
+  nameWithType.vb: QueryParameterConverter(Of T).CanConvert
+- uid: Avolantis.Text.QueryString.QueryParameterConverter`1.Convert(System.String,`0,Avolantis.Text.QueryString.QueryParameterCollection,Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  name: Convert(String, T, QueryParameterCollection, QueryStringSerializerOptions)
+  href: api/Avolantis.Text.QueryString.QueryParameterConverter-1.html#Avolantis_Text_QueryString_QueryParameterConverter_1_Convert_System_String__0_Avolantis_Text_QueryString_QueryParameterCollection_Avolantis_Text_QueryString_QueryStringSerializerOptions_
+  commentId: M:Avolantis.Text.QueryString.QueryParameterConverter`1.Convert(System.String,`0,Avolantis.Text.QueryString.QueryParameterCollection,Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  fullName: Avolantis.Text.QueryString.QueryParameterConverter<T>.Convert(System.String, T, Avolantis.Text.QueryString.QueryParameterCollection, Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  fullName.vb: Avolantis.Text.QueryString.QueryParameterConverter(Of T).Convert(System.String, T, Avolantis.Text.QueryString.QueryParameterCollection, Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  nameWithType: QueryParameterConverter<T>.Convert(String, T, QueryParameterCollection, QueryStringSerializerOptions)
+  nameWithType.vb: QueryParameterConverter(Of T).Convert(String, T, QueryParameterCollection, QueryStringSerializerOptions)
+- uid: Avolantis.Text.QueryString.QueryParameterConverter`1.Convert(System.String,System.Object,Type,Avolantis.Text.QueryString.QueryParameterCollection,Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  name: Convert(String, Object, Type, QueryParameterCollection, QueryStringSerializerOptions)
+  href: api/Avolantis.Text.QueryString.QueryParameterConverter-1.html#Avolantis_Text_QueryString_QueryParameterConverter_1_Convert_System_String_System_Object_Type_Avolantis_Text_QueryString_QueryParameterCollection_Avolantis_Text_QueryString_QueryStringSerializerOptions_
+  commentId: M:Avolantis.Text.QueryString.QueryParameterConverter`1.Convert(System.String,System.Object,Type,Avolantis.Text.QueryString.QueryParameterCollection,Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  fullName: Avolantis.Text.QueryString.QueryParameterConverter<T>.Convert(System.String, System.Object, Type, Avolantis.Text.QueryString.QueryParameterCollection, Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  fullName.vb: Avolantis.Text.QueryString.QueryParameterConverter(Of T).Convert(System.String, System.Object, Type, Avolantis.Text.QueryString.QueryParameterCollection, Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  nameWithType: QueryParameterConverter<T>.Convert(String, Object, Type, QueryParameterCollection, QueryStringSerializerOptions)
+  nameWithType.vb: QueryParameterConverter(Of T).Convert(String, Object, Type, QueryParameterCollection, QueryStringSerializerOptions)
+- uid: Avolantis.Text.QueryString.QueryParameterConverter`1.Convert*
+  name: Convert
+  href: api/Avolantis.Text.QueryString.QueryParameterConverter-1.html#Avolantis_Text_QueryString_QueryParameterConverter_1_Convert_
+  commentId: Overload:Avolantis.Text.QueryString.QueryParameterConverter`1.Convert
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryParameterConverter<T>.Convert
+  fullName.vb: Avolantis.Text.QueryString.QueryParameterConverter(Of T).Convert
+  nameWithType: QueryParameterConverter<T>.Convert
+  nameWithType.vb: QueryParameterConverter(Of T).Convert
+- uid: Avolantis.Text.QueryString.QueryParameterIgnoreCondition
+  name: QueryParameterIgnoreCondition
+  href: api/Avolantis.Text.QueryString.QueryParameterIgnoreCondition.html
+  commentId: T:Avolantis.Text.QueryString.QueryParameterIgnoreCondition
+  fullName: Avolantis.Text.QueryString.QueryParameterIgnoreCondition
+  nameWithType: QueryParameterIgnoreCondition
+- uid: Avolantis.Text.QueryString.QueryParameterIgnoreCondition.Always
+  name: Always
+  href: api/Avolantis.Text.QueryString.QueryParameterIgnoreCondition.html#Avolantis_Text_QueryString_QueryParameterIgnoreCondition_Always
+  commentId: F:Avolantis.Text.QueryString.QueryParameterIgnoreCondition.Always
+  fullName: Avolantis.Text.QueryString.QueryParameterIgnoreCondition.Always
+  nameWithType: QueryParameterIgnoreCondition.Always
+- uid: Avolantis.Text.QueryString.QueryParameterIgnoreCondition.Never
+  name: Never
+  href: api/Avolantis.Text.QueryString.QueryParameterIgnoreCondition.html#Avolantis_Text_QueryString_QueryParameterIgnoreCondition_Never
+  commentId: F:Avolantis.Text.QueryString.QueryParameterIgnoreCondition.Never
+  fullName: Avolantis.Text.QueryString.QueryParameterIgnoreCondition.Never
+  nameWithType: QueryParameterIgnoreCondition.Never
+- uid: Avolantis.Text.QueryString.QueryParameterIgnoreCondition.WhenWritingDefault
+  name: WhenWritingDefault
+  href: api/Avolantis.Text.QueryString.QueryParameterIgnoreCondition.html#Avolantis_Text_QueryString_QueryParameterIgnoreCondition_WhenWritingDefault
+  commentId: F:Avolantis.Text.QueryString.QueryParameterIgnoreCondition.WhenWritingDefault
+  fullName: Avolantis.Text.QueryString.QueryParameterIgnoreCondition.WhenWritingDefault
+  nameWithType: QueryParameterIgnoreCondition.WhenWritingDefault
+- uid: Avolantis.Text.QueryString.QueryParameterIgnoreCondition.WhenWritingNull
+  name: WhenWritingNull
+  href: api/Avolantis.Text.QueryString.QueryParameterIgnoreCondition.html#Avolantis_Text_QueryString_QueryParameterIgnoreCondition_WhenWritingNull
+  commentId: F:Avolantis.Text.QueryString.QueryParameterIgnoreCondition.WhenWritingNull
+  fullName: Avolantis.Text.QueryString.QueryParameterIgnoreCondition.WhenWritingNull
+  nameWithType: QueryParameterIgnoreCondition.WhenWritingNull
+- uid: Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy
+  name: QueryParameterKeyCasingPolicy
+  href: api/Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.html
+  commentId: T:Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy
+  fullName: Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy
+  nameWithType: QueryParameterKeyCasingPolicy
+- uid: Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.CamelCase
+  name: CamelCase
+  href: api/Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.html#Avolantis_Text_QueryString_QueryParameterKeyCasingPolicy_CamelCase
+  commentId: F:Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.CamelCase
+  fullName: Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.CamelCase
+  nameWithType: QueryParameterKeyCasingPolicy.CamelCase
+- uid: Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.KebabCase
+  name: KebabCase
+  href: api/Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.html#Avolantis_Text_QueryString_QueryParameterKeyCasingPolicy_KebabCase
+  commentId: F:Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.KebabCase
+  fullName: Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.KebabCase
+  nameWithType: QueryParameterKeyCasingPolicy.KebabCase
+- uid: Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.LowerCase
+  name: LowerCase
+  href: api/Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.html#Avolantis_Text_QueryString_QueryParameterKeyCasingPolicy_LowerCase
+  commentId: F:Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.LowerCase
+  fullName: Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.LowerCase
+  nameWithType: QueryParameterKeyCasingPolicy.LowerCase
+- uid: Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.NoChange
+  name: NoChange
+  href: api/Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.html#Avolantis_Text_QueryString_QueryParameterKeyCasingPolicy_NoChange
+  commentId: F:Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.NoChange
+  fullName: Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.NoChange
+  nameWithType: QueryParameterKeyCasingPolicy.NoChange
+- uid: Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.PascalCase
+  name: PascalCase
+  href: api/Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.html#Avolantis_Text_QueryString_QueryParameterKeyCasingPolicy_PascalCase
+  commentId: F:Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.PascalCase
+  fullName: Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.PascalCase
+  nameWithType: QueryParameterKeyCasingPolicy.PascalCase
+- uid: Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.UpperCase
+  name: UpperCase
+  href: api/Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.html#Avolantis_Text_QueryString_QueryParameterKeyCasingPolicy_UpperCase
+  commentId: F:Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.UpperCase
+  fullName: Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.UpperCase
+  nameWithType: QueryParameterKeyCasingPolicy.UpperCase
+- uid: Avolantis.Text.QueryString.QueryStringEmptyStringOptions
+  name: QueryStringEmptyStringOptions
+  href: api/Avolantis.Text.QueryString.QueryStringEmptyStringOptions.html
+  commentId: T:Avolantis.Text.QueryString.QueryStringEmptyStringOptions
+  fullName: Avolantis.Text.QueryString.QueryStringEmptyStringOptions
+  nameWithType: QueryStringEmptyStringOptions
+- uid: Avolantis.Text.QueryString.QueryStringEmptyStringOptions.Default
+  name: Default
+  href: api/Avolantis.Text.QueryString.QueryStringEmptyStringOptions.html#Avolantis_Text_QueryString_QueryStringEmptyStringOptions_Default
+  commentId: F:Avolantis.Text.QueryString.QueryStringEmptyStringOptions.Default
+  fullName: Avolantis.Text.QueryString.QueryStringEmptyStringOptions.Default
+  nameWithType: QueryStringEmptyStringOptions.Default
+- uid: Avolantis.Text.QueryString.QueryStringEmptyStringOptions.TreatEmptyAsNotPresent
+  name: TreatEmptyAsNotPresent
+  href: api/Avolantis.Text.QueryString.QueryStringEmptyStringOptions.html#Avolantis_Text_QueryString_QueryStringEmptyStringOptions_TreatEmptyAsNotPresent
+  commentId: F:Avolantis.Text.QueryString.QueryStringEmptyStringOptions.TreatEmptyAsNotPresent
+  fullName: Avolantis.Text.QueryString.QueryStringEmptyStringOptions.TreatEmptyAsNotPresent
+  nameWithType: QueryStringEmptyStringOptions.TreatEmptyAsNotPresent
+- uid: Avolantis.Text.QueryString.QueryStringEmptyStringOptions.TreatEmptyAsNull
+  name: TreatEmptyAsNull
+  href: api/Avolantis.Text.QueryString.QueryStringEmptyStringOptions.html#Avolantis_Text_QueryString_QueryStringEmptyStringOptions_TreatEmptyAsNull
+  commentId: F:Avolantis.Text.QueryString.QueryStringEmptyStringOptions.TreatEmptyAsNull
+  fullName: Avolantis.Text.QueryString.QueryStringEmptyStringOptions.TreatEmptyAsNull
+  nameWithType: QueryStringEmptyStringOptions.TreatEmptyAsNull
+- uid: Avolantis.Text.QueryString.QueryStringEmptyStringOptions.TreatWhitespaceAsNotPresent
+  name: TreatWhitespaceAsNotPresent
+  href: api/Avolantis.Text.QueryString.QueryStringEmptyStringOptions.html#Avolantis_Text_QueryString_QueryStringEmptyStringOptions_TreatWhitespaceAsNotPresent
+  commentId: F:Avolantis.Text.QueryString.QueryStringEmptyStringOptions.TreatWhitespaceAsNotPresent
+  fullName: Avolantis.Text.QueryString.QueryStringEmptyStringOptions.TreatWhitespaceAsNotPresent
+  nameWithType: QueryStringEmptyStringOptions.TreatWhitespaceAsNotPresent
+- uid: Avolantis.Text.QueryString.QueryStringEmptyStringOptions.TreatWhitespaceAsNull
+  name: TreatWhitespaceAsNull
+  href: api/Avolantis.Text.QueryString.QueryStringEmptyStringOptions.html#Avolantis_Text_QueryString_QueryStringEmptyStringOptions_TreatWhitespaceAsNull
+  commentId: F:Avolantis.Text.QueryString.QueryStringEmptyStringOptions.TreatWhitespaceAsNull
+  fullName: Avolantis.Text.QueryString.QueryStringEmptyStringOptions.TreatWhitespaceAsNull
+  nameWithType: QueryStringEmptyStringOptions.TreatWhitespaceAsNull
+- uid: Avolantis.Text.QueryString.QueryStringIgnoreAttribute
+  name: QueryStringIgnoreAttribute
+  href: api/Avolantis.Text.QueryString.QueryStringIgnoreAttribute.html
+  commentId: T:Avolantis.Text.QueryString.QueryStringIgnoreAttribute
+  fullName: Avolantis.Text.QueryString.QueryStringIgnoreAttribute
+  nameWithType: QueryStringIgnoreAttribute
+- uid: Avolantis.Text.QueryString.QueryStringIgnoreAttribute.Condition
+  name: Condition
+  href: api/Avolantis.Text.QueryString.QueryStringIgnoreAttribute.html#Avolantis_Text_QueryString_QueryStringIgnoreAttribute_Condition
+  commentId: P:Avolantis.Text.QueryString.QueryStringIgnoreAttribute.Condition
+  fullName: Avolantis.Text.QueryString.QueryStringIgnoreAttribute.Condition
+  nameWithType: QueryStringIgnoreAttribute.Condition
+- uid: Avolantis.Text.QueryString.QueryStringIgnoreAttribute.Condition*
+  name: Condition
+  href: api/Avolantis.Text.QueryString.QueryStringIgnoreAttribute.html#Avolantis_Text_QueryString_QueryStringIgnoreAttribute_Condition_
+  commentId: Overload:Avolantis.Text.QueryString.QueryStringIgnoreAttribute.Condition
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryStringIgnoreAttribute.Condition
+  nameWithType: QueryStringIgnoreAttribute.Condition
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions
+  name: QueryStringSerializerOptions
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html
+  commentId: T:Avolantis.Text.QueryString.QueryStringSerializerOptions
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions
+  nameWithType: QueryStringSerializerOptions
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.AllowDuplicateParameters
+  name: AllowDuplicateParameters
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_AllowDuplicateParameters
+  commentId: P:Avolantis.Text.QueryString.QueryStringSerializerOptions.AllowDuplicateParameters
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.AllowDuplicateParameters
+  nameWithType: QueryStringSerializerOptions.AllowDuplicateParameters
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.AllowDuplicateParameters*
+  name: AllowDuplicateParameters
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_AllowDuplicateParameters_
+  commentId: Overload:Avolantis.Text.QueryString.QueryStringSerializerOptions.AllowDuplicateParameters
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.AllowDuplicateParameters
+  nameWithType: QueryStringSerializerOptions.AllowDuplicateParameters
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.AutoConvertToUtc
+  name: AutoConvertToUtc
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_AutoConvertToUtc
+  commentId: P:Avolantis.Text.QueryString.QueryStringSerializerOptions.AutoConvertToUtc
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.AutoConvertToUtc
+  nameWithType: QueryStringSerializerOptions.AutoConvertToUtc
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.AutoConvertToUtc*
+  name: AutoConvertToUtc
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_AutoConvertToUtc_
+  commentId: Overload:Avolantis.Text.QueryString.QueryStringSerializerOptions.AutoConvertToUtc
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.AutoConvertToUtc
+  nameWithType: QueryStringSerializerOptions.AutoConvertToUtc
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.Converters
+  name: Converters
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_Converters
+  commentId: P:Avolantis.Text.QueryString.QueryStringSerializerOptions.Converters
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.Converters
+  nameWithType: QueryStringSerializerOptions.Converters
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.Converters*
+  name: Converters
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_Converters_
+  commentId: Overload:Avolantis.Text.QueryString.QueryStringSerializerOptions.Converters
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.Converters
+  nameWithType: QueryStringSerializerOptions.Converters
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.DateOnlyFormat
+  name: DateOnlyFormat
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_DateOnlyFormat
+  commentId: P:Avolantis.Text.QueryString.QueryStringSerializerOptions.DateOnlyFormat
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.DateOnlyFormat
+  nameWithType: QueryStringSerializerOptions.DateOnlyFormat
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.DateOnlyFormat*
+  name: DateOnlyFormat
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_DateOnlyFormat_
+  commentId: Overload:Avolantis.Text.QueryString.QueryStringSerializerOptions.DateOnlyFormat
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.DateOnlyFormat
+  nameWithType: QueryStringSerializerOptions.DateOnlyFormat
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.DateTimeFormat
+  name: DateTimeFormat
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_DateTimeFormat
+  commentId: P:Avolantis.Text.QueryString.QueryStringSerializerOptions.DateTimeFormat
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.DateTimeFormat
+  nameWithType: QueryStringSerializerOptions.DateTimeFormat
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.DateTimeFormat*
+  name: DateTimeFormat
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_DateTimeFormat_
+  commentId: Overload:Avolantis.Text.QueryString.QueryStringSerializerOptions.DateTimeFormat
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.DateTimeFormat
+  nameWithType: QueryStringSerializerOptions.DateTimeFormat
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.Default
+  name: Default
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_Default
+  commentId: P:Avolantis.Text.QueryString.QueryStringSerializerOptions.Default
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.Default
+  nameWithType: QueryStringSerializerOptions.Default
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.Default*
+  name: Default
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_Default_
+  commentId: Overload:Avolantis.Text.QueryString.QueryStringSerializerOptions.Default
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.Default
+  nameWithType: QueryStringSerializerOptions.Default
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.DefaultPrecision
+  name: DefaultPrecision
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_DefaultPrecision
+  commentId: P:Avolantis.Text.QueryString.QueryStringSerializerOptions.DefaultPrecision
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.DefaultPrecision
+  nameWithType: QueryStringSerializerOptions.DefaultPrecision
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.DefaultPrecision*
+  name: DefaultPrecision
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_DefaultPrecision_
+  commentId: Overload:Avolantis.Text.QueryString.QueryStringSerializerOptions.DefaultPrecision
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.DefaultPrecision
+  nameWithType: QueryStringSerializerOptions.DefaultPrecision
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.EmptyStringOptions
+  name: EmptyStringOptions
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_EmptyStringOptions
+  commentId: P:Avolantis.Text.QueryString.QueryStringSerializerOptions.EmptyStringOptions
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.EmptyStringOptions
+  nameWithType: QueryStringSerializerOptions.EmptyStringOptions
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.EmptyStringOptions*
+  name: EmptyStringOptions
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_EmptyStringOptions_
+  commentId: Overload:Avolantis.Text.QueryString.QueryStringSerializerOptions.EmptyStringOptions
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.EmptyStringOptions
+  nameWithType: QueryStringSerializerOptions.EmptyStringOptions
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.IgnoreNullValues
+  name: IgnoreNullValues
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_IgnoreNullValues
+  commentId: P:Avolantis.Text.QueryString.QueryStringSerializerOptions.IgnoreNullValues
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.IgnoreNullValues
+  nameWithType: QueryStringSerializerOptions.IgnoreNullValues
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.IgnoreNullValues*
+  name: IgnoreNullValues
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_IgnoreNullValues_
+  commentId: Overload:Avolantis.Text.QueryString.QueryStringSerializerOptions.IgnoreNullValues
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.IgnoreNullValues
+  nameWithType: QueryStringSerializerOptions.IgnoreNullValues
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.KeyCasingPolicy
+  name: KeyCasingPolicy
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_KeyCasingPolicy
+  commentId: P:Avolantis.Text.QueryString.QueryStringSerializerOptions.KeyCasingPolicy
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.KeyCasingPolicy
+  nameWithType: QueryStringSerializerOptions.KeyCasingPolicy
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.KeyCasingPolicy*
+  name: KeyCasingPolicy
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_KeyCasingPolicy_
+  commentId: Overload:Avolantis.Text.QueryString.QueryStringSerializerOptions.KeyCasingPolicy
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.KeyCasingPolicy
+  nameWithType: QueryStringSerializerOptions.KeyCasingPolicy
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.ParameterSeparator
+  name: ParameterSeparator
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_ParameterSeparator
+  commentId: P:Avolantis.Text.QueryString.QueryStringSerializerOptions.ParameterSeparator
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.ParameterSeparator
+  nameWithType: QueryStringSerializerOptions.ParameterSeparator
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.ParameterSeparator*
+  name: ParameterSeparator
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_ParameterSeparator_
+  commentId: Overload:Avolantis.Text.QueryString.QueryStringSerializerOptions.ParameterSeparator
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.ParameterSeparator
+  nameWithType: QueryStringSerializerOptions.ParameterSeparator
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.Prefix
+  name: Prefix
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_Prefix
+  commentId: P:Avolantis.Text.QueryString.QueryStringSerializerOptions.Prefix
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.Prefix
+  nameWithType: QueryStringSerializerOptions.Prefix
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.Prefix*
+  name: Prefix
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_Prefix_
+  commentId: Overload:Avolantis.Text.QueryString.QueryStringSerializerOptions.Prefix
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.Prefix
+  nameWithType: QueryStringSerializerOptions.Prefix
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.StringComparer
+  name: StringComparer
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_StringComparer
+  commentId: P:Avolantis.Text.QueryString.QueryStringSerializerOptions.StringComparer
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.StringComparer
+  nameWithType: QueryStringSerializerOptions.StringComparer
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.StringComparer*
+  name: StringComparer
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_StringComparer_
+  commentId: Overload:Avolantis.Text.QueryString.QueryStringSerializerOptions.StringComparer
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.StringComparer
+  nameWithType: QueryStringSerializerOptions.StringComparer
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.TimeOnlyFormat
+  name: TimeOnlyFormat
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_TimeOnlyFormat
+  commentId: P:Avolantis.Text.QueryString.QueryStringSerializerOptions.TimeOnlyFormat
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.TimeOnlyFormat
+  nameWithType: QueryStringSerializerOptions.TimeOnlyFormat
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.TimeOnlyFormat*
+  name: TimeOnlyFormat
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_TimeOnlyFormat_
+  commentId: Overload:Avolantis.Text.QueryString.QueryStringSerializerOptions.TimeOnlyFormat
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.TimeOnlyFormat
+  nameWithType: QueryStringSerializerOptions.TimeOnlyFormat
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.TrimStrings
+  name: TrimStrings
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_TrimStrings
+  commentId: P:Avolantis.Text.QueryString.QueryStringSerializerOptions.TrimStrings
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.TrimStrings
+  nameWithType: QueryStringSerializerOptions.TrimStrings
+- uid: Avolantis.Text.QueryString.QueryStringSerializerOptions.TrimStrings*
+  name: TrimStrings
+  href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_TrimStrings_
+  commentId: Overload:Avolantis.Text.QueryString.QueryStringSerializerOptions.TrimStrings
+  isSpec: "True"
+  fullName: Avolantis.Text.QueryString.QueryStringSerializerOptions.TrimStrings
+  nameWithType: QueryStringSerializerOptions.TrimStrings

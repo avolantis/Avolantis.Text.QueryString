@@ -1,0 +1,236 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/a/Avolantis.Text.QueryString/Avolantis.Text.QueryString/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avolantis.Text.QueryString..yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avolantis.Text.QueryString..html",
+          "hash": "UZm3FcpKWczq++LSj7UxmkAvm30wKLYpg0s5JXSoQao="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avolantis.Text.QueryString.QueryParameterCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avolantis.Text.QueryString.QueryParameterCollection.html",
+          "hash": "MORccdMGGnZgX0Y1UPEyYO995dTpuDLlSpuDTb07bek="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avolantis.Text.QueryString.QueryParameterConverter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avolantis.Text.QueryString.QueryParameterConverter-1.html",
+          "hash": "BEIu5RkokJ4PYpgKJEOpGCL5eg8+j0sJet1Kg1Lxruc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avolantis.Text.QueryString.QueryParameterConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avolantis.Text.QueryString.QueryParameterConverter.html",
+          "hash": "TdDJbZjBmp4R5QV/38BGaSnOAa3vD3yjRrZMkktasUg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avolantis.Text.QueryString.QueryParameterIgnoreCondition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avolantis.Text.QueryString.QueryParameterIgnoreCondition.html",
+          "hash": "aX7wxQCfj0k5HHZyaMmKsLE/O1X00Pqs55o1Ta2LnKc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.html",
+          "hash": "IFgNeDfUGyf/ZgCov1E6rZXnF3qZENKksHWwrONk0mg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avolantis.Text.QueryString.QueryStringEmptyStringOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avolantis.Text.QueryString.QueryStringEmptyStringOptions.html",
+          "hash": "nMov3zcLESToprV7v0l+KMJyp5b4980pg2qaHvIUpsQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avolantis.Text.QueryString.QueryStringIgnoreAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avolantis.Text.QueryString.QueryStringIgnoreAttribute.html",
+          "hash": "uLLWmyqVEYaJc9+hWdhWkAZGZPhKmNrvVFDQvdq5vyY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avolantis.Text.QueryString.QueryStringSerializerOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html",
+          "hash": "3rtHjqOkIqxgfwtiuau5wwkTvRma7a/MHZUqkNk3RZ4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avolantis.Text.QueryString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avolantis.Text.QueryString.html",
+          "hash": "cOSYsyhmhwYrHgdzVGasu0y5Mdf7nM0ZoibUo4LHsEQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "T17pQQ+Qk2e6ZUqHPHRir/4jbvbmYh6lh//rqzT2zCE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "Z2CkMCpJBPr1abfNK9FNYdoZcQqh9PPQpJFpSCrHfBw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "a0u1ksh8RpTZAd4aI3qfV7KcWlMmMrk4iOOOP7izuM4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "IfvCx34+AeJ/8qJVwWYP5z3YsSTVEjcOLKZ8DholBGc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 10,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
