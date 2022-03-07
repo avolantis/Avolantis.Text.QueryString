@@ -47,7 +47,7 @@ jobs:
       - name: release
         uses: softprops/action-gh-release@v1
         with:
-          prerelease: contains(github.ref_name, '-')
+          prerelease: ${{ contains(github.ref_name, '-') }}
           files: |
             ./LICENSE.md
             ./README.md
