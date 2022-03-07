@@ -3,9 +3,8 @@
     {
       "src": [
         {
-          "files": ["**/Avolantis.Text.QueryString.dll"],
-          "exclude": ["**/obj/**", "**/ref/**"],
-          "src": "../src/QueryString/bin"
+          "files": ["**/*.csproj"],
+          "src": "../src"
         }
       ],
       "dest": "api"
