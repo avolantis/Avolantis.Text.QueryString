@@ -8,9 +8,8 @@ internal class DateOnlyQueryParameterConverter : QueryParameterConverter<DateOnl
     {
     }
 
-    protected override void Convert(string key, DateOnly value,
-        QueryParameterCollection target, QueryStringSerializerOptions options)
+    public override void Convert(QueryStringWriter writer, DateOnly value, QueryStringSerializerOptions options)
     {
-        target.Add(key, value.ToString(options.DateOnlyFormat));
+        writer.WriteString(value.ToString(options.DateOnlyFormat));
     }
 }

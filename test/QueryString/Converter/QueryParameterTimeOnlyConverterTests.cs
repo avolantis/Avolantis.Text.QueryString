@@ -16,26 +16,27 @@ public class QueryParameterTimeOnlyConverterTests
     [Fact]
     public void TestConvertDefaultFormatSuccess()
     {
-        var stamp = TimeOnly.FromDateTime(DateTime.Now);
         var target = new QueryParameterCollection();
-        TimeOnlyQueryParameterConverter.Instance.Convert("key", stamp,
-            typeof(TimeOnly), target, QueryStringSerializerOptions.Default);
+        var writer = new QueryStringWriter(target, QueryStringSerializerOptions.Default);
+        var stamp = TimeOnly.FromDateTime(DateTime.Now);
+
+        TimeOnlyQueryParameterConverter.Instance.Convert(writer, stamp, QueryStringSerializerOptions.Default);
 
         target.Count().ShouldBe(1);
-        target.ContainsKey("key").ShouldBeTrue();
-        target["key", 0].ShouldBe(stamp.ToString("HH:mm:ss"));
+        target.ContainsKey(stamp.ToString("HH:mm:ss")).ShouldBeTrue();
     }
 
     [Fact]
     public void TestConvertCustomFormatSuccess()
     {
-        var stamp = TimeOnly.FromDateTime(DateTime.Now);
         var target = new QueryParameterCollection();
-        TimeOnlyQueryParameterConverter.Instance.Convert("key", stamp,
-            typeof(TimeOnly), target, new QueryStringSerializerOptions { TimeOnlyFormat = "HH:mm" });
+        var options = new QueryStringSerializerOptions { TimeOnlyFormat = "HH:mm" };
+        var writer = new QueryStringWriter(target, options);
+        var stamp = TimeOnly.FromDateTime(DateTime.Now);
+
+        TimeOnlyQueryParameterConverter.Instance.Convert(writer, stamp, options);
 
         target.Count().ShouldBe(1);
-        target.ContainsKey("key").ShouldBeTrue();
-        target["key", 0].ShouldBe(stamp.ToString("HH:mm"));
+        target.ContainsKey(stamp.ToString("HH:mm")).ShouldBeTrue();
     }
 }

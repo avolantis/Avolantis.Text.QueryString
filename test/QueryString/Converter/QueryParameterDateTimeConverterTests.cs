@@ -16,43 +16,45 @@ public class QueryParameterDateTimeConverterTests
     [Fact]
     public void TestConvertDefaultFormatSuccess()
     {
-        var stamp = DateTime.Now;
         var target = new QueryParameterCollection();
-        DateTimeQueryParameterConverter.Instance.Convert("key", stamp,
-            typeof(DateTime), target, new QueryStringSerializerOptions { AutoConvertToUtc = false });
+        var options = new QueryStringSerializerOptions { AutoConvertToUtc = false };
+        var writer = new QueryStringWriter(target, options);
+        var stamp = DateTime.Now;
+
+        DateTimeQueryParameterConverter.Instance.Convert(writer, stamp, options);
 
         target.Count().ShouldBe(1);
-        target.ContainsKey("key").ShouldBeTrue();
-        target["key", 0].ShouldBe(stamp.ToString("O"));
+        target.ContainsKey(stamp.ToString("O")).ShouldBeTrue();
     }
 
     [Fact]
     public void TestConvertCustomFormatSuccess()
     {
-        var stamp = DateTime.Now;
         var target = new QueryParameterCollection();
-        DateTimeQueryParameterConverter.Instance.Convert("key", stamp,
-            typeof(DateTime), target, new QueryStringSerializerOptions
-            {
-                AutoConvertToUtc = false,
-                DateTimeFormat = "YY-MM-dd"
-            });
+        var options = new QueryStringSerializerOptions
+        {
+            AutoConvertToUtc = false,
+            DateTimeFormat = "YY-MM-dd"
+        };
+        var writer = new QueryStringWriter(target, options);
+        var stamp = DateTime.Now;
+
+        DateTimeQueryParameterConverter.Instance.Convert(writer, stamp, options);
 
         target.Count().ShouldBe(1);
-        target.ContainsKey("key").ShouldBeTrue();
-        target["key", 0].ShouldBe(stamp.ToString("YY-MM-dd"));
+        target.ContainsKey(stamp.ToString("YY-MM-dd")).ShouldBeTrue();
     }
 
     [Fact]
     public void TestConvertToUtc()
     {
-        var stamp = DateTime.Now;
         var target = new QueryParameterCollection();
-        DateTimeQueryParameterConverter.Instance.Convert("key", stamp,
-            typeof(DateTime), target, new QueryStringSerializerOptions { AutoConvertToUtc = true });
+        var writer = new QueryStringWriter(target, QueryStringSerializerOptions.Default);
+        var stamp = DateTime.Now;
+
+        DateTimeQueryParameterConverter.Instance.Convert(writer, stamp, QueryStringSerializerOptions.Default);
 
         target.Count().ShouldBe(1);
-        target.ContainsKey("key").ShouldBeTrue();
-        target["key", 0].ShouldBe(stamp.ToUniversalTime().ToString("O"));
+        target.ContainsKey(stamp.ToUniversalTime().ToString("O")).ShouldBeTrue();
     }
 }

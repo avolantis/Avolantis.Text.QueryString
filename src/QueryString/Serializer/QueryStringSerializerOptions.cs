@@ -79,10 +79,10 @@ public class QueryStringSerializerOptions
     public bool TrimStrings { get; set; } = false;
 
     /// <summary>
-    ///     Gets or sets the available <see cref="QueryParameterConverter" />s used to convert
+    ///     Gets or sets the available <see cref="IQueryParameterConverter" />s used to convert
     ///     CLR objects to their corresponding <see cref="QueryStringParameter" />s
     /// </summary>
-    public ICollection<QueryParameterConverter> Converters { get; set; } = new List<QueryParameterConverter>
+    public ICollection<IQueryParameterConverter> Converters { get; set; } = new List<IQueryParameterConverter>
     {
         DateTimeQueryParameterConverter.Instance,
         DateOnlyQueryParameterConverter.Instance,

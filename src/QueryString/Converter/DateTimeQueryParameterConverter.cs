@@ -8,10 +8,9 @@ internal class DateTimeQueryParameterConverter : QueryParameterConverter<DateTim
     {
     }
 
-    protected override void Convert(string key, DateTime value,
-        QueryParameterCollection target, QueryStringSerializerOptions options)
+    public override void Convert(QueryStringWriter writer, DateTime value, QueryStringSerializerOptions options)
     {
         var result = options.AutoConvertToUtc ? value.ToUniversalTime() : value;
-        target.Add(key, result.ToString(options.DateTimeFormat));
+        writer.WriteString(result.ToString(options.DateTimeFormat));
     }
 }

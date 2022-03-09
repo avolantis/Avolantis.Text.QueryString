@@ -16,26 +16,27 @@ public class QueryParameterDateOnlyConverterTests
     [Fact]
     public void TestConvertDefaultFormatSuccess()
     {
-        var stamp = DateOnly.FromDateTime(DateTime.Now);
         var target = new QueryParameterCollection();
-        DateOnlyQueryParameterConverter.Instance.Convert("key", stamp,
-            typeof(DateOnly), target, QueryStringSerializerOptions.Default);
+        var writer = new QueryStringWriter(target, QueryStringSerializerOptions.Default);
+        var stamp = DateOnly.FromDateTime(DateTime.Now);
+
+        DateOnlyQueryParameterConverter.Instance.Convert(writer, stamp, QueryStringSerializerOptions.Default);
 
         target.Count().ShouldBe(1);
-        target.ContainsKey("key").ShouldBeTrue();
-        target["key", 0].ShouldBe(stamp.ToString("YYYY-MM-dd"));
+        target.ContainsKey(stamp.ToString("YYYY-MM-dd")).ShouldBeTrue();
     }
 
     [Fact]
     public void TestConvertCustomFormatSuccess()
     {
-        var stamp = DateOnly.FromDateTime(DateTime.Now);
         var target = new QueryParameterCollection();
-        DateOnlyQueryParameterConverter.Instance.Convert("key", stamp,
-            typeof(DateOnly), target, new QueryStringSerializerOptions { DateOnlyFormat = "YY-MM-dd" });
+        var options = new QueryStringSerializerOptions { DateOnlyFormat = "YY-MM-dd" };
+        var writer = new QueryStringWriter(target, options);
+        var stamp = DateOnly.FromDateTime(DateTime.Now);
+
+        DateOnlyQueryParameterConverter.Instance.Convert(writer, stamp, options);
 
         target.Count().ShouldBe(1);
-        target.ContainsKey("key").ShouldBeTrue();
-        target["key", 0].ShouldBe(stamp.ToString("YY-MM-dd"));
+        target.ContainsKey(stamp.ToString("YY-MM-dd")).ShouldBeTrue();
     }
 }

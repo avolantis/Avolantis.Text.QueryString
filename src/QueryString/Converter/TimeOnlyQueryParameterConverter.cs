@@ -8,9 +8,8 @@ internal class TimeOnlyQueryParameterConverter : QueryParameterConverter<TimeOnl
     {
     }
 
-    protected override void Convert(string key, TimeOnly value,
-        QueryParameterCollection target, QueryStringSerializerOptions options)
+    public override void Convert(QueryStringWriter writer, TimeOnly value, QueryStringSerializerOptions options)
     {
-        target.Add(key, value.ToString(options.TimeOnlyFormat));
+        writer.WriteString(value.ToString(options.TimeOnlyFormat));
     }
 }
