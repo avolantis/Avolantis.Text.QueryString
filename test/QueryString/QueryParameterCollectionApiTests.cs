@@ -21,6 +21,47 @@ public class QueryParameterCollectionApiTests
     }
 
     [Fact]
+    public void TestFromDictionary()
+    {
+        var data = new Dictionary<string, string?>
+        {
+            { "key", "value" },
+            { "key2", "value2" }
+        };
+
+        var qs = QueryParameterCollection.Create(data);
+
+        qs.ContainsKey("key").ShouldBeTrue();
+        qs["key"].ShouldHaveSingleItem();
+        qs["key", 0].ShouldBe("value");
+
+        qs.ContainsKey("key2").ShouldBeTrue();
+        qs["key2"].ShouldHaveSingleItem();
+        qs["key2", 0].ShouldBe("value2");
+    }
+
+    [Fact]
+    public void TestFromMultiValueDictionary()
+    {
+        var data = new Dictionary<string, List<string>>
+        {
+            { "key", new List<string> { "value", "value2" } },
+            { "key2", new List<string> { "value2" } }
+        };
+
+        var qs = QueryParameterCollection.Create(data);
+
+        qs.ContainsKey("key").ShouldBeTrue();
+        qs["key"].Count.ShouldBe(2);
+        qs["key", 0].ShouldBe("value");
+        qs["key", 1].ShouldBe("value2");
+
+        qs.ContainsKey("key2").ShouldBeTrue();
+        qs["key2"].ShouldHaveSingleItem();
+        qs["key2", 0].ShouldBe("value2");
+    }
+
+    [Fact]
     public void TestClone()
     {
         var qs = new QueryParameterCollection
@@ -36,7 +77,7 @@ public class QueryParameterCollectionApiTests
     }
 
     [Fact]
-    public void TestCount()
+    public void TestContainsItemWithDefaultEqualityComparer()
     {
         var qs = new QueryParameterCollection
         {
@@ -45,7 +86,28 @@ public class QueryParameterCollectionApiTests
             { "key2", "value2" }
         };
 
-        qs.Count().ShouldBe(3);
+        qs.Contains("key", "value").ShouldBeTrue();
+        qs.Contains("key", "Value").ShouldBeTrue();
+        qs.Contains("key2", "value2").ShouldBeTrue();
+        qs.Contains("key3", "anything").ShouldBeFalse();
+        qs.Contains("key3", null).ShouldBeFalse();
+    }
+
+    [Fact]
+    public void TestContainsItemWithGivenEqualityComparer()
+    {
+        var qs = new QueryParameterCollection
+        {
+            { "key", "value" },
+            { "key", "value" },
+            { "key2", "value2" }
+        };
+
+        qs.Contains("key", "value", StringComparer.Ordinal).ShouldBeTrue();
+        qs.Contains("key2", "value2", StringComparer.Ordinal).ShouldBeTrue();
+        qs.Contains("key", "Value", StringComparer.Ordinal).ShouldBeFalse();
+        qs.Contains("key3", "anything", StringComparer.Ordinal).ShouldBeFalse();
+        qs.Contains("key3", null, StringComparer.Ordinal).ShouldBeFalse();
     }
 
     [Fact]
@@ -61,6 +123,19 @@ public class QueryParameterCollectionApiTests
         qs.ContainsKey("key").ShouldBeTrue();
         qs.ContainsKey("key2").ShouldBeTrue();
         qs.ContainsKey("key3").ShouldBeFalse();
+    }
+
+    [Fact]
+    public void TestCount()
+    {
+        var qs = new QueryParameterCollection
+        {
+            { "key", "value" },
+            { "key", "value" },
+            { "key2", "value2" }
+        };
+
+        qs.Count().ShouldBe(3);
     }
 
     [Fact]

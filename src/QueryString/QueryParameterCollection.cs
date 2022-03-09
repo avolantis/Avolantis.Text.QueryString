@@ -1,4 +1,5 @@
 ﻿// ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable UnusedMember.Global
 
 using System.Diagnostics.CodeAnalysis;
 using System.Text;
@@ -27,6 +28,36 @@ public sealed partial class QueryParameterCollection
     {
         foreach (var parameter in parameters)
             Add(parameter);
+    }
+
+    /// <summary>
+    ///     Initializes a new <see cref="QueryParameterCollection" /> instance with the specified parameters
+    /// </summary>
+    /// <param name="parameters">The parameters to copy into the new <see cref="QueryParameterCollection" /></param>
+    public static QueryParameterCollection Create(IEnumerable<KeyValuePair<string, string?>> parameters)
+    {
+        var result = new QueryParameterCollection();
+
+        foreach (var (key, value) in parameters)
+            result.Add(key, value);
+
+        return result;
+    }
+
+    /// <summary>
+    ///     Initializes a new <see cref="QueryParameterCollection" /> instance with the specified parameters
+    /// </summary>
+    /// <param name="parameters">The parameters to copy into the new <see cref="QueryParameterCollection" /></param>
+    public static QueryParameterCollection Create<T>(IEnumerable<KeyValuePair<string, T>> parameters)
+        where T : IEnumerable<string?>
+    {
+        var result = new QueryParameterCollection();
+
+        foreach (var (key, values) in parameters)
+        foreach (var value in values)
+            result.Add(key, value);
+
+        return result;
     }
 
     /// <summary>
@@ -183,9 +214,11 @@ public sealed partial class QueryParameterCollection
     /// </summary>
     /// <param name="name">The parameter name to look for</param>
     /// <param name="value">The value to look for</param>
-    public bool Contains(string name, string? value)
+    /// <param name="comparer">The string comparer to use</param>
+    public bool Contains(string name, string? value, StringComparer? comparer = null)
     {
-        return _data.TryGetValue(name, out var values) && values.Contains(value);
+        comparer ??= StringComparer.InvariantCultureIgnoreCase;
+        return _data.TryGetValue(name, out var values) && values.Contains(value, comparer);
     }
 
     /// <summary>
