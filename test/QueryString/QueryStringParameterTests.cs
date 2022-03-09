@@ -39,6 +39,22 @@ public class QueryStringParameterTests
     }
 
     [Fact]
+    public void TestGetHashCode()
+    {
+        var param1 = new QueryStringParameter("key", "value");
+        var param2 = new QueryStringParameter("Key", "Value");
+        var param3 = new QueryStringParameter("Key2", "Value");
+        var param4 = new QueryStringParameter("Key", "Value2");
+
+        (param1.GetHashCode() == param2.GetHashCode()).ShouldBeTrue();
+        (param3.GetHashCode() == param4.GetHashCode()).ShouldBeFalse();
+        (param2.GetHashCode() == param3.GetHashCode()).ShouldBeFalse();
+        (param2.GetHashCode() == param4.GetHashCode()).ShouldBeFalse();
+        (param1.GetHashCode() == param3.GetHashCode()).ShouldBeFalse();
+        (param1.GetHashCode() == param4.GetHashCode()).ShouldBeFalse();
+    }
+
+    [Fact]
     public void TestOrdinalEqualityComparison()
     {
         var param1 = new QueryStringParameter("key", "value");

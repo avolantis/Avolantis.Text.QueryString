@@ -1,6 +1,7 @@
 // ReSharper disable UseDeconstructionOnParameter
 
 using System.Collections;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Avolantis.Text.QueryString;
 
@@ -57,11 +58,13 @@ public sealed partial class QueryParameterCollection : ICollection<QueryStringPa
             yield return new QueryStringParameter(key, value);
     }
 
+    [ExcludeFromCodeCoverage]
     IEnumerator IEnumerable.GetEnumerator()
     {
         return GetEnumerator();
     }
 
+    [ExcludeFromCodeCoverage]
     void ICollection<QueryStringParameter>.CopyTo(QueryStringParameter[] array, int arrayIndex)
     {
         this.ToArray().CopyTo(array, arrayIndex);

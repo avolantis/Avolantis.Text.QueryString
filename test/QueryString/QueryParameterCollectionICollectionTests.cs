@@ -57,6 +57,13 @@ public class QueryParameterCollectionICollectionTests
     }
 
     [Fact]
+    public void TestReadOnly()
+    {
+        ((ICollection<QueryStringParameter>)new QueryParameterCollection())
+            .IsReadOnly.ShouldBeFalse();
+    }
+
+    [Fact]
     public void TestRemove()
     {
         var qs = new QueryParameterCollection

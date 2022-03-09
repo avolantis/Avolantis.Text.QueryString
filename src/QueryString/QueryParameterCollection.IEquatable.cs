@@ -1,4 +1,6 @@
-﻿namespace Avolantis.Text.QueryString;
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace Avolantis.Text.QueryString;
 
 public sealed partial class QueryParameterCollection : IEquatable<QueryParameterCollection>
 {
@@ -44,6 +46,7 @@ public sealed partial class QueryParameterCollection : IEquatable<QueryParameter
     }
 
     /// <inheritdoc />
+    [ExcludeFromCodeCoverage]
     public override int GetHashCode()
     {
         return _data.GetHashCode();

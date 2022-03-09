@@ -139,6 +139,22 @@ public class QueryParameterCollectionApiTests
     }
 
     [Fact]
+    public void TestGetKeys()
+    {
+        var qs = new QueryParameterCollection
+        {
+            { "key", "value" },
+            { "key", "value" },
+            { "key2", "value2" },
+            { "key3", "value2" },
+            { "key2", "value2" },
+            { "key4", "value2" }
+        };
+
+        qs.Keys.ShouldBe(new[] { "key", "key2", "key3", "key4" });
+    }
+
+    [Fact]
     public void TestRemoveAll()
     {
         var qs = new QueryParameterCollection
