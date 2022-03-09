@@ -2,16 +2,18 @@
 > URL query string handling and serialization for .NET 6
 
 [![nuget](https://img.shields.io/nuget/v/Avolantis.Text.QueryString?logo=nuget)](https://www.nuget.org/packages/Avolantis.Text.QueryString)
-[![main](https://github.com/avolantis/Avolantis.Text.QueryString/workflows/main/badge.svg)](https://github.com/avolantis/Avolantis.Text.QueryString/actions/workflows/main.yml)
-[![coverage](https://coveralls.io/repos/github/avolantis/Avolantis.Text.QueryString/badge.svg)](https://coveralls.io/github/avolantis/Avolantis.Text.QueryString)
+[![github](https://img.shields.io/github/v/release/avolantis/Avolantis.Text.QueryString?include_prereleases&label=github&logo=nuget&sort=semver)](https://github.com/avolantis/Avolantis.Text.QueryString/packages)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./.github/CODE_OF_CONDUCT.md)
 [![license: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](./LICENSE.md)
+
+[![main](https://github.com/avolantis/Avolantis.Text.QueryString/workflows/main/badge.svg?branch=main)](https://github.com/avolantis/Avolantis.Text.QueryString/actions/workflows/main.yml)
+[![coverage](https://coveralls.io/repos/github/avolantis/Avolantis.Text.QueryString/badge.svg)](https://coveralls.io/github/avolantis/Avolantis.Text.QueryString)
 
 This library helps you manage URL query parameters in a specialized collection and
 allows you to serialize a POCO to a query string.
 
-**:warning: :construction: IMPORTANT: This project has not yet reached it's first stable release
-and is being developed currently. See how you can help below.**
+:construction: This project has not yet reached it's first stable release
+and is being developed currently. See how you can help below. :construction:
 
 ## Install
 ```shell
@@ -28,6 +30,8 @@ The project follows the conventions outlined in [Semantic Versioning 2.0.0](http
 Imagine having to write a client application in C# (e.g. Blazor WebAssembly) to send queries
 to REST endpoint with various filtering options via query string parameters, like
 ```c#
+[HttpGet]
+[Route("/users")]
 Task<IEnumerable<UserDto>> GetList([FromQuery] UserQueryOptions options)
 {
     // ...
@@ -61,15 +65,15 @@ var filter = new UserQueryOptions
     IsDeleted = true
 };
 var qs = QueryStringSerializer.Serialize(filter);
-// ?name=John+Doe&name=Jane+Doe&isDeleted=true
+qs.ToString(); // ?name=John+Doe&name=Jane+Doe&isDeleted=true
 ```
 
 ## Features
 
 - `QueryParameterCollection` for constructing and manipulating query string parameters
 - Built-in support for serializing primitives, strings, `Guid`-s,
-`DateTime`, `DateOnly`, `TimeOnly`, anonymous objects, POCO-s
-and collections implementing `IEnumerable`
+`DateTime`, `DateOnly`, `TimeOnly`, anonymous objects, POCO-s,
+`IFormattable` and collections implementing `IEnumerable`
 - Extensible converter system inspired by System.Text.Json
 - Override serialization defaults using attributes, like
 `[QueryStringParameterName("param-name")]` or `[QueryStringIgnore]`
@@ -87,6 +91,8 @@ from XML source code comments. Please note, these docs are under construction, a
 Feature requests and bug reports can be submitted in the project's
 [issue tracker](https://github.com/avolantis/Avolantis.Text.QueryString/issues) on GitHub.
 You can also open a support request ticket, please use one of the available issue templates.
+You can also ask questions, present ideas or simply join the conversation on
+[GitHub discussions](https://github.com/avolantis/Avolantis.Text.QueryString/discussions).
 
 In case of a security issue or vulnerability, please use a private communication channel
 to report such incident towards the current maintainer, or [Avolantis](https://avolantis.net)
@@ -103,7 +109,7 @@ meant to provide an easy way to serialize POCO-s to query strings.
 
 As a usable alternative is to use the build-in query binder in aspnet core and
 annotate the parameters of the model with `[FromQuery]`, however this does not
-support nested binding objects.
+support binding nested objects.
 
 ```c#
 public class Filter

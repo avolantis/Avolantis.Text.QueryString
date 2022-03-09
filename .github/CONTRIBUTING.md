@@ -57,6 +57,7 @@ This project follows commit conventions inspired by
 - `ci`: Changes to CI configuration
 - `build`: Changes that affect the build system or external dependencies
 - `chore`: Configuration and etc
+- `wip`: To explicitly signal work in progress _(a bot checks not to merge these)_
 - :heavy_check_mark: DO add an exclamation mark `!` after the type
 to mark the commit as `BREAKING CHANGES`
 - :x: DO NOT use commit types not listed above
