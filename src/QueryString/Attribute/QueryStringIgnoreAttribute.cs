@@ -1,6 +1,3 @@
-// ReSharper disable ClassNeverInstantiated.Global
-// ReSharper disable UnusedAutoPropertyAccessor.Global
-
 namespace Avolantis.Text.QueryString;
 
 /// <summary>
