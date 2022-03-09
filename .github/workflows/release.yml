@@ -21,9 +21,10 @@ jobs:
       - uses: actions/checkout@v2
       - name: verify
         run: |
-          echo "Verifying release commit is the main branch"
+          echo "Verifying release commit is latest in the main branch"
           git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
-          git branch --remote --contains | grep origin/main
+          git branch --remote --contains | grep "origin/main" || (echo "Commit is not found or not the latest in main branch" && exit 1)
+          echo "Commit verified"
       - uses: actions/download-artifact@v2
         with:
           name: assemblies-${{ github.sha }}
