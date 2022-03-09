@@ -3,7 +3,8 @@
     {
       "src": [
         {
-          "files": ["**/*.csproj"],
+          "files": ["**/Release/*/Avolantis.*.dll"],
+          "exclude": ["**/obj/**"],
           "src": "../src"
         }
       ],

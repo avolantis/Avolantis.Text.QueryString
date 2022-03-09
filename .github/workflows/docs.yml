@@ -27,6 +27,10 @@ jobs:
           restore-keys: ${{ runner.os }}-nuget
       - name: setup
         run: choco install docfx -y
+      - name: build
+        run: |
+          dotnet restore --locked-mode
+          dotnet build --no-restore --confiuration Release
       - name: generate
         run: docfx ./docs/docfx.json
       - uses: actions/upload-artifact@v2
