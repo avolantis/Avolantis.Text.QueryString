@@ -87,9 +87,6 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Avolantis.Text.QueryString..html">Avolantis.Text.QueryString.</a></h4>
-      <section><p>Represents a query parameter in a key-value pair form</p>
-</section>
       <h4><a class="xref" href="Avolantis.Text.QueryString.QueryParameterCollection.html">QueryParameterCollection</a></h4>
       <section><p>Represents a collection of query string parameters</p>
 </section>
@@ -99,23 +96,48 @@
       <h4><a class="xref" href="Avolantis.Text.QueryString.QueryParameterConverter-1.html">QueryParameterConverter&lt;T&gt;</a></h4>
       <section><p>Base class for implementing custom query string parameter converters</p>
 </section>
-      <h4><a class="xref" href="Avolantis.Text.QueryString.QueryStringIgnoreAttribute.html">QueryStringIgnoreAttribute</a></h4>
-      <section><p>Specifies the condition for ignoring a type or property during serialization</p>
-</section>
-      <h4><a class="xref" href="Avolantis.Text.QueryString.QueryStringSerializerOptions.html">QueryStringSerializerOptions</a></h4>
-      <section><p>Specifies options for the serialization process</p>
-</section>
-    <h3 id="enums">Enums
-  </h3>
       <h4><a class="xref" href="Avolantis.Text.QueryString.QueryParameterIgnoreCondition.html">QueryParameterIgnoreCondition</a></h4>
       <section><p>Specifies the conditions for skipping a parameter during serialization</p>
 </section>
       <h4><a class="xref" href="Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.html">QueryParameterKeyCasingPolicy</a></h4>
-      <section><p>Specifies whether to adjust casing of <span class="xref">Avolantis.Text.QueryString.QueryStringParameter</span> keys
+      <section><p>Specifies whether to adjust casing of <a class="xref" href="Avolantis.Text.QueryString.QueryStringParameter.html">QueryStringParameter</a> keys
 while serializing objects to <a class="xref" href="Avolantis.Text.QueryString.QueryParameterCollection.html">QueryParameterCollection</a>s</p>
+</section>
+      <h4><a class="xref" href="Avolantis.Text.QueryString.QueryStringConverterAttribute.html">QueryStringConverterAttribute</a></h4>
+      <section><p>Specifies an <a class="xref" href="Avolantis.Text.QueryString.IQueryParameterConverter.html">IQueryParameterConverter</a> to be used
+when serializing the attributed class or property</p>
 </section>
       <h4><a class="xref" href="Avolantis.Text.QueryString.QueryStringEmptyStringOptions.html">QueryStringEmptyStringOptions</a></h4>
       <section><p>Specifies options for handling empty and whitespace-only strings</p>
+</section>
+      <h4><a class="xref" href="Avolantis.Text.QueryString.QueryStringFormatAttribute.html">QueryStringFormatAttribute</a></h4>
+      <section><p>Apply the given <a class="xref" href="Avolantis.Text.QueryString.QueryStringFormatAttribute.html#Avolantis_Text_QueryString_QueryStringFormatAttribute_Format">Format</a> and <a class="xref" href="Avolantis.Text.QueryString.QueryStringFormatAttribute.html#Avolantis_Text_QueryString_QueryStringFormatAttribute_Provider">Provider</a>
+when serializing an object of type <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iformattable">IFormattable</a></p>
+</section>
+      <h4><a class="xref" href="Avolantis.Text.QueryString.QueryStringIgnoreAttribute.html">QueryStringIgnoreAttribute</a></h4>
+      <section><p>Specifies the condition for ignoring a type or property during serialization</p>
+</section>
+      <h4><a class="xref" href="Avolantis.Text.QueryString.QueryStringParameter.html">QueryStringParameter</a></h4>
+      <section><p>Represents a query parameter in a key-value pair form</p>
+</section>
+      <h4><a class="xref" href="Avolantis.Text.QueryString.QueryStringPrecisionAttribute.html">QueryStringPrecisionAttribute</a></h4>
+      <section><p>Specifies the precision of the fractional part for
+serializing a floating-point number</p>
+</section>
+      <h4><a class="xref" href="Avolantis.Text.QueryString.QueryStringPropertyNameAttribute.html">QueryStringPropertyNameAttribute</a></h4>
+      <section><p>Specifies the property name to write when serializing
+this property to a query string</p>
+</section>
+      <h4><a class="xref" href="Avolantis.Text.QueryString.QueryStringSerializerOptions.html">QueryStringSerializerOptions</a></h4>
+      <section><p>Specifies options for the serialization process</p>
+</section>
+      <h4><a class="xref" href="Avolantis.Text.QueryString.QueryStringWriter.html">QueryStringWriter</a></h4>
+      <section><p>Provides an API for writing parameters to a <a class="xref" href="Avolantis.Text.QueryString.QueryParameterCollection.html">QueryParameterCollection</a></p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="Avolantis.Text.QueryString.IQueryParameterConverter.html">IQueryParameterConverter</a></h4>
+      <section><p>Interface for query string parameter converters</p>
 </section>
 </article>
           </div>

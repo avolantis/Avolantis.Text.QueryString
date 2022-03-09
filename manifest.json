@@ -14,11 +14,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Avolantis.Text.QueryString..yml",
+      "source_relative_path": "api/Avolantis.Text.QueryString.IQueryParameterConverter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Avolantis.Text.QueryString..html",
-          "hash": "UZm3FcpKWczq++LSj7UxmkAvm30wKLYpg0s5JXSoQao="
+          "relative_path": "api/Avolantis.Text.QueryString.IQueryParameterConverter.html",
+          "hash": "enBFLpaG5wxoROpVjv+YJib8C3TYd+/AeHoCDVZ4SOY="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Avolantis.Text.QueryString.QueryParameterCollection.html",
-          "hash": "MORccdMGGnZgX0Y1UPEyYO995dTpuDLlSpuDTb07bek="
+          "hash": "1m6WJURCae/Aq29cqOjg+w/Dli4T/hk/QX9UZ0PyPL4="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Avolantis.Text.QueryString.QueryParameterConverter-1.html",
-          "hash": "BEIu5RkokJ4PYpgKJEOpGCL5eg8+j0sJet1Kg1Lxruc="
+          "hash": "cjGUO0F0UJ3Wju+U+uh8JFMts7YanXqC3vWvOGmOU2g="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Avolantis.Text.QueryString.QueryParameterConverter.html",
-          "hash": "TdDJbZjBmp4R5QV/38BGaSnOAa3vD3yjRrZMkktasUg="
+          "hash": "BHKHuIJ+VzFTFfD4yS6BkIPCMM9nnSak4vlZPnfMAFM="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Avolantis.Text.QueryString.QueryParameterIgnoreCondition.html",
-          "hash": "aX7wxQCfj0k5HHZyaMmKsLE/O1X00Pqs55o1Ta2LnKc="
+          "hash": "SQYSj9YXCv7pquyya9Ua0Z7fnm4tFyCZkjvCpbDwA+8="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.html",
-          "hash": "IFgNeDfUGyf/ZgCov1E6rZXnF3qZENKksHWwrONk0mg="
+          "hash": "3ZxkExUuWTyydMV/4Ot44gB1D1UQ3Zllk3e4ACvbHLo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avolantis.Text.QueryString.QueryStringConverterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avolantis.Text.QueryString.QueryStringConverterAttribute.html",
+          "hash": "06IDFbhEo8j/hFGHTOKdI94Cf24aTLDzhhcpP4KPqZ0="
         }
       },
       "is_incremental": false,
@@ -90,7 +102,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Avolantis.Text.QueryString.QueryStringEmptyStringOptions.html",
-          "hash": "nMov3zcLESToprV7v0l+KMJyp5b4980pg2qaHvIUpsQ="
+          "hash": "6QGfV/wZa0WpSKIlsnq7tEmkrgOAPcoN0qCnZuZDjoQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avolantis.Text.QueryString.QueryStringFormatAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avolantis.Text.QueryString.QueryStringFormatAttribute.html",
+          "hash": "wg4ocNw7u2Ouq4VLVu3tSr6VEWhoNmalWMGqVVoYvkw="
         }
       },
       "is_incremental": false,
@@ -102,7 +126,43 @@
       "output": {
         ".html": {
           "relative_path": "api/Avolantis.Text.QueryString.QueryStringIgnoreAttribute.html",
-          "hash": "uLLWmyqVEYaJc9+hWdhWkAZGZPhKmNrvVFDQvdq5vyY="
+          "hash": "wYyQV1FKr5QLxPlvLfx6qO8rHn+C/Z4NV6X+yue0enI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avolantis.Text.QueryString.QueryStringParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avolantis.Text.QueryString.QueryStringParameter.html",
+          "hash": "FdxCsgyaymk9JKNjMgtnq4piiZixBZWoOomfkBq+MZo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avolantis.Text.QueryString.QueryStringPrecisionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avolantis.Text.QueryString.QueryStringPrecisionAttribute.html",
+          "hash": "LXYOTOqaIKZdsfqITCMYoUJr2rqMTxCeEIUGh33V5Ac="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avolantis.Text.QueryString.QueryStringPropertyNameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avolantis.Text.QueryString.QueryStringPropertyNameAttribute.html",
+          "hash": "iFxM4BXeRvHhG3EloHz6TnKXQD8no6fb87UUVuIXqH4="
         }
       },
       "is_incremental": false,
@@ -114,7 +174,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html",
-          "hash": "3rtHjqOkIqxgfwtiuau5wwkTvRma7a/MHZUqkNk3RZ4="
+          "hash": "EhOpMDfIApnb4X4mFveQ2h25Urw1/wHC2y+ZbMXU7eM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avolantis.Text.QueryString.QueryStringWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avolantis.Text.QueryString.QueryStringWriter.html",
+          "hash": "rtHfjTmQoEPQWvVV1rNW595gGGsikmYeAOKa8sBpRYQ="
         }
       },
       "is_incremental": false,
@@ -126,7 +198,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Avolantis.Text.QueryString.html",
-          "hash": "cOSYsyhmhwYrHgdzVGasu0y5Mdf7nM0ZoibUo4LHsEQ="
+          "hash": "acRS5DaKwXQR2YAM73agJU2V/uqQOruPzUV4TYOrTPU="
         }
       },
       "is_incremental": false,
@@ -150,7 +222,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Z2CkMCpJBPr1abfNK9FNYdoZcQqh9PPQpJFpSCrHfBw="
+          "hash": "gtCHJ+vXmXD2gk5bqjR4YlahjA3/PfoTJnhxKsywk6Q="
         }
       },
       "is_incremental": false,
@@ -204,7 +276,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 10,
+          "total_file_count": 16,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

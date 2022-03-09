@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class QueryParameterKeyCasingPolicy
+    <title>Class QueryStringWriter
    | Avolantis.Text.QueryString Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class QueryParameterKeyCasingPolicy
+    <meta name="title" content="Class QueryStringWriter
    | Avolantis.Text.QueryString Documentation ">
     <meta name="generator" content="docfx 2.59.0.0">
     
@@ -78,39 +78,58 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy">
+            <article class="content wrap" id="_content" data-uid="Avolantis.Text.QueryString.QueryStringWriter">
   
   
-  <h1 id="Avolantis_Text_QueryString_QueryParameterKeyCasingPolicy" data-uid="Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy" class="text-break">Class QueryParameterKeyCasingPolicy
+  <h1 id="Avolantis_Text_QueryString_QueryStringWriter" data-uid="Avolantis.Text.QueryString.QueryStringWriter" class="text-break">Class QueryStringWriter
   </h1>
-  <div class="markdown level0 summary"><p>Specifies whether to adjust casing of <a class="xref" href="Avolantis.Text.QueryString.QueryStringParameter.html">QueryStringParameter</a> keys
-while serializing objects to <a class="xref" href="Avolantis.Text.QueryString.QueryParameterCollection.html">QueryParameterCollection</a>s</p>
+  <div class="markdown level0 summary"><p>Provides an API for writing parameters to a <a class="xref" href="Avolantis.Text.QueryString.QueryParameterCollection.html">QueryParameterCollection</a></p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">QueryParameterKeyCasingPolicy</span></div>
+    <div class="level1"><span class="xref">QueryStringWriter</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Avolantis.Text.QueryString.html">Avolantis.Text.QueryString</a></h6>
   <h6><strong>Assembly</strong>: Avolantis.Text.QueryString.dll</h6>
-  <h5 id="Avolantis_Text_QueryString_QueryParameterKeyCasingPolicy_syntax">Syntax</h5>
+  <h5 id="Avolantis_Text_QueryString_QueryStringWriter_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class QueryParameterKeyCasingPolicy : Enum</code></pre>
+    <pre><code class="lang-csharp hljs">public class QueryStringWriter : Object</code></pre>
   </div>
-  <h3 id="fields">Fields
+  <h3 id="methods">Methods
   </h3>
   
   
-  <h4 id="Avolantis_Text_QueryString_QueryParameterKeyCasingPolicy_CamelCase" data-uid="Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.CamelCase">CamelCase</h4>
-  <div class="markdown level1 summary"><p>Change casing to camelCase</p>
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_CreateChild_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.CreateChild*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_CreateChild_System_String_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.CreateChild(System.String)">CreateChild(String)</h4>
+  <div class="markdown level1 summary"><p>Creates a child <a class="xref" href="Avolantis.Text.QueryString.QueryStringWriter.html">QueryStringWriter</a> which prefixes
+written parameter keys with the given <code data-dev-comment-type="paramref" class="paramref">prefix</code></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const QueryParameterKeyCasingPolicy CamelCase</code></pre>
+    <pre><code class="lang-csharp hljs">public QueryStringWriter CreateChild(string prefix)</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">prefix</span></td>
+        <td><p>The prefix</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -120,157 +139,177 @@ while serializing objects to <a class="xref" href="Avolantis.Text.QueryString.Qu
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.html">QueryParameterKeyCasingPolicy</a></td>
-        <td></td>
+        <td><a class="xref" href="Avolantis.Text.QueryString.QueryStringWriter.html">QueryStringWriter</a></td>
+        <td><p>A child <a class="xref" href="Avolantis.Text.QueryString.QueryStringWriter.html">QueryStringWriter</a></p>
+</td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="Avolantis_Text_QueryString_QueryParameterKeyCasingPolicy_KebabCase" data-uid="Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.KebabCase">KebabCase</h4>
-  <div class="markdown level1 summary"><p>Change casing to kebab-case</p>
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteBoolean_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteBoolean*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteBoolean_System_Boolean_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteBoolean(System.Boolean)">WriteBoolean(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Writes a boolean value as a query parameter</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const QueryParameterKeyCasingPolicy KebabCase</code></pre>
+    <pre><code class="lang-csharp hljs">public void WriteBoolean(bool value)</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.html">QueryParameterKeyCasingPolicy</a></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to write</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="Avolantis_Text_QueryString_QueryParameterKeyCasingPolicy_LowerCase" data-uid="Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.LowerCase">LowerCase</h4>
-  <div class="markdown level1 summary"><p>Change casing to lowercase</p>
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteBoolean_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteBoolean*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteBoolean_System_String_System_Boolean_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteBoolean(System.String,System.Boolean)">WriteBoolean(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Writes a boolean query parameter</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const QueryParameterKeyCasingPolicy LowerCase</code></pre>
+    <pre><code class="lang-csharp hljs">public void WriteBoolean(string key, bool value)</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.html">QueryParameterKeyCasingPolicy</a></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the parameter</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to write</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="Avolantis_Text_QueryString_QueryParameterKeyCasingPolicy_NoChange" data-uid="Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.NoChange">NoChange</h4>
-  <div class="markdown level1 summary"><p>Leve casing as-is</p>
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteNull_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNull*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteNull" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNull">WriteNull()</h4>
+  <div class="markdown level1 summary"><p>Writes <code>null</code> value as a query parameter</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const QueryParameterKeyCasingPolicy NoChange</code></pre>
+    <pre><code class="lang-csharp hljs">public void WriteNull()</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteNull_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNull*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteNull_System_String_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNull(System.String)">WriteNull(String)</h4>
+  <div class="markdown level1 summary"><p>Writes <code>null</code> as a query parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNull(string key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.html">QueryParameterKeyCasingPolicy</a></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the parameter</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="Avolantis_Text_QueryString_QueryParameterKeyCasingPolicy_PascalCase" data-uid="Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.PascalCase">PascalCase</h4>
-  <div class="markdown level1 summary"><p>Change casing to PascalCase</p>
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteString_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteString*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteString_System_String_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteString(System.String)">WriteString(String)</h4>
+  <div class="markdown level1 summary"><p>Writes a string value as a query parameter</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const QueryParameterKeyCasingPolicy PascalCase</code></pre>
+    <pre><code class="lang-csharp hljs">public void WriteString(string value)</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.html">QueryParameterKeyCasingPolicy</a></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to write</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="Avolantis_Text_QueryString_QueryParameterKeyCasingPolicy_UpperCase" data-uid="Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.UpperCase">UpperCase</h4>
-  <div class="markdown level1 summary"><p>Change casing to UPPERCASE</p>
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteString_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteString*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteString_System_String_System_String_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteString(System.String,System.String)">WriteString(String, String)</h4>
+  <div class="markdown level1 summary"><p>Writes a string query parameter</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const QueryParameterKeyCasingPolicy UpperCase</code></pre>
+    <pre><code class="lang-csharp hljs">public void WriteString(string key, string value)</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.html">QueryParameterKeyCasingPolicy</a></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the parameter</p>
+</td>
       </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Avolantis_Text_QueryString_QueryParameterKeyCasingPolicy_value__" data-uid="Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.value__">value__</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int value__</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to write</p>
+</td>
       </tr>
     </tbody>
   </table>

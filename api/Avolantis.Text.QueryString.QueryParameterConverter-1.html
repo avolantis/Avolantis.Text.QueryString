@@ -92,35 +92,24 @@
     <div class="level1"><a class="xref" href="Avolantis.Text.QueryString.QueryParameterConverter.html">QueryParameterConverter</a></div>
     <div class="level2"><span class="xref">QueryParameterConverter&lt;T&gt;</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Avolantis.Text.QueryString.IQueryParameterConverter.html">IQueryParameterConverter</a></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+      <a class="xref" href="Avolantis.Text.QueryString.QueryParameterConverter.html#Avolantis_Text_QueryString_QueryParameterConverter_CanConvert_System_Reflection_MemberInfo_">QueryParameterConverter.CanConvert(MemberInfo)</a>
     </div>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+      <a class="xref" href="Avolantis.Text.QueryString.QueryParameterConverter.html#Avolantis_Text_QueryString_QueryParameterConverter_Convert_Avolantis_Text_QueryString_QueryStringWriter_System_Object_System_Reflection_MemberInfo_Avolantis_Text_QueryString_QueryStringSerializerOptions_">QueryParameterConverter.Convert(QueryStringWriter, Object, MemberInfo, QueryStringSerializerOptions)</a>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Avolantis.Text.QueryString.html">Avolantis.Text.QueryString</a></h6>
   <h6><strong>Assembly</strong>: Avolantis.Text.QueryString.dll</h6>
   <h5 id="Avolantis_Text_QueryString_QueryParameterConverter_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class QueryParameterConverter&lt;T&gt; : QueryParameterConverter</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class QueryParameterConverter&lt;T&gt; : QueryParameterConverter, IQueryParameterConverter</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -138,17 +127,24 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryParameterConverter_1__ctor_" data-uid="Avolantis.Text.QueryString.QueryParameterConverter`1.#ctor*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryParameterConverter_1__ctor" data-uid="Avolantis.Text.QueryString.QueryParameterConverter`1.#ctor">QueryParameterConverter()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected QueryParameterConverter()</code></pre>
+  </div>
   <h3 id="methods">Methods
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/avolantis/Avolantis.Text.QueryString/new/main/apiSpec/new?filename=Avolantis_Text_QueryString_QueryParameterConverter_1_CanConvert_Type_.md&amp;value=---%0Auid%3A%20Avolantis.Text.QueryString.QueryParameterConverter%601.CanConvert(Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/avolantis/Avolantis.Text.QueryString/blob/main/src/QueryString/Converter/QueryParameterConverter.cs/#L39">View Source</a>
-  </span>
+  
+  
   <a id="Avolantis_Text_QueryString_QueryParameterConverter_1_CanConvert_" data-uid="Avolantis.Text.QueryString.QueryParameterConverter`1.CanConvert*"></a>
-  <h4 id="Avolantis_Text_QueryString_QueryParameterConverter_1_CanConvert_Type_" data-uid="Avolantis.Text.QueryString.QueryParameterConverter`1.CanConvert(Type)">CanConvert(Type)</h4>
+  <h4 id="Avolantis_Text_QueryString_QueryParameterConverter_1_CanConvert_System_Type_" data-uid="Avolantis.Text.QueryString.QueryParameterConverter`1.CanConvert(System.Type)">CanConvert(Type)</h4>
   <div class="markdown level1 summary"><p>Returns whether this converter is can convert values of the given type</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -167,7 +163,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
         <td><span class="parametername">type</span></td>
         <td><p>The type to be converted</p>
 </td>
@@ -191,24 +187,19 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Avolantis.Text.QueryString.QueryParameterConverter.html#Avolantis_Text_QueryString_QueryParameterConverter_CanConvert_Type_">QueryParameterConverter.CanConvert(Type)</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/avolantis/Avolantis.Text.QueryString/new/main/apiSpec/new?filename=Avolantis_Text_QueryString_QueryParameterConverter_1_Convert_System_String__0_Avolantis_Text_QueryString_QueryParameterCollection_Avolantis_Text_QueryString_QueryStringSerializerOptions_.md&amp;value=---%0Auid%3A%20Avolantis.Text.QueryString.QueryParameterConverter%601.Convert(System.String%2C%600%2CAvolantis.Text.QueryString.QueryParameterCollection%2CAvolantis.Text.QueryString.QueryStringSerializerOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/avolantis/Avolantis.Text.QueryString/blob/main/src/QueryString/Converter/QueryParameterConverter.cs/#L63">View Source</a>
-  </span>
+  <div><a class="xref" href="Avolantis.Text.QueryString.QueryParameterConverter.html#Avolantis_Text_QueryString_QueryParameterConverter_CanConvert_System_Type_">QueryParameterConverter.CanConvert(Type)</a></div>
+  
+  
   <a id="Avolantis_Text_QueryString_QueryParameterConverter_1_Convert_" data-uid="Avolantis.Text.QueryString.QueryParameterConverter`1.Convert*"></a>
-  <h4 id="Avolantis_Text_QueryString_QueryParameterConverter_1_Convert_System_String__0_Avolantis_Text_QueryString_QueryParameterCollection_Avolantis_Text_QueryString_QueryStringSerializerOptions_" data-uid="Avolantis.Text.QueryString.QueryParameterConverter`1.Convert(System.String,`0,Avolantis.Text.QueryString.QueryParameterCollection,Avolantis.Text.QueryString.QueryStringSerializerOptions)">Convert(String, T, QueryParameterCollection, QueryStringSerializerOptions)</h4>
+  <h4 id="Avolantis_Text_QueryString_QueryParameterConverter_1_Convert_Avolantis_Text_QueryString_QueryStringWriter__0_Avolantis_Text_QueryString_QueryStringSerializerOptions_" data-uid="Avolantis.Text.QueryString.QueryParameterConverter`1.Convert(Avolantis.Text.QueryString.QueryStringWriter,`0,Avolantis.Text.QueryString.QueryStringSerializerOptions)">Convert(QueryStringWriter, T, QueryStringSerializerOptions)</h4>
   <div class="markdown level1 summary"><p>Converts an object of type <code data-dev-comment-type="typeparamref" class="typeparamref">T</code> to
-<span class="xref">Avolantis.Text.QueryString.QueryStringParameter</span>(s) and adds such parameter(s)
-to the given <a class="xref" href="Avolantis.Text.QueryString.QueryParameterCollection.html">QueryParameterCollection</a></p>
+<a class="xref" href="Avolantis.Text.QueryString.QueryStringParameter.html">QueryStringParameter</a>(s) using the given
+<a class="xref" href="Avolantis.Text.QueryString.QueryStringWriter.html">QueryStringWriter</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract void Convert(string key, T value, QueryParameterCollection target, QueryStringSerializerOptions options)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract void Convert(QueryStringWriter writer, T value, QueryStringSerializerOptions options)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -221,21 +212,15 @@ to the given <a class="xref" href="Avolantis.Text.QueryString.QueryParameterColl
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">key</span></td>
-        <td><p>The key of the parameter</p>
+        <td><a class="xref" href="Avolantis.Text.QueryString.QueryStringWriter.html">QueryStringWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>The <a class="xref" href="Avolantis.Text.QueryString.QueryStringWriter.html">QueryStringWriter</a> to write with</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">T</span></td>
         <td><span class="parametername">value</span></td>
-        <td><p>The value of the parameter</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Avolantis.Text.QueryString.QueryParameterCollection.html">QueryParameterCollection</a></td>
-        <td><span class="parametername">target</span></td>
-        <td><p>The target <a class="xref" href="Avolantis.Text.QueryString.QueryParameterCollection.html">QueryParameterCollection</a></p>
+        <td><p>The value to be converted</p>
 </td>
       </tr>
       <tr>
@@ -246,22 +231,17 @@ to the given <a class="xref" href="Avolantis.Text.QueryString.QueryParameterColl
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/avolantis/Avolantis.Text.QueryString/new/main/apiSpec/new?filename=Avolantis_Text_QueryString_QueryParameterConverter_1_Convert_System_String_System_Object_Type_Avolantis_Text_QueryString_QueryParameterCollection_Avolantis_Text_QueryString_QueryStringSerializerOptions_.md&amp;value=---%0Auid%3A%20Avolantis.Text.QueryString.QueryParameterConverter%601.Convert(System.String%2CSystem.Object%2CType%2CAvolantis.Text.QueryString.QueryParameterCollection%2CAvolantis.Text.QueryString.QueryStringSerializerOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/avolantis/Avolantis.Text.QueryString/blob/main/src/QueryString/Converter/QueryParameterConverter.cs/#L45">View Source</a>
-  </span>
+  
+  
   <a id="Avolantis_Text_QueryString_QueryParameterConverter_1_Convert_" data-uid="Avolantis.Text.QueryString.QueryParameterConverter`1.Convert*"></a>
-  <h4 id="Avolantis_Text_QueryString_QueryParameterConverter_1_Convert_System_String_System_Object_Type_Avolantis_Text_QueryString_QueryParameterCollection_Avolantis_Text_QueryString_QueryStringSerializerOptions_" data-uid="Avolantis.Text.QueryString.QueryParameterConverter`1.Convert(System.String,System.Object,Type,Avolantis.Text.QueryString.QueryParameterCollection,Avolantis.Text.QueryString.QueryStringSerializerOptions)">Convert(String, Object, Type, QueryParameterCollection, QueryStringSerializerOptions)</h4>
-  <div class="markdown level1 summary"><p>Converts an object to <span class="xref">Avolantis.Text.QueryString.QueryStringParameter</span>(s) and adds
-such parameter(s) to the given <a class="xref" href="Avolantis.Text.QueryString.QueryParameterCollection.html">QueryParameterCollection</a></p>
+  <h4 id="Avolantis_Text_QueryString_QueryParameterConverter_1_Convert_Avolantis_Text_QueryString_QueryStringWriter_System_Object_System_Type_Avolantis_Text_QueryString_QueryStringSerializerOptions_" data-uid="Avolantis.Text.QueryString.QueryParameterConverter`1.Convert(Avolantis.Text.QueryString.QueryStringWriter,System.Object,System.Type,Avolantis.Text.QueryString.QueryStringSerializerOptions)">Convert(QueryStringWriter, Object, Type, QueryStringSerializerOptions)</h4>
+  <div class="markdown level1 summary"><p>Converts an object to <a class="xref" href="Avolantis.Text.QueryString.QueryStringParameter.html">QueryStringParameter</a>(s)
+using the given <a class="xref" href="Avolantis.Text.QueryString.QueryStringWriter.html">QueryStringWriter</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Convert(string key, object value, Type type, QueryParameterCollection target, QueryStringSerializerOptions options)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Convert(QueryStringWriter writer, object value, Type type, QueryStringSerializerOptions options)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -274,27 +254,21 @@ such parameter(s) to the given <a class="xref" href="Avolantis.Text.QueryString.
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">key</span></td>
-        <td><p>The key of the parameter</p>
+        <td><a class="xref" href="Avolantis.Text.QueryString.QueryStringWriter.html">QueryStringWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>The <a class="xref" href="Avolantis.Text.QueryString.QueryStringWriter.html">QueryStringWriter</a> to write with</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
         <td><span class="parametername">value</span></td>
-        <td><p>The value of the parameter</p>
+        <td><p>The value of be converted</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
         <td><span class="parametername">type</span></td>
-        <td><p>The type of the object to convert</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Avolantis.Text.QueryString.QueryParameterCollection.html">QueryParameterCollection</a></td>
-        <td><span class="parametername">target</span></td>
-        <td><p>The target <a class="xref" href="Avolantis.Text.QueryString.QueryParameterCollection.html">QueryParameterCollection</a></p>
+        <td><p>The type to be converted</p>
 </td>
       </tr>
       <tr>
@@ -306,7 +280,11 @@ such parameter(s) to the given <a class="xref" href="Avolantis.Text.QueryString.
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Avolantis.Text.QueryString.QueryParameterConverter.html#Avolantis_Text_QueryString_QueryParameterConverter_Convert_System_String_System_Object_Type_Avolantis_Text_QueryString_QueryParameterCollection_Avolantis_Text_QueryString_QueryStringSerializerOptions_">QueryParameterConverter.Convert(String, Object, Type, QueryParameterCollection, QueryStringSerializerOptions)</a></div>
+  <div><a class="xref" href="Avolantis.Text.QueryString.QueryParameterConverter.html#Avolantis_Text_QueryString_QueryParameterConverter_Convert_Avolantis_Text_QueryString_QueryStringWriter_System_Object_System_Type_Avolantis_Text_QueryString_QueryStringSerializerOptions_">QueryParameterConverter.Convert(QueryStringWriter, Object, Type, QueryStringSerializerOptions)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Avolantis.Text.QueryString.IQueryParameterConverter.html">IQueryParameterConverter</a>
+  </div>
 </article>
           </div>
           
@@ -314,12 +292,6 @@ such parameter(s) to the given <a class="xref" href="Avolantis.Text.QueryString.
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
-                  <li>
-                    <a href="https://github.com/avolantis/Avolantis.Text.QueryString/new/main/apiSpec/new?filename=Avolantis_Text_QueryString_QueryParameterConverter_1.md&amp;value=---%0Auid%3A%20Avolantis.Text.QueryString.QueryParameterConverter%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/avolantis/Avolantis.Text.QueryString/blob/main/src/QueryString/Converter/QueryParameterConverter.cs/#L36" class="contribution-link">View Source</a>
-                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class QueryParameterIgnoreCondition
+    <title>Interface IQueryParameterConverter
    | Avolantis.Text.QueryString Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class QueryParameterIgnoreCondition
+    <meta name="title" content="Interface IQueryParameterConverter
    | Avolantis.Text.QueryString Documentation ">
     <meta name="generator" content="docfx 2.59.0.0">
     
@@ -78,38 +78,56 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Avolantis.Text.QueryString.QueryParameterIgnoreCondition">
+            <article class="content wrap" id="_content" data-uid="Avolantis.Text.QueryString.IQueryParameterConverter">
   
   
-  <h1 id="Avolantis_Text_QueryString_QueryParameterIgnoreCondition" data-uid="Avolantis.Text.QueryString.QueryParameterIgnoreCondition" class="text-break">Class QueryParameterIgnoreCondition
+  <h1 id="Avolantis_Text_QueryString_IQueryParameterConverter" data-uid="Avolantis.Text.QueryString.IQueryParameterConverter" class="text-break">Interface IQueryParameterConverter
   </h1>
-  <div class="markdown level0 summary"><p>Specifies the conditions for skipping a parameter during serialization</p>
+  <div class="markdown level0 summary"><p>Interface for query string parameter converters</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">QueryParameterIgnoreCondition</span></div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Avolantis.Text.QueryString.html">Avolantis.Text.QueryString</a></h6>
   <h6><strong>Assembly</strong>: Avolantis.Text.QueryString.dll</h6>
-  <h5 id="Avolantis_Text_QueryString_QueryParameterIgnoreCondition_syntax">Syntax</h5>
+  <h5 id="Avolantis_Text_QueryString_IQueryParameterConverter_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class QueryParameterIgnoreCondition : Enum</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IQueryParameterConverter</code></pre>
   </div>
-  <h3 id="fields">Fields
+  <h5 id="Avolantis_Text_QueryString_IQueryParameterConverter_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Use the provided <a class="xref" href="Avolantis.Text.QueryString.QueryParameterConverter.html">QueryParameterConverter</a> or
+<a class="xref" href="Avolantis.Text.QueryString.QueryParameterConverter-1.html">QueryParameterConverter&lt;T&gt;</a> base classes, when appropriate</p>
+</div>
+  <h3 id="methods">Methods
   </h3>
   
   
-  <h4 id="Avolantis_Text_QueryString_QueryParameterIgnoreCondition_Always" data-uid="Avolantis.Text.QueryString.QueryParameterIgnoreCondition.Always">Always</h4>
-  <div class="markdown level1 summary"><p>Always serialize this parameter</p>
+  <a id="Avolantis_Text_QueryString_IQueryParameterConverter_CanConvert_" data-uid="Avolantis.Text.QueryString.IQueryParameterConverter.CanConvert*"></a>
+  <h4 id="Avolantis_Text_QueryString_IQueryParameterConverter_CanConvert_System_Reflection_MemberInfo_" data-uid="Avolantis.Text.QueryString.IQueryParameterConverter.CanConvert(System.Reflection.MemberInfo)">CanConvert(MemberInfo)</h4>
+  <div class="markdown level1 summary"><p>Returns whether this converter is can convert values of the given type or member</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const QueryParameterIgnoreCondition Always</code></pre>
+    <pre><code class="lang-csharp hljs">bool CanConvert(MemberInfo typeOrMember)</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.reflection.memberinfo">MemberInfo</a></td>
+        <td><span class="parametername">typeOrMember</span></td>
+        <td><p>The type or member to be converted</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -119,107 +137,57 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Avolantis.Text.QueryString.QueryParameterIgnoreCondition.html">QueryParameterIgnoreCondition</a></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>Whether this converter is compatible with the given type or member</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="Avolantis_Text_QueryString_QueryParameterIgnoreCondition_Never" data-uid="Avolantis.Text.QueryString.QueryParameterIgnoreCondition.Never">Never</h4>
-  <div class="markdown level1 summary"><p>Never serialize this parameter</p>
+  <a id="Avolantis_Text_QueryString_IQueryParameterConverter_Convert_" data-uid="Avolantis.Text.QueryString.IQueryParameterConverter.Convert*"></a>
+  <h4 id="Avolantis_Text_QueryString_IQueryParameterConverter_Convert_Avolantis_Text_QueryString_QueryStringWriter_System_Object_System_Reflection_MemberInfo_Avolantis_Text_QueryString_QueryStringSerializerOptions_" data-uid="Avolantis.Text.QueryString.IQueryParameterConverter.Convert(Avolantis.Text.QueryString.QueryStringWriter,System.Object,System.Reflection.MemberInfo,Avolantis.Text.QueryString.QueryStringSerializerOptions)">Convert(QueryStringWriter, Object, MemberInfo, QueryStringSerializerOptions)</h4>
+  <div class="markdown level1 summary"><p>Converts an object to <a class="xref" href="Avolantis.Text.QueryString.QueryStringParameter.html">QueryStringParameter</a>(s)
+using the given <a class="xref" href="Avolantis.Text.QueryString.QueryStringWriter.html">QueryStringWriter</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const QueryParameterIgnoreCondition Never</code></pre>
+    <pre><code class="lang-csharp hljs">void Convert(QueryStringWriter writer, object value, MemberInfo typeOrMember, QueryStringSerializerOptions options)</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Avolantis.Text.QueryString.QueryParameterIgnoreCondition.html">QueryParameterIgnoreCondition</a></td>
-        <td></td>
+        <td><a class="xref" href="Avolantis.Text.QueryString.QueryStringWriter.html">QueryStringWriter</a></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>The <a class="xref" href="Avolantis.Text.QueryString.QueryStringWriter.html">QueryStringWriter</a> to write with</p>
+</td>
       </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Avolantis_Text_QueryString_QueryParameterIgnoreCondition_value__" data-uid="Avolantis.Text.QueryString.QueryParameterIgnoreCondition.value__">value__</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int value__</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of to be converted</p>
+</td>
       </tr>
-    </thead>
-    <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.reflection.memberinfo">MemberInfo</a></td>
+        <td><span class="parametername">typeOrMember</span></td>
+        <td><p>The type or member to be converted</p>
+</td>
       </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Avolantis_Text_QueryString_QueryParameterIgnoreCondition_WhenWritingDefault" data-uid="Avolantis.Text.QueryString.QueryParameterIgnoreCondition.WhenWritingDefault">WhenWritingDefault</h4>
-  <div class="markdown level1 summary"><p>Skip this parameter when the value is <code>default</code></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const QueryParameterIgnoreCondition WhenWritingDefault</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Avolantis.Text.QueryString.QueryParameterIgnoreCondition.html">QueryParameterIgnoreCondition</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Avolantis_Text_QueryString_QueryParameterIgnoreCondition_WhenWritingNull" data-uid="Avolantis.Text.QueryString.QueryParameterIgnoreCondition.WhenWritingNull">WhenWritingNull</h4>
-  <div class="markdown level1 summary"><p>Skip this parameter when the value is <code>null</code></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const QueryParameterIgnoreCondition WhenWritingNull</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Avolantis.Text.QueryString.QueryParameterIgnoreCondition.html">QueryParameterIgnoreCondition</a></td>
-        <td></td>
+        <td><a class="xref" href="Avolantis.Text.QueryString.QueryStringSerializerOptions.html">QueryStringSerializerOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Serialization options</p>
+</td>
       </tr>
     </tbody>
   </table>

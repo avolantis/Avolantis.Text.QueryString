@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class QueryStringEmptyStringOptions
+    <title>Class QueryStringConverterAttribute
    | Avolantis.Text.QueryString Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class QueryStringEmptyStringOptions
+    <meta name="title" content="Class QueryStringConverterAttribute
    | Avolantis.Text.QueryString Documentation ">
     <meta name="generator" content="docfx 2.59.0.0">
     
@@ -78,117 +78,119 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Avolantis.Text.QueryString.QueryStringEmptyStringOptions">
+            <article class="content wrap" id="_content" data-uid="Avolantis.Text.QueryString.QueryStringConverterAttribute">
   
   
-  <h1 id="Avolantis_Text_QueryString_QueryStringEmptyStringOptions" data-uid="Avolantis.Text.QueryString.QueryStringEmptyStringOptions" class="text-break">Class QueryStringEmptyStringOptions
+  <h1 id="Avolantis_Text_QueryString_QueryStringConverterAttribute" data-uid="Avolantis.Text.QueryString.QueryStringConverterAttribute" class="text-break">Class QueryStringConverterAttribute
   </h1>
-  <div class="markdown level0 summary"><p>Specifies options for handling empty and whitespace-only strings</p>
+  <div class="markdown level0 summary"><p>Specifies an <a class="xref" href="Avolantis.Text.QueryString.IQueryParameterConverter.html">IQueryParameterConverter</a> to be used
+when serializing the attributed class or property</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">QueryStringEmptyStringOptions</span></div>
+    <div class="level1"><span class="xref">QueryStringConverterAttribute</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Avolantis.Text.QueryString.html">Avolantis.Text.QueryString</a></h6>
   <h6><strong>Assembly</strong>: Avolantis.Text.QueryString.dll</h6>
-  <h5 id="Avolantis_Text_QueryString_QueryStringEmptyStringOptions_syntax">Syntax</h5>
+  <h5 id="Avolantis_Text_QueryString_QueryStringConverterAttribute_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class QueryStringEmptyStringOptions : Enum</code></pre>
+    <pre><code class="lang-csharp hljs">public class QueryStringConverterAttribute : Attribute</code></pre>
   </div>
-  <h3 id="fields">Fields
+  <h3 id="constructors">Constructors
   </h3>
   
   
-  <h4 id="Avolantis_Text_QueryString_QueryStringEmptyStringOptions_Default" data-uid="Avolantis.Text.QueryString.QueryStringEmptyStringOptions.Default">Default</h4>
-  <div class="markdown level1 summary"><p>Leave string values as-is</p>
+  <a id="Avolantis_Text_QueryString_QueryStringConverterAttribute__ctor_" data-uid="Avolantis.Text.QueryString.QueryStringConverterAttribute.#ctor*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringConverterAttribute__ctor_Avolantis_Text_QueryString_IQueryParameterConverter_" data-uid="Avolantis.Text.QueryString.QueryStringConverterAttribute.#ctor(Avolantis.Text.QueryString.IQueryParameterConverter)">QueryStringConverterAttribute(IQueryParameterConverter)</h4>
+  <div class="markdown level1 summary"><p>Specifies an <a class="xref" href="Avolantis.Text.QueryString.IQueryParameterConverter.html">IQueryParameterConverter</a> to be used
+when serializing the attributed class or property</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const QueryStringEmptyStringOptions Default</code></pre>
+    <pre><code class="lang-csharp hljs">public QueryStringConverterAttribute(IQueryParameterConverter converter)</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Avolantis.Text.QueryString.QueryStringEmptyStringOptions.html">QueryStringEmptyStringOptions</a></td>
-        <td></td>
+        <td><a class="xref" href="Avolantis.Text.QueryString.IQueryParameterConverter.html">IQueryParameterConverter</a></td>
+        <td><span class="parametername">converter</span></td>
+        <td><p>The <a class="xref" href="Avolantis.Text.QueryString.IQueryParameterConverter.html">IQueryParameterConverter</a> to use</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="Avolantis_Text_QueryString_QueryStringEmptyStringOptions_TreatEmptyAsNotPresent" data-uid="Avolantis.Text.QueryString.QueryStringEmptyStringOptions.TreatEmptyAsNotPresent">TreatEmptyAsNotPresent</h4>
-  <div class="markdown level1 summary"><p>Treat empty strings as if the parameter was not present</p>
+  <a id="Avolantis_Text_QueryString_QueryStringConverterAttribute__ctor_" data-uid="Avolantis.Text.QueryString.QueryStringConverterAttribute.#ctor*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringConverterAttribute__ctor_System_Type_" data-uid="Avolantis.Text.QueryString.QueryStringConverterAttribute.#ctor(System.Type)">QueryStringConverterAttribute(Type)</h4>
+  <div class="markdown level1 summary"><p>Specifies an <a class="xref" href="Avolantis.Text.QueryString.IQueryParameterConverter.html">IQueryParameterConverter</a> to be used
+when serializing the attributed class or property</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const QueryStringEmptyStringOptions TreatEmptyAsNotPresent</code></pre>
+    <pre><code class="lang-csharp hljs">public QueryStringConverterAttribute(Type type)</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Avolantis.Text.QueryString.QueryStringEmptyStringOptions.html">QueryStringEmptyStringOptions</a></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The type of the <a class="xref" href="Avolantis.Text.QueryString.IQueryParameterConverter.html">IQueryParameterConverter</a> to use</p>
+</td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <h4 id="Avolantis_Text_QueryString_QueryStringEmptyStringOptions_TreatEmptyAsNull" data-uid="Avolantis.Text.QueryString.QueryStringEmptyStringOptions.TreatEmptyAsNull">TreatEmptyAsNull</h4>
-  <div class="markdown level1 summary"><p>Treat empty strings as null values</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const QueryStringEmptyStringOptions TreatEmptyAsNull</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Description</th>
+        <th>Condition</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Avolantis.Text.QueryString.QueryStringEmptyStringOptions.html">QueryStringEmptyStringOptions</a></td>
-        <td></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>Thrown if the provided type does not include a public parameterless constructor
+or is not of type <a class="xref" href="Avolantis.Text.QueryString.IQueryParameterConverter.html">IQueryParameterConverter</a></p>
+</td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Avolantis_Text_QueryString_QueryStringEmptyStringOptions_TreatEmptyAsNull_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p><a class="xref" href="Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_IgnoreNullValues">IgnoreNullValues</a> will still control
-whether the parameter will be added to the result</p>
-</div>
+  <h3 id="properties">Properties
+  </h3>
   
   
-  <h4 id="Avolantis_Text_QueryString_QueryStringEmptyStringOptions_TreatWhitespaceAsNotPresent" data-uid="Avolantis.Text.QueryString.QueryStringEmptyStringOptions.TreatWhitespaceAsNotPresent">TreatWhitespaceAsNotPresent</h4>
-  <div class="markdown level1 summary"><p>Treat empty strings and strings only of whitespace as if the parameter was not present</p>
+  <a id="Avolantis_Text_QueryString_QueryStringConverterAttribute_Converter_" data-uid="Avolantis.Text.QueryString.QueryStringConverterAttribute.Converter*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringConverterAttribute_Converter" data-uid="Avolantis.Text.QueryString.QueryStringConverterAttribute.Converter">Converter</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Avolantis.Text.QueryString.IQueryParameterConverter.html">IQueryParameterConverter</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const QueryStringEmptyStringOptions TreatWhitespaceAsNotPresent</code></pre>
+    <pre><code class="lang-csharp hljs">public IQueryParameterConverter Converter { get; }</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -198,60 +200,7 @@ whether the parameter will be added to the result</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Avolantis.Text.QueryString.QueryStringEmptyStringOptions.html">QueryStringEmptyStringOptions</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Avolantis_Text_QueryString_QueryStringEmptyStringOptions_TreatWhitespaceAsNull" data-uid="Avolantis.Text.QueryString.QueryStringEmptyStringOptions.TreatWhitespaceAsNull">TreatWhitespaceAsNull</h4>
-  <div class="markdown level1 summary"><p>Treat empty strings and string only of whitespace as null values</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const QueryStringEmptyStringOptions TreatWhitespaceAsNull</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Avolantis.Text.QueryString.QueryStringEmptyStringOptions.html">QueryStringEmptyStringOptions</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Avolantis_Text_QueryString_QueryStringEmptyStringOptions_TreatWhitespaceAsNull_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p><a class="xref" href="Avolantis.Text.QueryString.QueryStringSerializerOptions.html#Avolantis_Text_QueryString_QueryStringSerializerOptions_IgnoreNullValues">IgnoreNullValues</a> will still control
-whether the parameter will be added to the result</p>
-</div>
-  
-  
-  <h4 id="Avolantis_Text_QueryString_QueryStringEmptyStringOptions_value__" data-uid="Avolantis.Text.QueryString.QueryStringEmptyStringOptions.value__">value__</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int value__</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><a class="xref" href="Avolantis.Text.QueryString.IQueryParameterConverter.html">IQueryParameterConverter</a></td>
         <td></td>
       </tr>
     </tbody>

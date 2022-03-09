@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class 
+    <title>Class QueryStringPropertyNameAttribute
    | Avolantis.Text.QueryString Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class 
+    <meta name="title" content="Class QueryStringPropertyNameAttribute
    | Avolantis.Text.QueryString Documentation ">
     <meta name="generator" content="docfx 2.59.0.0">
     
@@ -78,57 +78,94 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Avolantis.Text.QueryString.">
+            <article class="content wrap" id="_content" data-uid="Avolantis.Text.QueryString.QueryStringPropertyNameAttribute">
   
   
-  <h1 id="Avolantis_Text_QueryString_" data-uid="Avolantis.Text.QueryString." class="text-break">Class 
+  <h1 id="Avolantis_Text_QueryString_QueryStringPropertyNameAttribute" data-uid="Avolantis.Text.QueryString.QueryStringPropertyNameAttribute" class="text-break">Class QueryStringPropertyNameAttribute
   </h1>
-  <div class="markdown level0 summary"><p>Represents a query parameter in a key-value pair form</p>
+  <div class="markdown level0 summary"><p>Specifies the property name to write when serializing
+this property to a query string</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref"></span></div>
-  </div>
-  <div classs="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Avolantis.Text.QueryString..html">Avolantis.Text.QueryString.</a>&gt;</div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
-    </div>
+    <div class="level1"><span class="xref">QueryStringPropertyNameAttribute</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Avolantis.Text.QueryString.html">Avolantis.Text.QueryString</a></h6>
   <h6><strong>Assembly</strong>: Avolantis.Text.QueryString.dll</h6>
-  <h5 id="Avolantis_Text_QueryString__syntax">Syntax</h5>
+  <h5 id="Avolantis_Text_QueryString_QueryStringPropertyNameAttribute_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class  : IEquatable&lt;&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class QueryStringPropertyNameAttribute : Attribute</code></pre>
   </div>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">System.IEquatable&lt;T&gt;</a>
+  <h5 id="Avolantis_Text_QueryString_QueryStringPropertyNameAttribute_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The <a class="xref" href="Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.html">QueryParameterKeyCasingPolicy</a> is ignored,
+when a custom parameter name is set with this attribute</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryStringPropertyNameAttribute__ctor_" data-uid="Avolantis.Text.QueryString.QueryStringPropertyNameAttribute.#ctor*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringPropertyNameAttribute__ctor_System_String_" data-uid="Avolantis.Text.QueryString.QueryStringPropertyNameAttribute.#ctor(System.String)">QueryStringPropertyNameAttribute(String)</h4>
+  <div class="markdown level1 summary"><p>Specifies the property name to write when serializing
+this property to a query string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QueryStringPropertyNameAttribute(string name)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The desired name of the property</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Avolantis_Text_QueryString_QueryStringPropertyNameAttribute__ctor_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.html">QueryParameterKeyCasingPolicy</a> is ignored,
+when a custom parameter name is set with this attribute</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryStringPropertyNameAttribute_Name_" data-uid="Avolantis.Text.QueryString.QueryStringPropertyNameAttribute.Name*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringPropertyNameAttribute_Name" data-uid="Avolantis.Text.QueryString.QueryStringPropertyNameAttribute.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -136,12 +173,6 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
-                  <li>
-                    <a href="https://github.com/avolantis/Avolantis.Text.QueryString/new/main/apiSpec/new?filename=Avolantis_Text_QueryString_.md&amp;value=---%0Auid%3A%20Avolantis.Text.QueryString.%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/avolantis/Avolantis.Text.QueryString/blob/main/src/QueryString/QueryStringParameter.cs/#L16" class="contribution-link">View Source</a>
-                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
