@@ -30,7 +30,7 @@ jobs:
       - name: build
         run: |
           dotnet restore --locked-mode
-          dotnet build --no-restore --confiuration Release
+          dotnet build --no-restore --configuration Release
       - name: generate
         run: docfx ./docs/docfx.json
       - uses: actions/upload-artifact@v2
