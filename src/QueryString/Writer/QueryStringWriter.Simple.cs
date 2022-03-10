@@ -26,7 +26,7 @@ public partial class QueryStringWriter
     /// </summary>
     public void WriteNull()
     {
-        Add(null, null);
+        Add(null, QueryStringParameter.NullValue);
     }
 
     /// <summary>
@@ -35,14 +35,14 @@ public partial class QueryStringWriter
     /// <param name="key">The key of the parameter</param>
     public void WriteNull(string key)
     {
-        Add(key, null);
+        Add(key, QueryStringParameter.NullValue);
     }
 
     /// <summary>
     ///     Writes a string value as a query parameter
     /// </summary>
     /// <param name="value">The value to write</param>
-    public void WriteString(string? value)
+    public void WriteString(string value)
     {
         Add(null, value);
     }
@@ -52,7 +52,7 @@ public partial class QueryStringWriter
     /// </summary>
     /// <param name="key">The key of the parameter</param>
     /// <param name="value">The value to write</param>
-    public void WriteString(string key, string? value)
+    public void WriteString(string key, string value)
     {
         Add(key, value);
     }

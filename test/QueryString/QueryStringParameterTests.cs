@@ -13,10 +13,10 @@ public class QueryStringParameterTests
     }
 
     [Fact]
-    public void TestToStringReturnsNullAsText()
+    public void TestToStringReturnsNullAsFlag()
     {
         var nullParam = new QueryStringParameter("key", null);
-        nullParam.ToString().ShouldBe("key=null");
+        nullParam.ToString().ShouldBe("key");
     }
 
     [Fact]
@@ -85,5 +85,11 @@ public class QueryStringParameterTests
     {
         Should.Throw<ArgumentException>(() => QueryStringParameter.Parse(string.Empty));
         Should.Throw<ArgumentException>(() => QueryStringParameter.Parse("    "));
+    }
+
+    [Fact]
+    public void TestNullFactory()
+    {
+        QueryStringParameter.Null("key").ToString().ShouldBe("key=null");
     }
 }

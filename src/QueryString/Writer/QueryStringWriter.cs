@@ -34,7 +34,7 @@ public partial class QueryStringWriter
         return new QueryStringWriter(_prefix + prefix, _target, _options, _written);
     }
 
-    private void Add(string? key, string? value)
+    private void Add(string? key, string value)
     {
         var name = key == null ? _prefix : _prefix + key;
 
@@ -42,7 +42,7 @@ public partial class QueryStringWriter
             return;
 
         if (string.IsNullOrWhiteSpace(name))
-            _target.Add(value ?? QueryStringParameter.NullValue, null);
+            _target.Add(value, null);
         else
             _target.Add(name, value);
     }

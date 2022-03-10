@@ -21,6 +21,16 @@ public readonly record struct QueryStringParameter(string Key, string? Value)
     public const string NullValue = "null";
 
     /// <summary>
+    ///     Creates a new <see cref="QueryStringParameter" /> with <see cref="NullValue" />
+    /// </summary>
+    /// <param name="key">The key of the query parameter</param>
+    /// <returns>A <see cref="QueryStringParameter" /> instance with <see cref="NullValue" /></returns>
+    public static QueryStringParameter Null(string key)
+    {
+        return new(key, NullValue);
+    }
+
+    /// <summary>
     ///     Returns the key of this query parameter, with URL encoding applied
     /// </summary>
     public string EncodedKey => WebUtility.UrlEncode(Key);
@@ -28,7 +38,7 @@ public readonly record struct QueryStringParameter(string Key, string? Value)
     /// <summary>
     ///     Returns the value of this query parameter, with URL encoding applied
     /// </summary>
-    public string EncodedValue => WebUtility.UrlEncode(Value ?? NullValue);
+    public string? EncodedValue => WebUtility.UrlEncode(Value);
 
     /// <summary>
     ///     Determines if this query string parameter is equal to the specified one, using the default string comparison
@@ -45,7 +55,7 @@ public readonly record struct QueryStringParameter(string Key, string? Value)
     /// </summary>
     public override string ToString()
     {
-        return $"{EncodedKey}={EncodedValue}";
+        return EncodedValue == null ? EncodedKey : $"{EncodedKey}={EncodedValue}";
     }
 
     /// <summary>
@@ -55,6 +65,10 @@ public readonly record struct QueryStringParameter(string Key, string? Value)
     public void ToString(StringBuilder sb)
     {
         sb.Append(EncodedKey);
+
+        if (EncodedValue == null)
+            return;
+
         sb.Append('=');
         sb.Append(EncodedValue);
     }

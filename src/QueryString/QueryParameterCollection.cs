@@ -326,7 +326,7 @@ public sealed partial class QueryParameterCollection
 
         foreach (var param in this)
         {
-            if (ignoreNullValues && param.Value == null)
+            if (ignoreNullValues && param.Value == QueryStringParameter.NullValue)
                 continue;
 
             param.ToString(sb);

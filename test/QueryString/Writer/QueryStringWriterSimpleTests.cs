@@ -6,8 +6,8 @@ namespace Avolantis.Text.QueryString;
 public class QueryStringWriterSimpleTests
 {
     [Theory]
-    [InlineData(null, true, "?true=null")]
-    [InlineData(null, false, "?false=null")]
+    [InlineData(null, true, "?true")]
+    [InlineData(null, false, "?false")]
     [InlineData("key", true, "?key=true")]
     [InlineData("key", false, "?key=false")]
     public void TestWriteBooleanSuccess(string? key, bool value, string expected)
@@ -24,7 +24,7 @@ public class QueryStringWriterSimpleTests
     }
 
     [Theory]
-    [InlineData(null, "?null=null")]
+    [InlineData(null, "?null")]
     [InlineData("key", "?key=null")]
     public void TestWriteNullSuccess(string? key, string expected)
     {
@@ -40,7 +40,7 @@ public class QueryStringWriterSimpleTests
     }
 
     [Theory]
-    [InlineData(null, "value", "?value=null")]
+    [InlineData(null, "value", "?value")]
     [InlineData("key", "value", "?key=value")]
     public void TestWriteStringSuccess(string? key, string value, string expected)
     {

@@ -23,12 +23,13 @@ public class QueryParameterCollectionStringConversionTests
         var qs = new QueryParameterCollection
         {
             { "key", null },
+            { "key", QueryStringParameter.NullValue },
             { "key2", "value2" }
         };
-        qs.ToString().ShouldBe("?key=null&key2=value2");
-        qs.ToString(true).ShouldBe("?key2=value2");
+        qs.ToString().ShouldBe("?key&key=null&key2=value2");
+        qs.ToString(true).ShouldBe("?key&key2=value2");
         qs.RemoveAll("key2");
-        qs.ToString(true).ShouldBe(string.Empty);
+        qs.ToString(true).ShouldBe("?key");
     }
 
     [Fact]
