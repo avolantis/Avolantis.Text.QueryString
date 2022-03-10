@@ -27,11 +27,13 @@ public partial class QueryStringWriter
     ///     Creates a child <see cref="QueryStringWriter" /> which prefixes
     ///     written parameter keys with the given <paramref name="prefix" />
     /// </summary>
-    /// <param name="prefix">The prefix</param>
+    /// <param name="name">The namespace of the child</param>
+    /// <param name="prefix">The prefix to separate namespaces</param>
     /// <returns>A child <see cref="QueryStringWriter" /></returns>
-    public QueryStringWriter CreateChild(string prefix)
+    public QueryStringWriter CreateChild(string name, string prefix = ".")
     {
-        return new QueryStringWriter(_prefix + prefix, _target, _options, _written);
+        var target = string.IsNullOrWhiteSpace(_prefix) ? name : _prefix + prefix + name;
+        return new QueryStringWriter(target, _target, _options, _written);
     }
 
     private void Add(string? key, string value)

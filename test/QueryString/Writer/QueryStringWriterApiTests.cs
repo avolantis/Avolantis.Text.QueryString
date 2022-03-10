@@ -30,7 +30,7 @@ public class QueryStringWriterApiTests
         var writer = new QueryStringWriter(target, QueryStringSerializerOptions.Default);
 
         var child = writer.CreateChild("child");
-        var grandchild = child.CreateChild(".grandchild");
+        var grandchild = child.CreateChild("grandchild");
         grandchild.WriteString(".grandchild-key", "grandchild-value");
         child.WriteString(".child-key", "child-value");
         writer.WriteString("key", "value");
