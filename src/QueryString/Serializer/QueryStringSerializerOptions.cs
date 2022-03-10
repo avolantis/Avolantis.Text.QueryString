@@ -84,6 +84,7 @@ public class QueryStringSerializerOptions
     /// </summary>
     public ICollection<IQueryParameterConverter> Converters { get; set; } = new List<IQueryParameterConverter>
     {
+        GuidQueryParameterConverter.Instance,
         DateTimeQueryParameterConverter.Instance,
         DateOnlyQueryParameterConverter.Instance,
         TimeOnlyQueryParameterConverter.Instance
