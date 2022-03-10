@@ -6,7 +6,7 @@ namespace Avolantis.Text.QueryString;
 ///     Apply the given <see cref="Format" /> and <see cref="Provider" />
 ///     when serializing an object of type <see cref="IFormattable" />
 /// </summary>
-[AttributeUsage(AttributeTargets.Property)]
+[AttributeUsage(AttributeTargets.Class | AttributeTargets.Property)]
 public class QueryStringFormatAttribute : Attribute
 {
     /// <summary>
