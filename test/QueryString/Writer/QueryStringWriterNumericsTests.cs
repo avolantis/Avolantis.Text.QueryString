@@ -1,4 +1,5 @@
-﻿using Shouldly;
+﻿using System.Globalization;
+using Shouldly;
 using Xunit;
 
 namespace Avolantis.Text.QueryString;
@@ -37,14 +38,14 @@ public class QueryStringWriterNumericsTests
         Writer.WriteNumber(Long);
         Writer.WriteNumber(ULong);
 
-        Target.Keys.ShouldContain(Sbyte.ToString("F0"));
-        Target.Keys.ShouldContain(Byte.ToString("F0"));
-        Target.Keys.ShouldContain(Short.ToString("F0"));
-        Target.Keys.ShouldContain(UShort.ToString("F0"));
-        Target.Keys.ShouldContain(Int.ToString("F0"));
-        Target.Keys.ShouldContain(UInt.ToString("F0"));
-        Target.Keys.ShouldContain(Long.ToString("F0"));
-        Target.Keys.ShouldContain(ULong.ToString("F0"));
+        Target.Keys.ShouldContain(Sbyte.ToString("F0", CultureInfo.InvariantCulture));
+        Target.Keys.ShouldContain(Byte.ToString("F0", CultureInfo.InvariantCulture));
+        Target.Keys.ShouldContain(Short.ToString("F0", CultureInfo.InvariantCulture));
+        Target.Keys.ShouldContain(UShort.ToString("F0", CultureInfo.InvariantCulture));
+        Target.Keys.ShouldContain(Int.ToString("F0", CultureInfo.InvariantCulture));
+        Target.Keys.ShouldContain(UInt.ToString("F0", CultureInfo.InvariantCulture));
+        Target.Keys.ShouldContain(Long.ToString("F0", CultureInfo.InvariantCulture));
+        Target.Keys.ShouldContain(ULong.ToString("F0", CultureInfo.InvariantCulture));
     }
 
     [Fact]
@@ -61,14 +62,14 @@ public class QueryStringWriterNumericsTests
 
         Target.Keys.ShouldContain("key");
         Target["key"].Count.ShouldBe(8);
-        Target["key", 0].ShouldBe(Sbyte.ToString("F0"));
-        Target["key", 1].ShouldBe(Byte.ToString("F0"));
-        Target["key", 2].ShouldBe(Short.ToString("F0"));
-        Target["key", 3].ShouldBe(UShort.ToString("F0"));
-        Target["key", 4].ShouldBe(Int.ToString("F0"));
-        Target["key", 5].ShouldBe(UInt.ToString("F0"));
-        Target["key", 6].ShouldBe(Long.ToString("F0"));
-        Target["key", 7].ShouldBe(ULong.ToString("F0"));
+        Target["key", 0].ShouldBe(Sbyte.ToString("F0", CultureInfo.InvariantCulture));
+        Target["key", 1].ShouldBe(Byte.ToString("F0", CultureInfo.InvariantCulture));
+        Target["key", 2].ShouldBe(Short.ToString("F0", CultureInfo.InvariantCulture));
+        Target["key", 3].ShouldBe(UShort.ToString("F0", CultureInfo.InvariantCulture));
+        Target["key", 4].ShouldBe(Int.ToString("F0", CultureInfo.InvariantCulture));
+        Target["key", 5].ShouldBe(UInt.ToString("F0", CultureInfo.InvariantCulture));
+        Target["key", 6].ShouldBe(Long.ToString("F0", CultureInfo.InvariantCulture));
+        Target["key", 7].ShouldBe(ULong.ToString("F0", CultureInfo.InvariantCulture));
     }
 
     [Fact]
@@ -77,8 +78,8 @@ public class QueryStringWriterNumericsTests
         Writer.WriteNumber(Float);
         Writer.WriteNumber(Double);
 
-        Target.Keys.ShouldContain(Float.ToString("F2"));
-        Target.Keys.ShouldContain(Double.ToString("F2"));
+        Target.Keys.ShouldContain(Float.ToString("F2", CultureInfo.InvariantCulture));
+        Target.Keys.ShouldContain(Double.ToString("F2", CultureInfo.InvariantCulture));
     }
 
     [Fact]
@@ -87,8 +88,8 @@ public class QueryStringWriterNumericsTests
         Writer.WriteNumber(Float, 3);
         Writer.WriteNumber(Double, 4);
 
-        Target.Keys.ShouldContain(Float.ToString("F3"));
-        Target.Keys.ShouldContain(Double.ToString("F4"));
+        Target.Keys.ShouldContain(Float.ToString("F3", CultureInfo.InvariantCulture));
+        Target.Keys.ShouldContain(Double.ToString("F4", CultureInfo.InvariantCulture));
     }
 
     [Fact]
@@ -99,8 +100,8 @@ public class QueryStringWriterNumericsTests
 
         Target.Keys.ShouldContain("key");
         Target["key"].Count.ShouldBe(2);
-        Target["key", 0].ShouldBe(Float.ToString("F2"));
-        Target["key", 1].ShouldBe(Double.ToString("F2"));
+        Target["key", 0].ShouldBe(Float.ToString("F2", CultureInfo.InvariantCulture));
+        Target["key", 1].ShouldBe(Double.ToString("F2", CultureInfo.InvariantCulture));
     }
 
     [Fact]
@@ -111,7 +112,7 @@ public class QueryStringWriterNumericsTests
 
         Target.Keys.ShouldContain("key");
         Target["key"].Count.ShouldBe(2);
-        Target["key", 0].ShouldBe(Float.ToString("F5"));
-        Target["key", 1].ShouldBe(Double.ToString("F1"));
+        Target["key", 0].ShouldBe(Float.ToString("F5", CultureInfo.InvariantCulture));
+        Target["key", 1].ShouldBe(Double.ToString("F1", CultureInfo.InvariantCulture));
     }
 }
