@@ -570,12 +570,6 @@ references:
   commentId: F:Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.CamelCase
   fullName: Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.CamelCase
   nameWithType: QueryParameterKeyCasingPolicy.CamelCase
-- uid: Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.KebabCase
-  name: KebabCase
-  href: api/Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.html#Avolantis_Text_QueryString_QueryParameterKeyCasingPolicy_KebabCase
-  commentId: F:Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.KebabCase
-  fullName: Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.KebabCase
-  nameWithType: QueryParameterKeyCasingPolicy.KebabCase
 - uid: Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.LowerCase
   name: LowerCase
   href: api/Avolantis.Text.QueryString.QueryParameterKeyCasingPolicy.html#Avolantis_Text_QueryString_QueryParameterKeyCasingPolicy_LowerCase
@@ -873,6 +867,18 @@ references:
   commentId: Overload:Avolantis.Text.QueryString.QueryStringParameter.Key
   fullName: Avolantis.Text.QueryString.QueryStringParameter.Key
   nameWithType: QueryStringParameter.Key
+- uid: Avolantis.Text.QueryString.QueryStringParameter.Null(System.String)
+  name: Null(String)
+  href: api/Avolantis.Text.QueryString.QueryStringParameter.html#Avolantis_Text_QueryString_QueryStringParameter_Null_System_String_
+  commentId: M:Avolantis.Text.QueryString.QueryStringParameter.Null(System.String)
+  fullName: Avolantis.Text.QueryString.QueryStringParameter.Null(System.String)
+  nameWithType: QueryStringParameter.Null(String)
+- uid: Avolantis.Text.QueryString.QueryStringParameter.Null*
+  name: "Null"
+  href: api/Avolantis.Text.QueryString.QueryStringParameter.html#Avolantis_Text_QueryString_QueryStringParameter_Null_
+  commentId: Overload:Avolantis.Text.QueryString.QueryStringParameter.Null
+  fullName: Avolantis.Text.QueryString.QueryStringParameter.Null
+  nameWithType: QueryStringParameter.Null
 - uid: Avolantis.Text.QueryString.QueryStringParameter.NullValue
   name: NullValue
   href: api/Avolantis.Text.QueryString.QueryStringParameter.html#Avolantis_Text_QueryString_QueryStringParameter_NullValue
@@ -1020,6 +1026,90 @@ references:
   commentId: Overload:Avolantis.Text.QueryString.QueryStringPropertyNameAttribute.Name
   fullName: Avolantis.Text.QueryString.QueryStringPropertyNameAttribute.Name
   nameWithType: QueryStringPropertyNameAttribute.Name
+- uid: Avolantis.Text.QueryString.QueryStringSerializer
+  name: QueryStringSerializer
+  href: api/Avolantis.Text.QueryString.QueryStringSerializer.html
+  commentId: T:Avolantis.Text.QueryString.QueryStringSerializer
+  fullName: Avolantis.Text.QueryString.QueryStringSerializer
+  nameWithType: QueryStringSerializer
+- uid: Avolantis.Text.QueryString.QueryStringSerializer.Map(System.Object,System.Type,Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  name: Map(Object, Type, QueryStringSerializerOptions)
+  href: api/Avolantis.Text.QueryString.QueryStringSerializer.html#Avolantis_Text_QueryString_QueryStringSerializer_Map_System_Object_System_Type_Avolantis_Text_QueryString_QueryStringSerializerOptions_
+  commentId: M:Avolantis.Text.QueryString.QueryStringSerializer.Map(System.Object,System.Type,Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  fullName: Avolantis.Text.QueryString.QueryStringSerializer.Map(System.Object, System.Type, Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  nameWithType: QueryStringSerializer.Map(Object, Type, QueryStringSerializerOptions)
+- uid: Avolantis.Text.QueryString.QueryStringSerializer.Map*
+  name: Map
+  href: api/Avolantis.Text.QueryString.QueryStringSerializer.html#Avolantis_Text_QueryString_QueryStringSerializer_Map_
+  commentId: Overload:Avolantis.Text.QueryString.QueryStringSerializer.Map
+  fullName: Avolantis.Text.QueryString.QueryStringSerializer.Map
+  nameWithType: QueryStringSerializer.Map
+- uid: Avolantis.Text.QueryString.QueryStringSerializer.Map``1(``0,Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  name: Map<T>(T, QueryStringSerializerOptions)
+  href: api/Avolantis.Text.QueryString.QueryStringSerializer.html#Avolantis_Text_QueryString_QueryStringSerializer_Map__1___0_Avolantis_Text_QueryString_QueryStringSerializerOptions_
+  commentId: M:Avolantis.Text.QueryString.QueryStringSerializer.Map``1(``0,Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  name.vb: Map(Of T)(T, QueryStringSerializerOptions)
+  fullName: Avolantis.Text.QueryString.QueryStringSerializer.Map<T>(T, Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  fullName.vb: Avolantis.Text.QueryString.QueryStringSerializer.Map(Of T)(T, Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  nameWithType: QueryStringSerializer.Map<T>(T, QueryStringSerializerOptions)
+  nameWithType.vb: QueryStringSerializer.Map(Of T)(T, QueryStringSerializerOptions)
+- uid: Avolantis.Text.QueryString.QueryStringSerializer.MapTo(Avolantis.Text.QueryString.QueryParameterCollection,System.Object,System.Type,Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  name: MapTo(QueryParameterCollection, Object, Type, QueryStringSerializerOptions)
+  href: api/Avolantis.Text.QueryString.QueryStringSerializer.html#Avolantis_Text_QueryString_QueryStringSerializer_MapTo_Avolantis_Text_QueryString_QueryParameterCollection_System_Object_System_Type_Avolantis_Text_QueryString_QueryStringSerializerOptions_
+  commentId: M:Avolantis.Text.QueryString.QueryStringSerializer.MapTo(Avolantis.Text.QueryString.QueryParameterCollection,System.Object,System.Type,Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  fullName: Avolantis.Text.QueryString.QueryStringSerializer.MapTo(Avolantis.Text.QueryString.QueryParameterCollection, System.Object, System.Type, Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  nameWithType: QueryStringSerializer.MapTo(QueryParameterCollection, Object, Type, QueryStringSerializerOptions)
+- uid: Avolantis.Text.QueryString.QueryStringSerializer.MapTo*
+  name: MapTo
+  href: api/Avolantis.Text.QueryString.QueryStringSerializer.html#Avolantis_Text_QueryString_QueryStringSerializer_MapTo_
+  commentId: Overload:Avolantis.Text.QueryString.QueryStringSerializer.MapTo
+  fullName: Avolantis.Text.QueryString.QueryStringSerializer.MapTo
+  nameWithType: QueryStringSerializer.MapTo
+- uid: Avolantis.Text.QueryString.QueryStringSerializer.MapTo``1(Avolantis.Text.QueryString.QueryParameterCollection,``0,Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  name: MapTo<T>(QueryParameterCollection, T, QueryStringSerializerOptions)
+  href: api/Avolantis.Text.QueryString.QueryStringSerializer.html#Avolantis_Text_QueryString_QueryStringSerializer_MapTo__1_Avolantis_Text_QueryString_QueryParameterCollection___0_Avolantis_Text_QueryString_QueryStringSerializerOptions_
+  commentId: M:Avolantis.Text.QueryString.QueryStringSerializer.MapTo``1(Avolantis.Text.QueryString.QueryParameterCollection,``0,Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  name.vb: MapTo(Of T)(QueryParameterCollection, T, QueryStringSerializerOptions)
+  fullName: Avolantis.Text.QueryString.QueryStringSerializer.MapTo<T>(Avolantis.Text.QueryString.QueryParameterCollection, T, Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  fullName.vb: Avolantis.Text.QueryString.QueryStringSerializer.MapTo(Of T)(Avolantis.Text.QueryString.QueryParameterCollection, T, Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  nameWithType: QueryStringSerializer.MapTo<T>(QueryParameterCollection, T, QueryStringSerializerOptions)
+  nameWithType.vb: QueryStringSerializer.MapTo(Of T)(QueryParameterCollection, T, QueryStringSerializerOptions)
+- uid: Avolantis.Text.QueryString.QueryStringSerializer.Serialize(Avolantis.Text.QueryString.QueryStringWriter,System.Object,System.Reflection.MemberInfo,Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  name: Serialize(QueryStringWriter, Object, MemberInfo, QueryStringSerializerOptions)
+  href: api/Avolantis.Text.QueryString.QueryStringSerializer.html#Avolantis_Text_QueryString_QueryStringSerializer_Serialize_Avolantis_Text_QueryString_QueryStringWriter_System_Object_System_Reflection_MemberInfo_Avolantis_Text_QueryString_QueryStringSerializerOptions_
+  commentId: M:Avolantis.Text.QueryString.QueryStringSerializer.Serialize(Avolantis.Text.QueryString.QueryStringWriter,System.Object,System.Reflection.MemberInfo,Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  fullName: Avolantis.Text.QueryString.QueryStringSerializer.Serialize(Avolantis.Text.QueryString.QueryStringWriter, System.Object, System.Reflection.MemberInfo, Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  nameWithType: QueryStringSerializer.Serialize(QueryStringWriter, Object, MemberInfo, QueryStringSerializerOptions)
+- uid: Avolantis.Text.QueryString.QueryStringSerializer.Serialize(System.Object,System.Type,Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  name: Serialize(Object, Type, QueryStringSerializerOptions)
+  href: api/Avolantis.Text.QueryString.QueryStringSerializer.html#Avolantis_Text_QueryString_QueryStringSerializer_Serialize_System_Object_System_Type_Avolantis_Text_QueryString_QueryStringSerializerOptions_
+  commentId: M:Avolantis.Text.QueryString.QueryStringSerializer.Serialize(System.Object,System.Type,Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  fullName: Avolantis.Text.QueryString.QueryStringSerializer.Serialize(System.Object, System.Type, Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  nameWithType: QueryStringSerializer.Serialize(Object, Type, QueryStringSerializerOptions)
+- uid: Avolantis.Text.QueryString.QueryStringSerializer.Serialize*
+  name: Serialize
+  href: api/Avolantis.Text.QueryString.QueryStringSerializer.html#Avolantis_Text_QueryString_QueryStringSerializer_Serialize_
+  commentId: Overload:Avolantis.Text.QueryString.QueryStringSerializer.Serialize
+  fullName: Avolantis.Text.QueryString.QueryStringSerializer.Serialize
+  nameWithType: QueryStringSerializer.Serialize
+- uid: Avolantis.Text.QueryString.QueryStringSerializer.Serialize``1(``0,Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  name: Serialize<T>(T, QueryStringSerializerOptions)
+  href: api/Avolantis.Text.QueryString.QueryStringSerializer.html#Avolantis_Text_QueryString_QueryStringSerializer_Serialize__1___0_Avolantis_Text_QueryString_QueryStringSerializerOptions_
+  commentId: M:Avolantis.Text.QueryString.QueryStringSerializer.Serialize``1(``0,Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  name.vb: Serialize(Of T)(T, QueryStringSerializerOptions)
+  fullName: Avolantis.Text.QueryString.QueryStringSerializer.Serialize<T>(T, Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  fullName.vb: Avolantis.Text.QueryString.QueryStringSerializer.Serialize(Of T)(T, Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  nameWithType: QueryStringSerializer.Serialize<T>(T, QueryStringSerializerOptions)
+  nameWithType.vb: QueryStringSerializer.Serialize(Of T)(T, QueryStringSerializerOptions)
+- uid: Avolantis.Text.QueryString.QueryStringSerializer.Serialize``1(Avolantis.Text.QueryString.QueryStringWriter,System.Object,Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  name: Serialize<T>(QueryStringWriter, Object, QueryStringSerializerOptions)
+  href: api/Avolantis.Text.QueryString.QueryStringSerializer.html#Avolantis_Text_QueryString_QueryStringSerializer_Serialize__1_Avolantis_Text_QueryString_QueryStringWriter_System_Object_Avolantis_Text_QueryString_QueryStringSerializerOptions_
+  commentId: M:Avolantis.Text.QueryString.QueryStringSerializer.Serialize``1(Avolantis.Text.QueryString.QueryStringWriter,System.Object,Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  name.vb: Serialize(Of T)(QueryStringWriter, Object, QueryStringSerializerOptions)
+  fullName: Avolantis.Text.QueryString.QueryStringSerializer.Serialize<T>(Avolantis.Text.QueryString.QueryStringWriter, System.Object, Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  fullName.vb: Avolantis.Text.QueryString.QueryStringSerializer.Serialize(Of T)(Avolantis.Text.QueryString.QueryStringWriter, System.Object, Avolantis.Text.QueryString.QueryStringSerializerOptions)
+  nameWithType: QueryStringSerializer.Serialize<T>(QueryStringWriter, Object, QueryStringSerializerOptions)
+  nameWithType.vb: QueryStringSerializer.Serialize(Of T)(QueryStringWriter, Object, QueryStringSerializerOptions)
 - uid: Avolantis.Text.QueryString.QueryStringSerializerOptions
   name: QueryStringSerializerOptions
   href: api/Avolantis.Text.QueryString.QueryStringSerializerOptions.html
@@ -1224,12 +1314,12 @@ references:
   commentId: T:Avolantis.Text.QueryString.QueryStringWriter
   fullName: Avolantis.Text.QueryString.QueryStringWriter
   nameWithType: QueryStringWriter
-- uid: Avolantis.Text.QueryString.QueryStringWriter.CreateChild(System.String)
-  name: CreateChild(String)
-  href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_CreateChild_System_String_
-  commentId: M:Avolantis.Text.QueryString.QueryStringWriter.CreateChild(System.String)
-  fullName: Avolantis.Text.QueryString.QueryStringWriter.CreateChild(System.String)
-  nameWithType: QueryStringWriter.CreateChild(String)
+- uid: Avolantis.Text.QueryString.QueryStringWriter.CreateChild(System.String,System.String)
+  name: CreateChild(String, String)
+  href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_CreateChild_System_String_System_String_
+  commentId: M:Avolantis.Text.QueryString.QueryStringWriter.CreateChild(System.String,System.String)
+  fullName: Avolantis.Text.QueryString.QueryStringWriter.CreateChild(System.String, System.String)
+  nameWithType: QueryStringWriter.CreateChild(String, String)
 - uid: Avolantis.Text.QueryString.QueryStringWriter.CreateChild*
   name: CreateChild
   href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_CreateChild_
@@ -1272,6 +1362,144 @@ references:
   commentId: Overload:Avolantis.Text.QueryString.QueryStringWriter.WriteNull
   fullName: Avolantis.Text.QueryString.QueryStringWriter.WriteNull
   nameWithType: QueryStringWriter.WriteNull
+- uid: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Byte)
+  name: WriteNumber(Byte)
+  href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_Byte_
+  commentId: M:Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Byte)
+  fullName: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Byte)
+  nameWithType: QueryStringWriter.WriteNumber(Byte)
+- uid: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Double,System.Nullable{System.Int32})
+  name: WriteNumber(Double, Nullable<Int32>)
+  href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_Double_System_Nullable_System_Int32__
+  commentId: M:Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Double,System.Nullable{System.Int32})
+  name.vb: WriteNumber(Double, Nullable(Of Int32))
+  fullName: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Double, System.Nullable<System.Int32>)
+  fullName.vb: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Double, System.Nullable(Of System.Int32))
+  nameWithType: QueryStringWriter.WriteNumber(Double, Nullable<Int32>)
+  nameWithType.vb: QueryStringWriter.WriteNumber(Double, Nullable(Of Int32))
+- uid: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Int16)
+  name: WriteNumber(Int16)
+  href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_Int16_
+  commentId: M:Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Int16)
+  fullName: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Int16)
+  nameWithType: QueryStringWriter.WriteNumber(Int16)
+- uid: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Int32)
+  name: WriteNumber(Int32)
+  href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_Int32_
+  commentId: M:Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Int32)
+  fullName: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Int32)
+  nameWithType: QueryStringWriter.WriteNumber(Int32)
+- uid: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Int64)
+  name: WriteNumber(Int64)
+  href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_Int64_
+  commentId: M:Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Int64)
+  fullName: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Int64)
+  nameWithType: QueryStringWriter.WriteNumber(Int64)
+- uid: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.SByte)
+  name: WriteNumber(SByte)
+  href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_SByte_
+  commentId: M:Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.SByte)
+  fullName: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.SByte)
+  nameWithType: QueryStringWriter.WriteNumber(SByte)
+- uid: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Single,System.Nullable{System.Int32})
+  name: WriteNumber(Single, Nullable<Int32>)
+  href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_Single_System_Nullable_System_Int32__
+  commentId: M:Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Single,System.Nullable{System.Int32})
+  name.vb: WriteNumber(Single, Nullable(Of Int32))
+  fullName: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Single, System.Nullable<System.Int32>)
+  fullName.vb: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Single, System.Nullable(Of System.Int32))
+  nameWithType: QueryStringWriter.WriteNumber(Single, Nullable<Int32>)
+  nameWithType.vb: QueryStringWriter.WriteNumber(Single, Nullable(Of Int32))
+- uid: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.Byte)
+  name: WriteNumber(String, Byte)
+  href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_String_System_Byte_
+  commentId: M:Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.Byte)
+  fullName: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String, System.Byte)
+  nameWithType: QueryStringWriter.WriteNumber(String, Byte)
+- uid: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.Double,System.Nullable{System.Int32})
+  name: WriteNumber(String, Double, Nullable<Int32>)
+  href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_String_System_Double_System_Nullable_System_Int32__
+  commentId: M:Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.Double,System.Nullable{System.Int32})
+  name.vb: WriteNumber(String, Double, Nullable(Of Int32))
+  fullName: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String, System.Double, System.Nullable<System.Int32>)
+  fullName.vb: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String, System.Double, System.Nullable(Of System.Int32))
+  nameWithType: QueryStringWriter.WriteNumber(String, Double, Nullable<Int32>)
+  nameWithType.vb: QueryStringWriter.WriteNumber(String, Double, Nullable(Of Int32))
+- uid: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.Int16)
+  name: WriteNumber(String, Int16)
+  href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_String_System_Int16_
+  commentId: M:Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.Int16)
+  fullName: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String, System.Int16)
+  nameWithType: QueryStringWriter.WriteNumber(String, Int16)
+- uid: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.Int32)
+  name: WriteNumber(String, Int32)
+  href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_String_System_Int32_
+  commentId: M:Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.Int32)
+  fullName: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String, System.Int32)
+  nameWithType: QueryStringWriter.WriteNumber(String, Int32)
+- uid: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.Int64)
+  name: WriteNumber(String, Int64)
+  href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_String_System_Int64_
+  commentId: M:Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.Int64)
+  fullName: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String, System.Int64)
+  nameWithType: QueryStringWriter.WriteNumber(String, Int64)
+- uid: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.SByte)
+  name: WriteNumber(String, SByte)
+  href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_String_System_SByte_
+  commentId: M:Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.SByte)
+  fullName: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String, System.SByte)
+  nameWithType: QueryStringWriter.WriteNumber(String, SByte)
+- uid: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.Single,System.Nullable{System.Int32})
+  name: WriteNumber(String, Single, Nullable<Int32>)
+  href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_String_System_Single_System_Nullable_System_Int32__
+  commentId: M:Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.Single,System.Nullable{System.Int32})
+  name.vb: WriteNumber(String, Single, Nullable(Of Int32))
+  fullName: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String, System.Single, System.Nullable<System.Int32>)
+  fullName.vb: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String, System.Single, System.Nullable(Of System.Int32))
+  nameWithType: QueryStringWriter.WriteNumber(String, Single, Nullable<Int32>)
+  nameWithType.vb: QueryStringWriter.WriteNumber(String, Single, Nullable(Of Int32))
+- uid: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.UInt16)
+  name: WriteNumber(String, UInt16)
+  href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_String_System_UInt16_
+  commentId: M:Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.UInt16)
+  fullName: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String, System.UInt16)
+  nameWithType: QueryStringWriter.WriteNumber(String, UInt16)
+- uid: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.UInt32)
+  name: WriteNumber(String, UInt32)
+  href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_String_System_UInt32_
+  commentId: M:Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.UInt32)
+  fullName: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String, System.UInt32)
+  nameWithType: QueryStringWriter.WriteNumber(String, UInt32)
+- uid: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.UInt64)
+  name: WriteNumber(String, UInt64)
+  href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_String_System_UInt64_
+  commentId: M:Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.UInt64)
+  fullName: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String, System.UInt64)
+  nameWithType: QueryStringWriter.WriteNumber(String, UInt64)
+- uid: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.UInt16)
+  name: WriteNumber(UInt16)
+  href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_UInt16_
+  commentId: M:Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.UInt16)
+  fullName: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.UInt16)
+  nameWithType: QueryStringWriter.WriteNumber(UInt16)
+- uid: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.UInt32)
+  name: WriteNumber(UInt32)
+  href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_UInt32_
+  commentId: M:Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.UInt32)
+  fullName: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.UInt32)
+  nameWithType: QueryStringWriter.WriteNumber(UInt32)
+- uid: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.UInt64)
+  name: WriteNumber(UInt64)
+  href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_UInt64_
+  commentId: M:Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.UInt64)
+  fullName: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.UInt64)
+  nameWithType: QueryStringWriter.WriteNumber(UInt64)
+- uid: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber*
+  name: WriteNumber
+  href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_
+  commentId: Overload:Avolantis.Text.QueryString.QueryStringWriter.WriteNumber
+  fullName: Avolantis.Text.QueryString.QueryStringWriter.WriteNumber
+  nameWithType: QueryStringWriter.WriteNumber
 - uid: Avolantis.Text.QueryString.QueryStringWriter.WriteString(System.String)
   name: WriteString(String)
   href: api/Avolantis.Text.QueryString.QueryStringWriter.html#Avolantis_Text_QueryString_QueryStringWriter_WriteString_System_String_

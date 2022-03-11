@@ -76,14 +76,15 @@
 <p>URL query string handling and serialization for .NET 6</p>
 </blockquote>
 <p><a href="https://www.nuget.org/packages/Avolantis.Text.QueryString"><img src="https://img.shields.io/nuget/v/Avolantis.Text.QueryString?logo=nuget" alt="nuget"></a>
-<a href="https://github.com/avolantis/Avolantis.Text.QueryString/actions/workflows/main.yml"><img src="https://github.com/avolantis/Avolantis.Text.QueryString/workflows/main/badge.svg" alt="main"></a>
-<a href="https://coveralls.io/github/avolantis/Avolantis.Text.QueryString"><img src="https://coveralls.io/repos/github/avolantis/Avolantis.Text.QueryString/badge.svg" alt="coverage"></a>
+<a href="https://github.com/avolantis/Avolantis.Text.QueryString/packages"><img src="https://img.shields.io/github/v/release/avolantis/Avolantis.Text.QueryString?include_prereleases&amp;label=github&amp;logo=nuget&amp;sort=semver" alt="github"></a>
 <a href="./.github/CODE_OF_CONDUCT.md"><img src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg" alt="Contributor Covenant"></a>
 <a href="./LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-yellow.svg" alt="license: MIT"></a></p>
+<p><a href="https://github.com/avolantis/Avolantis.Text.QueryString/actions/workflows/main.yml"><img src="https://github.com/avolantis/Avolantis.Text.QueryString/workflows/main/badge.svg?branch=main" alt="main"></a>
+<a href="https://coveralls.io/github/avolantis/Avolantis.Text.QueryString"><img src="https://coveralls.io/repos/github/avolantis/Avolantis.Text.QueryString/badge.svg" alt="coverage"></a></p>
 <p>This library helps you manage URL query parameters in a specialized collection and
 allows you to serialize a POCO to a query string.</p>
-<p><strong>:warning: 🚧 IMPORTANT: This project has not yet reached it's first stable release
-and is being developed currently. See how you can help below.</strong></p>
+<p>🚧 This project has not yet reached it's first stable release
+and is being developed currently. See how you can help below. 🚧</p>
 <h2 id="install">Install</h2>
 <pre><code class="lang-shell">dotnet package add Avolantis.Text.QueryString
 </code></pre>
@@ -94,7 +95,9 @@ to request targeting such environments.</p>
 <h2 id="motivation">Motivation</h2>
 <p>Imagine having to write a client application in C# (e.g. Blazor WebAssembly) to send queries
 to REST endpoint with various filtering options via query string parameters, like</p>
-<pre><code class="lang-c#">Task&lt;IEnumerable&lt;UserDto&gt;&gt; GetList([FromQuery] UserQueryOptions options)
+<pre><code class="lang-c#">[HttpGet]
+[Route(&quot;/users&quot;)]
+Task&lt;IEnumerable&lt;UserDto&gt;&gt; GetList([FromQuery] UserQueryOptions options)
 {
     // ...
 }
@@ -125,14 +128,14 @@ class UserQueryOptions
     IsDeleted = true
 };
 var qs = QueryStringSerializer.Serialize(filter);
-// ?name=John+Doe&amp;name=Jane+Doe&amp;isDeleted=true
+qs.ToString(); // ?name=John+Doe&amp;name=Jane+Doe&amp;isDeleted=true
 </code></pre>
 <h2 id="features">Features</h2>
 <ul>
 <li><code>QueryParameterCollection</code> for constructing and manipulating query string parameters</li>
 <li>Built-in support for serializing primitives, strings, <code>Guid</code>-s,
-<code>DateTime</code>, <code>DateOnly</code>, <code>TimeOnly</code>, anonymous objects, POCO-s
-and collections implementing <code>IEnumerable</code></li>
+<code>DateTime</code>, <code>DateOnly</code>, <code>TimeOnly</code>, anonymous objects, POCO-s,
+<code>IFormattable</code> and collections implementing <code>IEnumerable</code></li>
 <li>Extensible converter system inspired by System.Text.Json</li>
 <li>Override serialization defaults using attributes, like
 <code>[QueryStringParameterName(&quot;param-name&quot;)]</code> or <code>[QueryStringIgnore]</code></li>
@@ -148,7 +151,9 @@ from XML source code comments. Please note, these docs are under construction, a
 <h2 id="support">Support</h2>
 <p>Feature requests and bug reports can be submitted in the project's
 <a href="https://github.com/avolantis/Avolantis.Text.QueryString/issues">issue tracker</a> on GitHub.
-You can also open a support request ticket, please use one of the available issue templates.</p>
+You can also open a support request ticket, please use one of the available issue templates.
+You can also ask questions, present ideas or simply join the conversation on
+<a href="https://github.com/avolantis/Avolantis.Text.QueryString/discussions">GitHub discussions</a>.</p>
 <p>In case of a security issue or vulnerability, please use a private communication channel
 to report such incident towards the current maintainer, or <a href="https://avolantis.net">Avolantis</a>
 on security@avolantis.net. This helps us prepare a fix for a potential vulnerability
@@ -161,7 +166,7 @@ As expressed in the <a href="#motivation">motivation</a> section, this library i
 meant to provide an easy way to serialize POCO-s to query strings.</p>
 <p>As a usable alternative is to use the build-in query binder in aspnet core and
 annotate the parameters of the model with <code>[FromQuery]</code>, however this does not
-support nested binding objects.</p>
+support binding nested objects.</p>
 <pre><code class="lang-c#">public class Filter
 {
     public string Name { get; set; }

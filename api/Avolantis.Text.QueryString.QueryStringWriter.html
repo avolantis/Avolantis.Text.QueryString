@@ -102,14 +102,14 @@
   
   
   <a id="Avolantis_Text_QueryString_QueryStringWriter_CreateChild_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.CreateChild*"></a>
-  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_CreateChild_System_String_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.CreateChild(System.String)">CreateChild(String)</h4>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_CreateChild_System_String_System_String_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.CreateChild(System.String,System.String)">CreateChild(String, String)</h4>
   <div class="markdown level1 summary"><p>Creates a child <a class="xref" href="Avolantis.Text.QueryString.QueryStringWriter.html">QueryStringWriter</a> which prefixes
-written parameter keys with the given <code data-dev-comment-type="paramref" class="paramref">prefix</code></p>
+written parameter keys with the given <code data-dev-comment-type="paramref" class="paramref">separator</code></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public QueryStringWriter CreateChild(string prefix)</code></pre>
+    <pre><code class="lang-csharp hljs">public QueryStringWriter CreateChild(string name, string separator = &quot;.&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -123,8 +123,14 @@ written parameter keys with the given <code data-dev-comment-type="paramref" cla
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">prefix</span></td>
-        <td><p>The prefix</p>
+        <td><span class="parametername">name</span></td>
+        <td><p>The namespace of the child</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">separator</span></td>
+        <td><p>The prefix to separate namespaces</p>
 </td>
       </tr>
     </tbody>
@@ -246,6 +252,652 @@ written parameter keys with the given <code data-dev-comment-type="paramref" cla
         <td><span class="parametername">key</span></td>
         <td><p>The key of the parameter</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_Byte_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Byte)">WriteNumber(Byte)</h4>
+  <div class="markdown level1 summary"><p>Writes an integral value as a query parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(byte value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_Double_System_Nullable_System_Int32__" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Double,System.Nullable{System.Int32})">WriteNumber(Double, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Writes a floating-point value as a query parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(double value, Nullable&lt;int&gt; precision = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">precision</span></td>
+        <td><p>The number of fractional digits to write</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_Int16_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Int16)">WriteNumber(Int16)</h4>
+  <div class="markdown level1 summary"><p>Writes an integral value as a query parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(short value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_Int32_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Int32)">WriteNumber(Int32)</h4>
+  <div class="markdown level1 summary"><p>Writes an integral value as a query parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_Int64_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Int64)">WriteNumber(Int64)</h4>
+  <div class="markdown level1 summary"><p>Writes an integral value as a query parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(long value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_SByte_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.SByte)">WriteNumber(SByte)</h4>
+  <div class="markdown level1 summary"><p>Writes an integral value as a query parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(sbyte value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.sbyte">SByte</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to write</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_Single_System_Nullable_System_Int32__" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.Single,System.Nullable{System.Int32})">WriteNumber(Single, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Writes a floating-point value as a query parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(float value, Nullable&lt;int&gt; precision = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to write</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">precision</span></td>
+        <td><p>The number of fractional digits to write</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_String_System_Byte_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.Byte)">WriteNumber(String, Byte)</h4>
+  <div class="markdown level1 summary"><p>Writes an integral number query parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(string key, byte value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the parameter</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_String_System_Double_System_Nullable_System_Int32__" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.Double,System.Nullable{System.Int32})">WriteNumber(String, Double, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Writes a floating-point number query parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(string key, double value, Nullable&lt;int&gt; precision = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the parameter</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">precision</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_String_System_Int16_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.Int16)">WriteNumber(String, Int16)</h4>
+  <div class="markdown level1 summary"><p>Writes an integral number query parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(string key, short value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the parameter</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_String_System_Int32_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.Int32)">WriteNumber(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Writes an integral number query parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(string key, int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the parameter</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_String_System_Int64_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.Int64)">WriteNumber(String, Int64)</h4>
+  <div class="markdown level1 summary"><p>Writes an integral number query parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(string key, long value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the parameter</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_String_System_SByte_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.SByte)">WriteNumber(String, SByte)</h4>
+  <div class="markdown level1 summary"><p>Writes an integral number query parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(string key, sbyte value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the parameter</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.sbyte">SByte</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to write</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_String_System_Single_System_Nullable_System_Int32__" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.Single,System.Nullable{System.Int32})">WriteNumber(String, Single, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Writes a floating-point number query parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(string key, float value, Nullable&lt;int&gt; precision = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the parameter</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to write</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">precision</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_String_System_UInt16_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.UInt16)">WriteNumber(String, UInt16)</h4>
+  <div class="markdown level1 summary"><p>Writes an integral number query parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(string key, ushort value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the parameter</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_String_System_UInt32_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.UInt32)">WriteNumber(String, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Writes an integral number query parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(string key, uint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the parameter</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_String_System_UInt64_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.String,System.UInt64)">WriteNumber(String, UInt64)</h4>
+  <div class="markdown level1 summary"><p>Writes an integral number query parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(string key, ulong value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key of the parameter</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_UInt16_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.UInt16)">WriteNumber(UInt16)</h4>
+  <div class="markdown level1 summary"><p>Writes an integral value as a query parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(ushort value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_UInt32_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.UInt32)">WriteNumber(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Writes an integral value as a query parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(uint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber*"></a>
+  <h4 id="Avolantis_Text_QueryString_QueryStringWriter_WriteNumber_System_UInt64_" data-uid="Avolantis.Text.QueryString.QueryStringWriter.WriteNumber(System.UInt64)">WriteNumber(UInt64)</h4>
+  <div class="markdown level1 summary"><p>Writes an integral value as a query parameter</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(ulong value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
