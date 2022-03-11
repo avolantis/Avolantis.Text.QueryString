@@ -41,11 +41,29 @@ public class QueryStringWriterSimpleTests
 
     [Theory]
     [InlineData(null, "value", "?value")]
+    [InlineData(null, " value  ", "?+value++")]
     [InlineData("key", "value", "?key=value")]
+    [InlineData("key", "  value ", "?key=++value+")]
     public void TestWriteStringSuccess(string? key, string value, string expected)
     {
         var target = new QueryParameterCollection();
         var writer = new QueryStringWriter(target, QueryStringSerializerOptions.Default);
+
+        if (key != null)
+            writer.WriteString(key, value);
+        else
+            writer.WriteString(value);
+
+        target.ToString().ShouldBe(expected);
+    }
+
+    [Theory]
+    [InlineData(null, "  value ", "?value")]
+    [InlineData("key", " value  ", "?key=value")]
+    public void TestTrimStrings(string? key, string value, string expected)
+    {
+        var target = new QueryParameterCollection();
+        var writer = new QueryStringWriter(target, new QueryStringWriterOptions { TrimStrings = true });
 
         if (key != null)
             writer.WriteString(key, value);

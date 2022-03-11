@@ -44,7 +44,7 @@ public partial class QueryStringWriter
     /// <param name="value">The value to write</param>
     public void WriteString(string value)
     {
-        Add(null, value);
+        Add(null, _options.TrimStrings ? value.Trim() : value);
     }
 
     /// <summary>
@@ -54,6 +54,6 @@ public partial class QueryStringWriter
     /// <param name="value">The value to write</param>
     public void WriteString(string key, string value)
     {
-        Add(key, value);
+        Add(key, _options.TrimStrings ? value.Trim() : value);
     }
 }
