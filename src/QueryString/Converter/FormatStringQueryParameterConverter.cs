@@ -12,12 +12,8 @@ internal class FormatStringQueryParameterConverter : IQueryParameterConverter
 
     public bool CanConvert(MemberInfo typeOrMember)
     {
-        if (typeOrMember.GetCustomAttribute<QueryStringFormatAttribute>() == null)
-            return false;
-
-        var type = typeOrMember as Type;
-        type ??= typeOrMember.DeclaringType!;
-        return type.IsAssignableTo(typeof(IFormattable));
+        return typeOrMember.GetCustomAttribute<QueryStringFormatAttribute>() != null &&
+               typeOrMember.GetActualType().IsAssignableTo(typeof(IFormattable));
     }
 
     public void Convert(QueryStringWriter writer, object value, MemberInfo typeOrMember,

@@ -14,9 +14,7 @@ public abstract class QueryParameterConverter : IQueryParameterConverter
     /// <inheritdoc />
     public virtual bool CanConvert(MemberInfo typeOrMember)
     {
-        var type = typeOrMember as Type;
-        type ??= typeOrMember.DeclaringType!;
-        return CanConvert(type);
+        return CanConvert(typeOrMember.GetActualType());
     }
 
     /// <summary>
@@ -30,9 +28,7 @@ public abstract class QueryParameterConverter : IQueryParameterConverter
     public virtual void Convert(QueryStringWriter writer, object value, MemberInfo typeOrMember,
         QueryStringSerializerOptions options)
     {
-        var type = typeOrMember as Type;
-        type ??= typeOrMember.DeclaringType!;
-        Convert(writer, value, type, options);
+        Convert(writer, value, typeOrMember.GetActualType(), options);
     }
 
     /// <summary>

@@ -1,8 +1,6 @@
-﻿using System.Reflection;
+﻿namespace Avolantis.Text.QueryString;
 
-namespace Avolantis.Text.QueryString;
-
-internal class GuidQueryParameterConverter : IQueryParameterConverter
+internal class GuidQueryParameterConverter : QueryParameterConverter<Guid>
 {
     public static readonly GuidQueryParameterConverter Instance = new();
 
@@ -10,21 +8,13 @@ internal class GuidQueryParameterConverter : IQueryParameterConverter
     {
     }
 
-    public bool CanConvert(MemberInfo typeOrMember)
+    public override bool CanConvert(Type type)
     {
-        var type = typeOrMember as Type;
-        type ??= typeOrMember.DeclaringType!;
         return type == typeof(Guid);
     }
 
-    public void Convert(QueryStringWriter writer, object value, MemberInfo typeOrMember,
-        QueryStringSerializerOptions options)
+    public override void Convert(QueryStringWriter writer, Guid value, QueryStringSerializerOptions options)
     {
-        var guid = (Guid)value;
-
-        if (guid == Guid.Empty && !options.ShouldWriteDefaultValue(typeOrMember))
-            return;
-
-        writer.WriteString(guid.ToString("D"));
+        writer.WriteString(value.ToString("D"));
     }
 }
