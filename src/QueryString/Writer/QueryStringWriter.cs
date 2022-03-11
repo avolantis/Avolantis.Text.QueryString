@@ -8,16 +8,16 @@ public partial class QueryStringWriter
     private readonly string _prefix = string.Empty;
 
     private readonly QueryParameterCollection _target;
-    private readonly QueryStringSerializerOptions _options;
+    private readonly QueryStringWriterOptions _options;
 
-    internal QueryStringWriter(QueryParameterCollection target, QueryStringSerializerOptions options)
+    internal QueryStringWriter(QueryParameterCollection target, QueryStringWriterOptions options)
     {
         _target = target;
         _options = options;
     }
 
-    private QueryStringWriter(string prefix, QueryParameterCollection target,
-        QueryStringSerializerOptions options, HashSet<object> written) : this(target, options)
+    private QueryStringWriter(string prefix, HashSet<object> written,
+        QueryParameterCollection target, QueryStringWriterOptions options) : this(target, options)
     {
         _prefix = prefix;
         _written = written;
@@ -25,26 +25,29 @@ public partial class QueryStringWriter
 
     /// <summary>
     ///     Creates a child <see cref="QueryStringWriter" /> which prefixes
-    ///     written parameter keys with the given <paramref name="prefix" />
+    ///     written parameter keys with the given <paramref name="separator" />
     /// </summary>
     /// <param name="name">The namespace of the child</param>
-    /// <param name="prefix">The prefix to separate namespaces</param>
+    /// <param name="separator">The prefix to separate namespaces</param>
     /// <returns>A child <see cref="QueryStringWriter" /></returns>
-    public QueryStringWriter CreateChild(string name, string prefix = ".")
+    public QueryStringWriter CreateChild(string name, string separator = ".")
     {
-        var target = string.IsNullOrWhiteSpace(_prefix) ? name : _prefix + prefix + name;
-        return new QueryStringWriter(target, _target, _options, _written);
+        var @namespace = string.IsNullOrWhiteSpace(_prefix)
+            ? _options.EncodeKey(name)
+            : _prefix + separator + _options.EncodeKey(name);
+        return new QueryStringWriter(@namespace, _written, _target, _options);
     }
 
     private void Add(string? key, string value)
     {
-        var name = key == null ? _prefix : _prefix + key;
+        var name = key == null ? _prefix : _prefix + _options.EncodeKey(key);
 
+        // TODO: Add overload with string comparer (from options)
         if (!_options.AllowDuplicateParameters && _target.ContainsKey(name))
             return;
 
         if (string.IsNullOrWhiteSpace(name))
-            _target.Add(value, null);
+            _target.Add(_options.EncodeKey(value), null);
         else
             _target.Add(name, value);
     }

@@ -77,4 +77,31 @@ public class QueryStringWriterApiTests
         target["key2"].ShouldHaveSingleItem();
         target["key2", 0].ShouldBe("value");
     }
+
+    [Theory]
+    [InlineData(QueryParameterKeyCasingPolicy.NoChange, "SomeKey", true, "?SomeKey")]
+    [InlineData(QueryParameterKeyCasingPolicy.NoChange, "someKey", true, "?someKey")]
+    [InlineData(QueryParameterKeyCasingPolicy.NoChange, "SomeKey", false, "?SomeKey=SomeValue")]
+    [InlineData(QueryParameterKeyCasingPolicy.NoChange, "someKey", false, "?someKey=SomeValue")]
+    [InlineData(QueryParameterKeyCasingPolicy.CamelCase, "SomeKey", true, "?someKey")]
+    [InlineData(QueryParameterKeyCasingPolicy.CamelCase, "SomeKey", false, "?someKey=SomeValue")]
+    [InlineData(QueryParameterKeyCasingPolicy.PascalCase, "someKey", true, "?SomeKey")]
+    [InlineData(QueryParameterKeyCasingPolicy.PascalCase, "someKey", false, "?SomeKey=SomeValue")]
+    [InlineData(QueryParameterKeyCasingPolicy.LowerCase, "SomeKey", true, "?somekey")]
+    [InlineData(QueryParameterKeyCasingPolicy.LowerCase, "SomeKey", false, "?somekey=SomeValue")]
+    [InlineData(QueryParameterKeyCasingPolicy.UpperCase, "SomeKey", true, "?SOMEKEY")]
+    [InlineData(QueryParameterKeyCasingPolicy.UpperCase, "SomeKey", false, "?SOMEKEY=SomeValue")]
+    public void TestKeyCasingPolicy(QueryParameterKeyCasingPolicy policy, string key, bool isFlag, string expected)
+    {
+        var target = new QueryParameterCollection();
+        var options = new QueryStringWriterOptions { KeyCasingPolicy = policy };
+        var writer = new QueryStringWriter(target, options);
+
+        if (isFlag)
+            writer.WriteString(key);
+        else
+            writer.WriteString(key, "SomeValue");
+
+        target.ToString().ShouldBe(expected);
+    }
 }

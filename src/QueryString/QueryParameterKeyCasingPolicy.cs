@@ -22,11 +22,6 @@ public enum QueryParameterKeyCasingPolicy
     PascalCase,
 
     /// <summary>
-    ///     Change casing to kebab-case
-    /// </summary>
-    KebabCase,
-
-    /// <summary>
     ///     Change casing to lowercase
     /// </summary>
     LowerCase,
